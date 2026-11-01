@@ -33,5 +33,5 @@ L+=["","## F. Label corrections after review round 1 (2026-11-01)","",
 "| FreePeak/db-mcp-server#70 | SESSION/REJECT | SESSION/UNAVAIL | codebook: call times out |",
 "| supabase/mcp#410 | GUARD/UNSAFE | TOOL_DEF/TOOLS | rule 3: description-only change |",
 "| Snowflake-Labs/mcp#35 | EXEC/REJECT | EXEC/UNKNOWN | no error text in the record |",
-"","The self-consistency statistics in the paper compare the original first pass (`labels_pass1_v1.csv`) with the second pass; against the corrected labels they are element 38/40, symptom 35/40 (`agreement_after_corrections.json`)."]
+"","History files (not reported in the paper): `labels_pass1_v1.csv` is an earlier draft; `labels_pass2.csv` and `agreement*.json` are an LLM self-consistency pass."]
 open(OUT,'w').write("\n".join(L)+"\n")

@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Coding and data agents reach databases through Model Context Protocol (MCP) tool servers; when a server is defective, what matters is what the agent sees. We mined 5,742 merged pull requests from 26 popular open-source database MCP servers, sampled 376 fix-like PRs and coded 256 confirmed defect fixes by the contract element that was wrong and by the symptom the calling agent would observe, inferred from the PR and issue text. Of 205 fixes with an agent-facing symptom, 59 (28.8%; repository-cluster bootstrap 95% CI 20.3–36.3%) would have returned a success-looking response that was wrong, incomplete or unsafe; 20.1% if guardrail defects are set aside. Adding misleading errors, 39.5% of responses could not be taken at face value. Rendering the live tool lists of 15 servers (223 tools) through the Gemma 4 chat template, 9 servers have tools whose parameter types or structure are lost, mostly optional parameters declared as a union with null; a simple normaliser cuts affected tools from 67 to 40. We release the labelled dataset, codebook and scripts, and propose six harness checks for function-calling agents.
+Coding and data agents reach databases through Model Context Protocol (MCP) tool servers; when a server is defective, what matters is what the agent sees. We mined 5,742 merged pull requests from 26 popular open-source database MCP servers, sampled 376 fix-like PRs and coded 256 confirmed defect fixes by the contract element that was wrong and by the symptom the calling agent would observe, inferred from the PR and issue text. Of 205 fixes with an agent-facing symptom, 59 (28.8%; repository-cluster bootstrap 95% CI 20.3–36.3%) would have returned a success-looking response that was wrong, incomplete or unsafe; 20.1% if guardrail defects are set aside. Adding misleading errors, 39.5% of responses could not be taken at face value. Rendering the live tool lists of 15 repositories (223 tools) through the Gemma 4 chat template, 67 of the 223 tools in 9 of these 15 repositories lose a parameter type or structure, mostly optional parameters declared as a union with null; a short normaliser cuts this from 67 to 40 of 223 tools. We release the labelled dataset, codebook and scripts, and propose six harness checks for function-calling agents.
 
 ## 1 Introduction
 
@@ -93,13 +93,13 @@ Agent signatures appear on 209 of 5,742 merged PRs (3.6%), rising from 0.7% in t
 
 ### RQ5: Do current tool schemas survive translation into Gemma 4 function declarations?
 
-Google's Gemma 4 tool-calling guide passes JSON-schema dicts unchanged to `apply_chat_template` [14]; the chat template then renders them [15]. Per parameter it renders `description`, a single string `type`, `enum` (strings only), `items` (keys emitted verbatim), `nullable`, and nested `properties`/`required`; other keywords are dropped. On 1 November 2026 we ran `tools/list` on the current release of each server: 15 of 26 repositories (18 configurations, 223 tools) started without a live service; four needed dependency pins and mongodb-mcp-server was listed unconnected (details in the release). Go, Rust and SaaS-backed servers are missing.
+Google's Gemma 4 tool-calling guide passes JSON-schema dicts unchanged to `apply_chat_template` [13]; the chat template then renders them [14]. Per parameter it renders `description`, a single string `type`, `enum` (strings only), `items` (keys emitted verbatim), `nullable`, and nested `properties`/`required`; other keywords are dropped. On 1 November 2026 we ran `tools/list` on the current release of each server: 15 of 26 repositories (18 configurations, 223 tools) started without a live service; four needed dependency pins and mongodb-mcp-server was listed unconnected (details in the release). Go, Rust and SaaS-backed servers are missing.
 
-- In 9 of 15 repositories at least one tool loses a parameter's type or structure (67 tools, 30.0%; three configurations account for 45). The main cause is optional parameters declared as `anyOf: [T, null]` (67 parameters in 43 tools), which render with an empty type; objects without `properties` render `additionalProperties` as if it were a parameter.
-- A 30-line normaliser (`anyOf [T, null]` to `type: T, nullable: true`; `$ref` inlined) leaves 40 tools in 8 repositories, from multi-type unions and free-form objects.
+- In 9 of 15 repositories at least one tool loses a parameter's type or structure (67 tools, 30.0%; three configurations account for 45). The main cause is optional parameters declared as `anyOf: [T, null]` (67 such parameters, spread over 43 of the affected tools), which render with an empty type; objects without `properties` render `additionalProperties` as if it were a parameter.
+- A short normaliser (`anyOf [T, null]` to `type: T, nullable: true`; `$ref` inlined) leaves 40 tools in 8 repositories, from multi-type unions and free-form objects.
 - 106 tools lose a constraint keyword, mostly `default`. Separately, 106 tools have an undescribed parameter, a server property rather than a template loss.
 
-We did not run the model.
+We did not run the model; whether these losses change Gemma 4's tool calls is untested.
 
 ## 5 Harness checks
 
@@ -122,7 +122,7 @@ In 256 confirmed fixes to database MCP servers, about three in ten agent-facing 
 
 ## Data and code availability
 
-Dataset, codebook, selection record, appendix, schema-audit inputs and scripts (Apache-2.0): https://github.com/beskvladimir-create/db-mcp-defects. Numbers come from `scripts/analyze.py`.
+Dataset, codebook, selection record, appendix, schema-audit inputs and scripts (Apache-2.0): https://github.com/beskvladimir-create/db-mcp-defects. Numbers come from `scripts/analyze.py`; the schema-audit numbers come from `scripts/c3_schema_audit.py`.
 
 **Table 1.** Element by symptom (n = 256).
 
@@ -142,7 +142,7 @@ Dataset, codebook, selection record, appendix, schema-audit inputs and scripts (
 
 ## AI tools
 
-An LLM assistant (Claude) was used to write the data-collection and analysis scripts, to propose initial labels that the author reviewed, and for editing.
+An LLM assistant (Claude) was used to write the data-collection and analysis scripts.
 
 ## References
 
@@ -158,6 +158,5 @@ An LLM assistant (Claude) was used to write the data-collection and analysis scr
 [10] Zhu X. et al. Where Agent Frameworks Fall Short: Examining Functional Challenges and Usability Concerns. arXiv:2602.21806, 2026.
 [11] Li H., Zhang H., Hassan A. E. AIDev: Studying AI Coding Agents on GitHub. arXiv:2602.09185, 2026.
 [12] Model Context Protocol Specification 2025-11-25, Server: Tools. https://modelcontextprotocol.io/specification/2025-11-25/server/tools (accessed 2026-11-01).
-[13] Google. Gemma 4 model overview. https://ai.google.dev/gemma/docs/core (accessed 2026-11-01).
-[14] Google DeepMind. Tool calling, Gemma documentation. https://gemma.ai/get-started/capabilities/function-calling/ (accessed 2026-11-01; replaces the deprecated ai.google.dev page).
-[15] Google. Gemma 4 chat template, google/gemma-4-E2B-it revision 8995379, as copied in huggingface/trl `trl/chat_templates/gemma4_v5.jinja` (commit a03b8fe). https://github.com/huggingface/trl/blob/a03b8fe31d5f68b645ccf0d6b95c1f1245b5006e/trl/chat_templates/gemma4_v5.jinja
+[13] Google DeepMind. Tool calling, Gemma documentation. https://gemma.ai/get-started/capabilities/function-calling/ (accessed 2026-11-01; replaces the deprecated ai.google.dev page).
+[14] Google. Gemma 4 chat template, google/gemma-4-E2B-it revision 8995379, as copied in huggingface/trl `trl/chat_templates/gemma4_v5.jinja` (commit a03b8fe). https://github.com/huggingface/trl/blob/a03b8fe31d5f68b645ccf0d6b95c1f1245b5006e/trl/chat_templates/gemma4_v5.jinja

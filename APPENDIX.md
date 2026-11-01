@@ -178,4 +178,4 @@ Fix-like (all 1,051): 81/1051; other merged PRs: 128/4691. Frame: 79/821; non-fr
 | supabase/mcp#410 | GUARD/UNSAFE | TOOL_DEF/TOOLS | rule 3: description-only change |
 | Snowflake-Labs/mcp#35 | EXEC/REJECT | EXEC/UNKNOWN | no error text in the record |
 
-The self-consistency statistics in the paper compare the original first pass (`labels_pass1_v1.csv`) with the second pass; against the corrected labels they are element 38/40, symptom 35/40 (`agreement_after_corrections.json`).
+History files (not reported in the paper): `labels_pass1_v1.csv` is an earlier draft; `labels_pass2.csv` and `agreement*.json` are an LLM self-consistency pass.

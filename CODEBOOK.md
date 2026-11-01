@@ -97,7 +97,7 @@ These rules were made explicit while labelling and are recorded here so that oth
   - `vuln`: an attacker-facing weakness that does not change the answer to a benign agent call (SSRF, path
     traversal, DNS rebinding, session binding, token exposure, injection through tool inputs, tool output not fenced
     as untrusted data).
-- Six labels were corrected after an independent review (listed in APPENDIX.md, section E). Rules 3 and 5 were
+- Six draft labels were corrected (listed in APPENDIX.md, section F). Rules 3 and 5 were
   applied to units where they had not been applied consistently.
 - Rule 6 (oversized output coded `SILENT`) is reported with a sensitivity analysis without those units.
 - Follow-up series (same defect fixed in several PRs) are listed in `data/defect_groups.csv` and used for a
