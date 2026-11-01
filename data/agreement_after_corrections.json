@@ -1,0 +1,62 @@
+{
+ "include": {
+  "agreement": 1.0,
+  "kappa": 1.0,
+  "n": 60
+ },
+ "element": {
+  "agreement": 0.95,
+  "kappa": 0.9402539208364451,
+  "n": 40,
+  "disagreements": [
+   [
+    "redis__mcp-redis#46",
+    "CONFIG",
+    "TOOL_DEF"
+   ],
+   [
+    "supabase__mcp#410",
+    "TOOL_DEF",
+    "GUARD"
+   ]
+  ]
+ },
+ "symptom": {
+  "agreement": 0.875,
+  "kappa": 0.8542274052478134,
+  "n": 40,
+  "disagreements": [
+   [
+    "benborla__mcp-server-mysql#93",
+    "REJECT",
+    "UNAVAIL"
+   ],
+   [
+    "mongodb-js__mongodb-mcp-server#630",
+    "TOOLS",
+    "UNKNOWN"
+   ],
+   [
+    "redis__mcp-redis#46",
+    "UNAVAIL",
+    "TOOLS"
+   ],
+   [
+    "Snowflake-Labs__mcp#35",
+    "UNKNOWN",
+    "REJECT"
+   ],
+   [
+    "supabase__mcp#410",
+    "TOOLS",
+    "UNSAFE"
+   ]
+  ]
+ },
+ "client_specific": {
+  "agreement": 1.0,
+  "kappa": 1.0,
+  "n": 40,
+  "disagreements": []
+ }
+}

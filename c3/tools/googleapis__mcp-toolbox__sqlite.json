@@ -1,0 +1,61 @@
+{
+ "command": [
+  "npx",
+  "-y",
+  "@toolbox-sdk/server",
+  "--prebuilt",
+  "sqlite",
+  "--stdio"
+ ],
+ "server_info": {
+  "name": "Toolbox",
+  "version": "1.15.0+binary.linux.amd64.8e8e569+prebuilt.sqlite"
+ },
+ "protocol_version": "2025-06-18",
+ "tools": [
+  {
+   "name": "execute_sql",
+   "description": "Use this tool to execute SQL.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "sql": {
+      "type": "string",
+      "description": "The sql to execute."
+     }
+    },
+    "required": [
+     "sql"
+    ]
+   },
+   "annotations": {
+    "readOnlyHint": false,
+    "destructiveHint": true
+   }
+  },
+  {
+   "name": "list_tables",
+   "description": "Lists SQLite tables. Use 'output_format' ('simple'/'detailed') and 'table_names' (comma-separated or empty) to control output.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "output_format": {
+      "type": "string",
+      "description": "Optional: Use 'simple' to return table names only or use 'detailed' to return the full information schema.",
+      "default": "detailed"
+     },
+     "table_names": {
+      "type": "string",
+      "description": "Optional: A comma-separated list of table names. If empty, details for all tables in user-accessible schemas will be listed.",
+      "default": ""
+     }
+    },
+    "required": []
+   },
+   "annotations": {
+    "readOnlyHint": false,
+    "destructiveHint": true
+   }
+  }
+ ]
+}

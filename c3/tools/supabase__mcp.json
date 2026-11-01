@@ -1,0 +1,16 @@
+{
+ "command": [
+  "npx",
+  "-y",
+  "@supabase/mcp-server-supabase",
+  "--access-token",
+  "sbp_dummy"
+ ],
+ "server_info": {
+  "name": "supabase",
+  "title": "Supabase",
+  "version": "0.15.0"
+ },
+ "protocol_version": "2025-06-18",
+ "error": "tools/list error: {\"code\": -32603, \"message\": \"fetch failed\"}"
+}

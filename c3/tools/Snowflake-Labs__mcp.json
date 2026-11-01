@@ -1,0 +1,15 @@
+{
+ "command": [
+  "uvx",
+  "snowflake-labs-mcp",
+  "--service-config-file",
+  "sf.yaml",
+  "--account",
+  "x",
+  "--user",
+  "y",
+  "--password",
+  "z"
+ ],
+ "error": "server exited: lib/python3.13/site-packages/snowflake/connector/connection.py\", line 1782, in _authenticate\n    raise auth_op from e\n  File \"/root/.cache/uv/archive-v0/ms416T27pRSP6YBR/lib/python3.13/site-packages/snowflake/connector/connection.py\", line 1757, in _authenticate\n    auth_instance.handle_timeout(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        authenticator=self._authenticator,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n        password=self._password,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/root/.cache/uv/archive-v0/ms416T27pRSP6YBR/lib/python3.13/site-packages/snowflake/connector/auth/by_plugin.py\", line 212, in handle_timeout\n    raise error\nsnowflake.connector.errors.OperationalError: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting\n"
+}

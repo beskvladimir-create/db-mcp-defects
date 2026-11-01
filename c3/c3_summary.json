@@ -1,0 +1,209 @@
+{
+ "attempt_files": 25,
+ "server_configs_ok": 18,
+ "repos_covered": [
+  "Anarkh-Lee/universal-db-mcp",
+  "ClickHouse/mcp-clickhouse",
+  "RichardHan/mssql_mcp_server",
+  "alexander-zuev/supabase-mcp-server",
+  "bytebase/dbhub",
+  "chroma-core/chroma-mcp",
+  "cr7258/elasticsearch-mcp-server",
+  "designcomputer/mysql_mcp_server",
+  "executeautomation/mcp-database-server",
+  "googleapis/mcp-toolbox",
+  "mongodb-js/mongodb-mcp-server",
+  "motherduckdb/mcp-server-motherduck",
+  "neo4j-contrib/mcp-neo4j",
+  "redis/mcp-redis",
+  "runekaagaard/mcp-alchemy"
+ ],
+ "n_repos_covered": 15,
+ "n_tools": 223,
+ "tools_with": {
+  "norm:constraint_dropped": 106,
+  "norm:constraint_lost": 106,
+  "norm:items_union_passthrough": 4,
+  "norm:no_single_type": 16,
+  "norm:object_without_properties": 24,
+  "norm:param_no_description": 106,
+  "norm:rendered_empty_type": 37,
+  "norm:structure_misrendered": 24,
+  "norm:type_lost": 37,
+  "norm:type_or_structure_lost": 40,
+  "norm:union_or_ref": 16,
+  "raw:constraint_dropped": 106,
+  "raw:constraint_lost": 106,
+  "raw:items_union_passthrough": 4,
+  "raw:no_single_type": 55,
+  "raw:object_without_properties": 17,
+  "raw:param_no_description": 106,
+  "raw:rendered_empty_type": 64,
+  "raw:structure_misrendered": 17,
+  "raw:type_lost": 64,
+  "raw:type_or_structure_lost": 67,
+  "raw:union_or_ref": 55
+ },
+ "repos_with_type_or_structure_lost_raw": [
+  "ClickHouse/mcp-clickhouse",
+  "alexander-zuev/supabase-mcp-server",
+  "chroma-core/chroma-mcp",
+  "cr7258/elasticsearch-mcp-server",
+  "mongodb-js/mongodb-mcp-server",
+  "motherduckdb/mcp-server-motherduck",
+  "neo4j-contrib/mcp-neo4j",
+  "redis/mcp-redis",
+  "runekaagaard/mcp-alchemy"
+ ],
+ "repos_with_type_or_structure_lost_norm": [
+  "ClickHouse/mcp-clickhouse",
+  "alexander-zuev/supabase-mcp-server",
+  "chroma-core/chroma-mcp",
+  "cr7258/elasticsearch-mcp-server",
+  "mongodb-js/mongodb-mcp-server",
+  "neo4j-contrib/mcp-neo4j",
+  "redis/mcp-redis",
+  "runekaagaard/mcp-alchemy"
+ ],
+ "top3_configs_raw": [
+  [
+   "cr7258__elasticsearch-mcp-server",
+   20,
+   20
+  ],
+  [
+   "neo4j-contrib__mcp-neo4j__data-modeling",
+   13,
+   16
+  ],
+  [
+   "redis__mcp-redis",
+   12,
+   53
+  ]
+ ],
+ "top3_share_of_raw_losses": 45,
+ "failed": {
+  "Snowflake-Labs__mcp": "^^\n    )\n    ^\n  File \"/root/.cache/uv/archive-v0/ms416T27pRSP6YBR/lib/python3.13/site-packages/snowflake/connector/auth/by_plugin.py\", line 212, in handle_timeout\n    raise error\nsnowflake.connector.errors.OperationalError: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting\n",
+  "benborla__mcp-server-mysql": "server exited: npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead\n",
+  "crystaldba__postgres-mcp": " dependencies:\n  \u2570\u2500\u25b6 Because there is no version of pglast==7.2.0 and postgres-mcp>=0.3.0\n      depends on pglast==7.2.0, we can conclude that postgres-mcp>=0.3.0\n      cannot be used.\n      And because you require postgres-mcp==0.3.0, we can conclude that your\n      requirements are unsatisfiable.\n",
+  "neo4j-contrib__mcp-neo4j__memory": ": neo4j\nWarning: No transport type provided. Using default: stdio\nFailed to connect to Neo4j: Couldn't connect to localhost:7687 (resolved to ('127.0.0.1:7687',)):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connect call failed ('127.0.0.1', 7687))\n",
+  "neondatabase__mcp-server-neon": "cases, you or one of your dependencies are requesting\nnpm error 403 a package version that is forbidden by your security policy, or\nnpm error 403 on a server you do not have access to.\nnpm error A complete log of this run can be found in: /home/claude/.npm/_logs/2026-11-01T04_40_41_126Z-debug-0.log\n",
+  "qdrant__mcp-server-qdrant": ".cache/uv/archive-v0/pqjQJlscLE2Ws6lH/lib/python3.13/site-packages/fastembed/common/model_management.py\", line 752, in download_model\n    raise ValueError(f\"Could not load model {model.model} from any source.\")\nValueError: Could not load model sentence-transformers/all-MiniLM-L6-v2 from any source.\n",
+  "supabase__mcp": "tools/list error: {\"code\": -32603, \"message\": \"fetch failed\"}"
+ },
+ "per_config": {
+  "Anarkh-Lee__universal-db-mcp": {
+   "n_tools": 9,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "ClickHouse__mcp-clickhouse": {
+   "n_tools": 3,
+   "type_or_structure_lost_raw": 2,
+   "type_or_structure_lost_norm": 1
+  },
+  "RichardHan__mssql_mcp_server": {
+   "n_tools": 1,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "alexander-zuev__supabase-mcp-server": {
+   "n_tools": 12,
+   "type_or_structure_lost_raw": 3,
+   "type_or_structure_lost_norm": 3
+  },
+  "bytebase__dbhub": {
+   "n_tools": 2,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "chroma-core__chroma-mcp": {
+   "n_tools": 13,
+   "type_or_structure_lost_raw": 7,
+   "type_or_structure_lost_norm": 4
+  },
+  "cr7258__elasticsearch-mcp-server": {
+   "n_tools": 20,
+   "type_or_structure_lost_raw": 20,
+   "type_or_structure_lost_norm": 6
+  },
+  "designcomputer__mysql_mcp_server": {
+   "n_tools": 3,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "executeautomation__mcp-database-server": {
+   "n_tools": 10,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "googleapis__mcp-toolbox__postgres": {
+   "n_tools": 29,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "googleapis__mcp-toolbox__sqlite": {
+   "n_tools": 2,
+   "type_or_structure_lost_raw": 0,
+   "type_or_structure_lost_norm": 0
+  },
+  "mongodb-js__mongodb-mcp-server": {
+   "n_tools": 27,
+   "type_or_structure_lost_raw": 4,
+   "type_or_structure_lost_norm": 4
+  },
+  "motherduckdb__mcp-server-motherduck": {
+   "n_tools": 4,
+   "type_or_structure_lost_raw": 2,
+   "type_or_structure_lost_norm": 0
+  },
+  "neo4j-contrib__mcp-neo4j__aura-manager": {
+   "n_tools": 12,
+   "type_or_structure_lost_raw": 1,
+   "type_or_structure_lost_norm": 0
+  },
+  "neo4j-contrib__mcp-neo4j__cypher": {
+   "n_tools": 3,
+   "type_or_structure_lost_raw": 2,
+   "type_or_structure_lost_norm": 2
+  },
+  "neo4j-contrib__mcp-neo4j__data-modeling": {
+   "n_tools": 16,
+   "type_or_structure_lost_raw": 13,
+   "type_or_structure_lost_norm": 13
+  },
+  "redis__mcp-redis": {
+   "n_tools": 53,
+   "type_or_structure_lost_raw": 12,
+   "type_or_structure_lost_norm": 6
+  },
+  "runekaagaard__mcp-alchemy": {
+   "n_tools": 4,
+   "type_or_structure_lost_raw": 1,
+   "type_or_structure_lost_norm": 1
+  }
+ },
+ "server_info": {
+  "Anarkh-Lee__universal-db-mcp": "universal-db-mcp 1.0.0",
+  "ClickHouse__mcp-clickhouse": "mcp-clickhouse 0.7.0",
+  "RichardHan__mssql_mcp_server": "mssql_mcp_server 1.30.0",
+  "alexander-zuev__supabase-mcp-server": "supabase 1.30.0",
+  "bytebase__dbhub": "DBHub MCP Server 1.5.0",
+  "chroma-core__chroma-mcp": "chroma 1.6.0",
+  "cr7258__elasticsearch-mcp-server": "elasticsearch-mcp-server 3.4.7",
+  "designcomputer__mysql_mcp_server": "mysql_mcp_server 1.30.0",
+  "executeautomation__mcp-database-server": "executeautomation/database-server 1.1.0",
+  "googleapis__mcp-toolbox__postgres": "Toolbox 1.15.0+binary.linux.amd64.8e8e569+prebuilt.postgres",
+  "googleapis__mcp-toolbox__sqlite": "Toolbox 1.15.0+binary.linux.amd64.8e8e569+prebuilt.sqlite",
+  "mongodb-js__mongodb-mcp-server": "MongoDB MCP Server 3.2.2",
+  "motherduckdb__mcp-server-motherduck": "mcp-server-motherduck 1.1.0",
+  "neo4j-contrib__mcp-neo4j__aura-manager": "mcp-neo4j-aura-manager 2.14.7",
+  "neo4j-contrib__mcp-neo4j__cypher": "mcp-neo4j-cypher 2.13.3",
+  "neo4j-contrib__mcp-neo4j__data-modeling": "mcp-neo4j-data-modeling 4.1.4",
+  "redis__mcp-redis": "Redis MCP Server 1.30.0",
+  "runekaagaard__mcp-alchemy": "MCP Alchemy 1.30.0"
+ },
+ "n_repos_type_or_structure_lost_raw": 9,
+ "n_repos_type_or_structure_lost_norm": 8
+}

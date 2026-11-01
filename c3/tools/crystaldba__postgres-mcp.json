@@ -1,0 +1,13 @@
+{
+ "command": [
+  "uvx",
+  "--with",
+  "mcp<2",
+  "--from",
+  "postgres-mcp==0.3.0",
+  "postgres-mcp",
+  "--access-mode=restricted",
+  "postgresql://postgres@127.0.0.1:5433/postgres"
+ ],
+ "error": "server exited: warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.\n  \u00d7 No solution found when resolving tool dependencies:\n  \u2570\u2500\u25b6 Because there is no version of pglast==7.2.0 and postgres-mcp>=0.3.0\n      depends on pglast==7.2.0, we can conclude that postgres-mcp>=0.3.0\n      cannot be used.\n      And because you require postgres-mcp==0.3.0, we can conclude that your\n      requirements are unsatisfiable.\n"
+}

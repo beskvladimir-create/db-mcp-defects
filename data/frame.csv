@@ -1,0 +1,822 @@
+id,repo,number,title,author,created_at,merged_at
+ClickHouse__mcp-clickhouse#230,ClickHouse/mcp-clickhouse,230,fix: allow Host validation behind a trusted reverse proxy,mosya415,2026-08-28T12:09:24Z,2026-08-31T16:11:21Z
+ClickHouse__mcp-clickhouse#229,ClickHouse/mcp-clickhouse,229,fix: reject non-positive table page sizes,fallintoplace,2026-08-27T20:44:57Z,2026-08-31T17:43:15Z
+ClickHouse__mcp-clickhouse#228,ClickHouse/mcp-clickhouse,228,fix: cache completed ClickHouse health results for one second,mosya415,2026-08-27T20:42:54Z,2026-09-09T23:59:20Z
+ClickHouse__mcp-clickhouse#221,ClickHouse/mcp-clickhouse,221,fix request-scoped client overrides,joe-clickhouse,2026-08-21T15:29:02Z,2026-08-21T20:38:54Z
+ClickHouse__mcp-clickhouse#220,ClickHouse/mcp-clickhouse,220,fix: close DROP and TRUNCATE protection bypasses,mosya415,2026-08-21T14:54:00Z,2026-08-21T18:01:21Z
+ClickHouse__mcp-clickhouse#212,ClickHouse/mcp-clickhouse,212,fix: add actionable hints on ClickHouse connection failures,sankalpsthakur,2026-07-22T13:29:07Z,2026-07-23T14:18:13Z
+ClickHouse__mcp-clickhouse#187,ClickHouse/mcp-clickhouse,187,fix latest GHCR tag on release events,joe-clickhouse,2026-05-27T21:59:48Z,2026-06-03T17:22:28Z
+ClickHouse__mcp-clickhouse#173,ClickHouse/mcp-clickhouse,173,Joe/171 oauth seems to have been broken in recent updates,joe-clickhouse,2026-04-20T18:02:31Z,2026-04-23T20:29:57Z
+ClickHouse__mcp-clickhouse#136,ClickHouse/mcp-clickhouse,136,fix blocking during long queries,joe-clickhouse,2026-03-02T23:03:43Z,2026-04-29T16:38:37Z
+ClickHouse__mcp-clickhouse#35,ClickHouse/mcp-clickhouse,35,fix(readonly): Respect server readonly settings,iskakaushik,2025-04-16T21:49:50Z,2025-04-16T22:00:12Z
+ClickHouse__mcp-clickhouse#30,ClickHouse/mcp-clickhouse,30,fix: Ensure .env loaded before config init during `mcp dev` startup,sealpp,2025-04-09T09:29:27Z,2025-04-15T13:53:03Z
+ClickHouse__mcp-clickhouse#26,ClickHouse/mcp-clickhouse,26,fix: prevent BrokenResourceError by returning structured responses for query errors,iskakaushik,2025-03-31T16:25:11Z,2025-03-31T16:36:13Z
+ClickHouse__mcp-clickhouse#4,ClickHouse/mcp-clickhouse,4,Fix import order,esadek,2025-02-05T10:53:01Z,2025-02-12T15:15:54Z
+FreePeak__db-mcp-server#107,FreePeak/db-mcp-server,107,fix: handle special characters in database credentials (DSN building),linhdmn,2026-10-17T04:14:43Z,2026-10-17T04:44:22Z
+FreePeak__db-mcp-server#96,FreePeak/db-mcp-server,96,fix(npm): the packed tarball could never install — SHA256SUMS prefix mismatch,linhdmn,2026-10-12T03:58:20Z,2026-10-12T07:02:40Z
+FreePeak__db-mcp-server#72,FreePeak/db-mcp-server,72,fix(docker): satisfy Glama MCP directory scanner (#30),linhdmn,2026-07-28T15:39:04Z,2026-07-28T16:21:38Z
+FreePeak__db-mcp-server#70,FreePeak/db-mcp-server,70,fix(db): propagate query_timeout into MySQL DSN (#29),linhdmn,2026-07-28T15:37:05Z,2026-07-28T16:21:31Z
+FreePeak__db-mcp-server#67,FreePeak/db-mcp-server,67,fix: handle []map[string]interface{} content in FormatResponse,MekayelAnik,2026-04-25T01:57:54Z,2026-07-28T15:35:03Z
+FreePeak__db-mcp-server#66,FreePeak/db-mcp-server,66,fix: use sanitizeStringLiteral for TimescaleDB information schema columns,linhdmn,2026-04-19T05:44:23Z,2026-04-19T05:44:30Z
+FreePeak__db-mcp-server#65,FreePeak/db-mcp-server,65,fix: sanitize SQL identifiers in TimescaleDB tool and SQLite schema,linhdmn,2026-04-18T04:22:35Z,2026-04-19T04:06:05Z
+FreePeak__db-mcp-server#64,FreePeak/db-mcp-server,64,fix: close log file handle and log schema query failures,linhdmn,2026-04-18T04:15:19Z,2026-04-19T04:05:09Z
+FreePeak__db-mcp-server#63,FreePeak/db-mcp-server,63,fix: prevent SQL injection in TimescaleDB functions,linhdmn,2026-04-18T04:10:50Z,2026-04-19T04:04:41Z
+FreePeak__db-mcp-server#62,FreePeak/db-mcp-server,62,fix: resolve SQLite paths relative to config file directory,linhdmn,2026-04-18T03:53:35Z,2026-04-19T04:03:51Z
+FreePeak__db-mcp-server#61,FreePeak/db-mcp-server,61,fix: respect VERBOSE env var for log level,linhdmn,2026-04-17T16:13:09Z,2026-04-19T04:03:10Z
+FreePeak__db-mcp-server#56,FreePeak/db-mcp-server,56,fix(db_config),yeatesss,2026-02-05T01:41:52Z,2026-02-24T18:03:55Z
+FreePeak__db-mcp-server#53,FreePeak/db-mcp-server,53,"Fix CI pipeline failures: formatting, Oracle NLS, and nil logger",Copilot,2026-01-16T04:28:08Z,2026-01-16T06:49:51Z
+FreePeak__db-mcp-server#50,FreePeak/db-mcp-server,50,fix(ci): remove unnecessary npm install step from publish workflow,linhdmn,2026-01-13T18:08:33Z,2026-01-13T18:08:57Z
+FreePeak__db-mcp-server#45,FreePeak/db-mcp-server,45,fix: respect -log-dir flag in stdio mode,diegoclair,2025-12-09T19:52:22Z,2025-12-14T13:51:01Z
+FreePeak__db-mcp-server#36,FreePeak/db-mcp-server,36,fix: Wrong response format for empty results in some cases,linhdmn,2025-08-19T07:56:27Z,2025-09-13T04:10:30Z
+FreePeak__db-mcp-server#27,FreePeak/db-mcp-server,27,fix: add command build multi arch docker image,linhdmn,2025-04-14T15:51:11Z,2025-04-16T02:40:05Z
+FreePeak__db-mcp-server#24,FreePeak/db-mcp-server,24,fix: update logic postgres query,linhdmn,2025-04-11T07:45:17Z,2025-04-11T08:39:17Z
+FreePeak__db-mcp-server#23,FreePeak/db-mcp-server,23,Fix/checking issue,linhdmn,2025-04-09T17:36:12Z,2025-04-10T16:17:13Z
+FreePeak__db-mcp-server#12,FreePeak/db-mcp-server,12,fix: sever name register,linhdmn,2025-03-31T09:10:26Z,2025-03-31T12:50:53Z
+FreePeak__db-mcp-server#5,FreePeak/db-mcp-server,5,fix: downgrade go version and remove hack/ folder to compatible with …,linhdmn,2025-03-26T04:23:24Z,2025-03-26T04:28:44Z
+FreePeak__db-mcp-server#4,FreePeak/db-mcp-server,4,Hotfix/stdio server,linhdmn,2025-03-25T17:49:24Z,2025-03-25T19:26:18Z
+RichardHan__mssql_mcp_server#21,RichardHan/mssql_mcp_server,21,Fix pymssql connection error by removing unsupported encrypt parameter,HauVuTri,2025-08-15T04:10:33Z,2025-08-23T07:57:17Z
+Snowflake-Labs__mcp#175,Snowflake-Labs/mcp,175,fix(cortex_agent): fix SSE response parsing for Cortex Agent API,shibinmatrix,2026-03-17T19:01:32Z,2026-04-13T16:44:04Z
+Snowflake-Labs__mcp#170,Snowflake-Labs/mcp,170,Fix queries classified as `Unknown` statement type by updating parsing `dialect=snowflake`,edmundyan,2026-02-21T05:24:40Z,2026-04-01T14:57:09Z
+Snowflake-Labs__mcp#157,Snowflake-Labs/mcp,157,fix: make verbose logging work,sfc-gh-twhite,2025-12-18T15:43:51Z,2025-12-18T17:25:51Z
+Snowflake-Labs__mcp#144,Snowflake-Labs/mcp,144,fix: Change integer to number,sfc-gh-jsummer,2025-10-28T15:19:57Z,2025-10-28T15:20:06Z
+Snowflake-Labs__mcp#142,Snowflake-Labs/mcp,142,fix: Set port to string,sfc-gh-jsummer,2025-10-27T19:12:03Z,2025-10-27T19:12:13Z
+Snowflake-Labs__mcp#141,Snowflake-Labs/mcp,141,fix: Upgrade schema with new variables and meta data,sfc-gh-jsummer,2025-10-27T18:27:58Z,2025-10-27T19:07:36Z
+Snowflake-Labs__mcp#140,Snowflake-Labs/mcp,140,fix: Add request timeout and limit validation,sfc-gh-jsummer,2025-10-27T15:17:57Z,2025-10-27T15:49:49Z
+Snowflake-Labs__mcp#127,Snowflake-Labs/mcp,127,Fix publish workflow,sfc-gh-jsummer,2025-10-06T16:50:47Z,2025-10-27T16:36:48Z
+Snowflake-Labs__mcp#124,Snowflake-Labs/mcp,124,fix: Remove status key,sfc-gh-jsummer,2025-10-03T16:13:21Z,2025-10-03T17:30:52Z
+Snowflake-Labs__mcp#121,Snowflake-Labs/mcp,121,fix(error): Resolve stack trace in error logging,sfc-gh-jsummer,2025-09-30T18:23:49Z,2025-10-03T15:31:01Z
+Snowflake-Labs__mcp#115,Snowflake-Labs/mcp,115,fix: update error messages in SnowflakeException for clarity,sfc-gh-twhite,2025-09-25T15:32:01Z,2025-09-25T19:43:57Z
+Snowflake-Labs__mcp#114,Snowflake-Labs/mcp,114,fix: enhance error handling in load_tools_config_resource function,sfc-gh-twhite,2025-09-25T15:20:32Z,2025-09-25T15:36:04Z
+Snowflake-Labs__mcp#96,Snowflake-Labs/mcp,96,Fix Private Key pwd typo,sfc-gh-jsummer,2025-09-16T15:57:13Z,2025-09-16T16:53:41Z
+Snowflake-Labs__mcp#44,Snowflake-Labs/mcp,44,fix: sanitize tool name generation,sfc-gh-twhite,2025-07-10T13:06:18Z,2025-07-16T15:23:53Z
+Snowflake-Labs__mcp#35,Snowflake-Labs/mcp,35,fix:malformed payload,lee-chrisbell,2025-06-24T16:38:05Z,2025-06-24T17:32:35Z
+Snowflake-Labs__mcp#18,Snowflake-Labs/mcp,18,fix: update import path for SnowflakeConnectionManager,sfc-gh-twhite,2025-06-13T16:58:10Z,2025-06-13T17:36:46Z
+alexander-zuev__supabase-mcp-server#51,alexander-zuev/supabase-mcp-server,51,fix(migrations): fix issue with cold start of migration schema,alexander-zuev,2025-03-10T11:27:52Z,2025-03-10T11:31:18Z
+alexander-zuev__supabase-mcp-server#49,alexander-zuev/supabase-mcp-server,49,fix: attempt #2 to fix smithery deploy,alexander-zuev,2025-03-09T11:43:17Z,2025-03-09T11:43:58Z
+alexander-zuev__supabase-mcp-server#48,alexander-zuev/supabase-mcp-server,48,feat(database): enhance migration management and query validation,alexander-zuev,2025-03-09T07:49:14Z,2025-03-09T08:16:43Z
+alexander-zuev__supabase-mcp-server#43,alexander-zuev/supabase-mcp-server,43,fix(api): fix a bug with api_spec retrieval,alexander-zuev,2025-03-08T07:24:22Z,2025-03-08T07:26:07Z
+alexander-zuev__supabase-mcp-server#42,alexander-zuev/supabase-mcp-server,42,fix(tests): error in duplicate migration names,alexander-zuev,2025-03-07T12:36:11Z,2025-03-07T12:37:21Z
+alexander-zuev__supabase-mcp-server#41,alexander-zuev/supabase-mcp-server,41,"feat: sql syntax validation, new safety mode, automatic migration, new db client, improved tools",alexander-zuev,2025-03-06T08:40:08Z,2025-03-07T12:29:04Z
+alexander-zuev__supabase-mcp-server#15,alexander-zuev/supabase-mcp-server,15,Fix/foreign tables,alexander-zuev,2025-02-26T07:11:45Z,2025-02-26T07:26:49Z
+alexander-zuev__supabase-mcp-server#12,alexander-zuev/supabase-mcp-server,12,fix: improve transaction handling in database client,alexander-zuev,2025-02-25T06:57:23Z,2025-02-25T06:58:02Z
+benborla__mcp-server-mysql#137,benborla/mcp-server-mysql,137,"fix: add repository, bugs, and homepage metadata to package.json",SyntaxHQDEV,2026-06-08T08:20:22Z,2026-06-19T03:36:09Z
+benborla__mcp-server-mysql#136,benborla/mcp-server-mysql,136,fix(remote-mcp): create per-request Server in POST /mcp to fix parallel-request hang,tomer-azar,2026-05-24T13:37:03Z,2026-06-19T03:34:11Z
+benborla__mcp-server-mysql#132,benborla/mcp-server-mysql,132,fix: add MYSQL_BIG_NUMBER_STRINGS env var to prevent BIGINT precision loss,duyiliu,2026-05-20T03:31:36Z,2026-06-19T03:28:52Z
+benborla__mcp-server-mysql#119,benborla/mcp-server-mysql,119,fix: use AST parser for schema extraction to prevent permission bypass,spidershield-contrib,2026-03-15T04:52:08Z,2026-07-27T13:35:04Z
+benborla__mcp-server-mysql#106,benborla/mcp-server-mysql,106,Fix: Resolve symlinks in main module detection,addamx,2025-12-31T08:43:19Z,2026-01-27T14:14:30Z
+benborla__mcp-server-mysql#93,benborla/mcp-server-mysql,93,fix: Add connection pool keep-alive settings,echarrod,2025-11-05T11:04:52Z,2025-11-18T09:39:22Z
+benborla__mcp-server-mysql#87,benborla/mcp-server-mysql,87,fix: Correct package attribution and genericize all examples,bulgariamitko,2025-09-16T19:13:25Z,2025-11-18T09:37:28Z
+benborla__mcp-server-mysql#51,benborla/mcp-server-mysql,51,Support for MySQL Unix socket connections. Fix build errors that were preventing the project from compiling.,elvismdev,2025-05-24T03:04:38Z,2025-05-25T10:37:41Z
+bytebase__dbhub#481,bytebase/dbhub,481,fix(sqlite): include generated columns in schema discovery,zwk110,2026-10-26T09:04:05Z,2026-10-26T09:22:30Z
+bytebase__dbhub#480,bytebase/dbhub,480,fix(postgres): keep the process alive when the server drops a checked-out connection,tianzhou,2026-10-21T04:04:30Z,2026-10-21T04:19:56Z
+bytebase__dbhub#475,bytebase/dbhub,475,fix(http): refuse subscriptions/listen instead of holding it open,tianzhou,2026-10-13T15:19:46Z,2026-10-13T15:23:25Z
+bytebase__dbhub#473,bytebase/dbhub,473,fix(http): raise keep-alive timeout above proxy idle timeouts,tianzhou,2026-10-13T14:23:55Z,2026-10-13T14:36:49Z
+bytebase__dbhub#470,bytebase/dbhub,470,fix(sqlite): run multi-statement batches in source order,vishalhabib99,2026-10-10T00:06:50Z,2026-10-10T02:55:47Z
+bytebase__dbhub#465,bytebase/dbhub,465,"fix(timeout): server-side query_timeout on MySQL and one client-side fallback for PostgreSQL, MySQL, MariaDB",tianzhou,2026-10-09T08:19:01Z,2026-10-09T08:35:50Z
+bytebase__dbhub#464,bytebase/dbhub,464,fix(postgres): deny set_config() in readonly mode,tianzhou,2026-10-09T07:50:25Z,2026-10-09T07:58:28Z
+bytebase__dbhub#463,bytebase/dbhub,463,fix(postgres): re-read sslcert/sslkey/sslrootcert per connection so rotated certificates take effect,tianzhou,2026-10-09T06:52:28Z,2026-10-09T07:44:04Z
+bytebase__dbhub#462,bytebase/dbhub,462,"fix(sqlserver): max_rows TOP rewrite breaks DISTINCT/TOP (n)/OFFSET and misses PERCENT, WITH TIES, batches",tianzhou,2026-10-09T06:10:24Z,2026-10-09T06:45:46Z
+bytebase__dbhub#461,bytebase/dbhub,461,fix: reload TOML config per source instead of reconnecting every source,tianzhou,2026-10-09T04:48:13Z,2026-10-09T05:49:09Z
+bytebase__dbhub#458,bytebase/dbhub,458,fix(ssh): address review findings on SSH agent support,tianzhou,2026-10-09T03:02:45Z,2026-10-09T03:10:00Z
+bytebase__dbhub#451,bytebase/dbhub,451,fix(config): reject empty TOML sslmode before DSN fallback,tsiakoulias,2026-10-01T22:16:40Z,2026-10-02T14:34:22Z
+bytebase__dbhub#443,bytebase/dbhub,443,fix(sqlserver): support verify-full TLS mode,tsiakoulias,2026-09-29T01:21:53Z,2026-10-02T14:43:42Z
+bytebase__dbhub#438,bytebase/dbhub,438,fix: reload AWS credentials from disk on every RDS IAM token refresh,tianzhou,2026-09-21T07:08:15Z,2026-09-21T07:18:59Z
+bytebase__dbhub#431,bytebase/dbhub,431,fix: never echo a raw DSN in redaction fallbacks or the invalid-DSN error,tianzhou,2026-09-19T05:14:47Z,2026-09-19T05:58:29Z
+bytebase__dbhub#429,bytebase/dbhub,429,fix: apply max_rows to comment-prefixed and CTE queries,tianzhou,2026-09-18T06:45:00Z,2026-09-18T07:24:25Z
+bytebase__dbhub#425,bytebase/dbhub,425,Fix: make a failed AWS IAM refresh recoverable instead of losing the source,tianzhou,2026-09-15T03:07:02Z,2026-09-15T03:43:18Z
+bytebase__dbhub#423,bytebase/dbhub,423,"fix(postgres,mariadb): attach pool 'error' listeners so a dropped idle connection no longer crashes the process",tianzhou,2026-09-14T10:47:54Z,2026-09-14T10:51:39Z
+bytebase__dbhub#421,bytebase/dbhub,421,fix: authenticate PostgreSQL IAM connections on demand,deinspanjer,2026-09-12T17:37:18Z,2026-10-09T03:12:33Z
+bytebase__dbhub#419,bytebase/dbhub,419,fix(postgres): include foreign tables in search_objects,tianzhou,2026-09-08T10:17:43Z,2026-09-08T10:20:42Z
+bytebase__dbhub#417,bytebase/dbhub,417,fix(postgres): return date/timestamp values verbatim instead of host-local Dates,tianzhou,2026-09-02T02:49:20Z,2026-09-02T03:02:42Z
+bytebase__dbhub#415,bytebase/dbhub,415,fix(postgres): enforce query timeout on server,rabberbock,2026-09-01T11:52:21Z,2026-09-02T02:37:56Z
+bytebase__dbhub#414,bytebase/dbhub,414,fix(frontend): make workbench Run work over non-localhost HTTP,tianzhou,2026-09-01T06:40:22Z,2026-09-01T06:43:39Z
+bytebase__dbhub#412,bytebase/dbhub,412,fix(sqlite): resolve TOML `database` paths instead of rewriting them,darylmcd,2026-08-29T16:58:44Z,2026-09-01T05:51:46Z
+bytebase__dbhub#394,bytebase/dbhub,394,fix: split DSN credentials on the last @ of the authority,DANze11,2026-08-05T22:09:19Z,2026-08-06T02:44:10Z
+bytebase__dbhub#388,bytebase/dbhub,388,Fix: SQL Server max_rows not enforced across UNION/INTERSECT/EXCEPT,tianzhou,2026-07-31T08:07:46Z,2026-07-31T08:30:24Z
+bytebase__dbhub#386,bytebase/dbhub,386,fix(mysql): kill server-side query on timeout instead of leaking it into the pool,tianzhou,2026-07-31T07:11:09Z,2026-07-31T07:49:41Z
+bytebase__dbhub#379,bytebase/dbhub,379,fix: block SELECT-invocable escape-hatch functions in readonly mode (#377),tianzhou,2026-07-29T07:13:59Z,2026-07-29T07:57:21Z
+bytebase__dbhub#375,bytebase/dbhub,375,fix: stop logging SQL statements and parameters on execution errors,DANze11,2026-07-27T23:25:34Z,2026-07-28T04:04:22Z
+bytebase__dbhub#369,bytebase/dbhub,369,fix: block SQL Server pass-through data sources in read-only mode,tianzhou,2026-07-19T16:26:56Z,2026-07-19T16:29:19Z
+bytebase__dbhub#368,bytebase/dbhub,368,"fix: TOML config loading, DSN conflict, and .env interpolation",tianzhou,2026-07-19T15:03:34Z,2026-07-19T16:12:13Z
+bytebase__dbhub#367,bytebase/dbhub,367,fix(test): isolate config discovery in server-spawning integration tests,tianzhou,2026-07-19T14:45:32Z,2026-07-19T14:52:27Z
+bytebase__dbhub#365,bytebase/dbhub,365,fix: reject MySQL/MariaDB DSNs that name no database,tianzhou,2026-07-19T13:40:11Z,2026-07-19T13:55:24Z
+bytebase__dbhub#364,bytebase/dbhub,364,fix: scope view search to the default schema,tianzhou,2026-07-19T13:27:33Z,2026-07-19T13:30:33Z
+bytebase__dbhub#363,bytebase/dbhub,363,fix: close half-built connections when connect() fails,tianzhou,2026-07-19T10:22:36Z,2026-07-19T13:13:35Z
+bytebase__dbhub#362,bytebase/dbhub,362,fix: support TiDB in readonly mode for MySQL/MariaDB connectors,tianzhou,2026-07-19T10:04:57Z,2026-07-19T10:18:37Z
+bytebase__dbhub#350,bytebase/dbhub,350,fix: enforce read-only mode at the engine level for SQL Server,tianzhou,2026-06-30T06:28:03Z,2026-06-30T08:38:43Z
+bytebase__dbhub#348,bytebase/dbhub,348,fix(ssh): resolve ProxyJump aliases recursively with per-hop auth (#347),tianzhou,2026-06-26T09:12:48Z,2026-06-26T11:37:29Z
+bytebase__dbhub#342,bytebase/dbhub,342,"fix: enforce read-only mode at the database engine, not just the keyword classifier",tianzhou,2026-06-24T04:59:26Z,2026-06-24T05:52:24Z
+bytebase__dbhub#340,bytebase/dbhub,340,fix: enforce Host allow-list on HTTP transport to block DNS rebinding,tianzhou,2026-06-24T03:23:16Z,2026-06-24T04:04:48Z
+bytebase__dbhub#337,bytebase/dbhub,337,fix: honor and validate source fields set alongside a DSN (#334),tianzhou,2026-06-23T12:52:22Z,2026-06-23T14:32:49Z
+bytebase__dbhub#332,bytebase/dbhub,332,fix: scope search_objects to configured database on MySQL/MariaDB,tianzhou,2026-06-09T10:23:05Z,2026-06-09T10:32:54Z
+bytebase__dbhub#331,bytebase/dbhub,331,Fix: enable query plans on SQL Server via EXPLAIN,tianzhou,2026-06-09T09:16:27Z,2026-06-09T09:56:04Z
+bytebase__dbhub#329,bytebase/dbhub,329,fix: correct +09:00 timezone integration test assertion,tianzhou,2026-06-07T15:16:47Z,2026-06-07T15:27:28Z
+bytebase__dbhub#326,bytebase/dbhub,326,fix: address review feedback on tables/views split in search_objects,tianzhou,2026-06-07T13:58:29Z,2026-06-07T14:07:18Z
+bytebase__dbhub#309,bytebase/dbhub,309,fix: surface source description in MCP tool description (#267),Isla-Liu,2026-04-21T09:36:55Z,2026-04-21T10:55:34Z
+bytebase__dbhub#297,bytebase/dbhub,297,Fix: include views in PostgreSQL getTableComment() relkind filter,tianzhou,2026-04-02T15:13:31Z,2026-04-02T15:35:05Z
+bytebase__dbhub#291,bytebase/dbhub,291,Fix: externalize database drivers to prevent dynamic require error,tianzhou,2026-03-28T13:00:05Z,2026-03-28T13:05:34Z
+bytebase__dbhub#284,bytebase/dbhub,284,Fix: prevent readonly bypass via MySQL conditional comments,tianzhou,2026-03-27T03:42:49Z,2026-03-27T05:50:34Z
+bytebase__dbhub#275,bytebase/dbhub,275,Fix: detect mutating keywords inside CTEs in read-only mode,tianzhou,2026-03-12T15:19:50Z,2026-03-28T14:02:50Z
+bytebase__dbhub#268,bytebase/dbhub,268,fix: resolve SSH config from ~/.ssh/config for TOML sources,tianzhou,2026-03-06T04:53:51Z,2026-03-06T05:51:50Z
+bytebase__dbhub#260,bytebase/dbhub,260,fix: prevent IAM refresh timer race during shutdown,tianzhou,2026-03-05T03:43:57Z,2026-03-05T04:12:48Z
+bytebase__dbhub#256,bytebase/dbhub,256,fix: dialect-aware SQL parsing for statement splitting and comment stripping,ccase-pmlr,2026-02-24T19:58:49Z,2026-02-25T02:18:07Z
+bytebase__dbhub#255,bytebase/dbhub,255,fix: correct SSH keepalive validation issues,tianzhou,2026-02-24T06:42:07Z,2026-02-24T06:49:42Z
+bytebase__dbhub#247,bytebase/dbhub,247,Fixes for `search_objects` performance on large tables under postgres,ccase-pmlr,2026-02-20T17:49:50Z,2026-02-23T04:04:25Z
+bytebase__dbhub#242,bytebase/dbhub,242,fix: use namespace import for mariadb to fix Node.js v24 ESM compatibility,tianzhou,2026-02-19T03:39:52Z,2026-02-19T03:54:31Z
+bytebase__dbhub#212,bytebase/dbhub,212,fix: prepared placeholder replacement,tianzhou,2025-12-25T06:04:47Z,2025-12-25T06:10:54Z
+bytebase__dbhub#199,bytebase/dbhub,199,Fix race condition in SSHTunnel.establish() without mutex,Copilot,2025-12-22T10:02:41Z,2025-12-22T10:19:56Z
+bytebase__dbhub#197,bytebase/dbhub,197,Fix SSH tunnel error listener registration timing,Copilot,2025-12-22T09:30:43Z,2025-12-22T09:41:22Z
+bytebase__dbhub#196,bytebase/dbhub,196,Fix event listener memory leak in SSH tunnel connection,Copilot,2025-12-22T09:30:31Z,2025-12-22T09:39:30Z
+bytebase__dbhub#176,bytebase/dbhub,176,fix: display only enabled tools in startup table (#171),tianzhou,2025-12-15T15:15:02Z,2025-12-15T15:21:49Z
+bytebase__dbhub#166,bytebase/dbhub,166,fix: restore SafeURL for DSN parsing with special character passwords,drake-at-netchex,2025-12-05T15:43:23Z,2025-12-05T16:41:07Z
+bytebase__dbhub#163,bytebase/dbhub,163,fix: docker build,tianzhou,2025-12-04T16:43:32Z,2025-12-04T16:44:20Z
+bytebase__dbhub#155,bytebase/dbhub,155,fix: read-only flag,tianzhou,2025-11-27T11:18:13Z,2025-11-27T11:24:01Z
+bytebase__dbhub#145,bytebase/dbhub,145,fix: disable SSE streaming in stateless HTTP transport mode,tianzhou,2025-11-25T17:04:09Z,2025-11-25T17:06:42Z
+bytebase__dbhub#144,bytebase/dbhub,144,fix: only run http server/admin console if --transport http,tianzhou,2025-11-25T11:22:12Z,2025-11-25T11:26:05Z
+bytebase__dbhub#141,bytebase/dbhub,141,fix: bundle path,tianzhou,2025-11-24T14:56:25Z,2025-11-24T15:02:39Z
+bytebase__dbhub#140,bytebase/dbhub,140,fix: windows absolute path,tianzhou,2025-11-24T10:33:25Z,2025-11-24T10:40:31Z
+bytebase__dbhub#133,bytebase/dbhub,133,fix: infer database type from DSN protocol in API sources endpoint,petergithub,2025-11-20T09:11:28Z,2025-11-23T15:45:56Z
+bytebase__dbhub#132,bytebase/dbhub,132,fix: add postgres connector cloning for multi-source support,petergithub,2025-11-20T08:15:18Z,2025-11-23T15:29:26Z
+bytebase__dbhub#116,bytebase/dbhub,116,fix: add SQLite connector cloning for multi-source support,Yax,2025-11-10T13:40:48Z,2025-11-10T15:47:28Z
+bytebase__dbhub#71,bytebase/dbhub,71,Fix sqlite3 bindings and revert sqlite support,mtichavsky,2025-06-26T09:30:38Z,2025-06-26T09:39:26Z
+bytebase__dbhub#17,bytebase/dbhub,17,Fix Password Handling in MySQL DSN Parser,shmuelb-everc,2025-04-07T10:24:26Z,2025-04-10T06:37:48Z
+bytebase__dbhub#6,bytebase/dbhub,6,fix: Fix the path resolution to the production dist folder,Popplywop,2025-03-18T15:46:09Z,2025-03-18T15:57:18Z
+bytebase__dbhub#4,bytebase/dbhub,4,fix: update sql server DSN to match documentation.,Popplywop,2025-03-17T12:54:38Z,2025-03-17T14:14:22Z
+centralmind__gateway#86,centralmind/gateway,86,bugfix: skip omitempty at tools[].inputSchema.properties,ajatprabha,2025-07-17T17:35:52Z,2025-07-18T16:15:36Z
+centralmind__gateway#79,centralmind/gateway,79,Fix missing tool descriptions,bvt123,2025-06-08T11:26:02Z,2025-06-09T13:42:34Z
+centralmind__gateway#77,centralmind/gateway,77,Fixing the postgres connector config,chethanuk,2025-05-25T21:12:00Z,2025-05-31T18:33:43Z
+centralmind__gateway#40,centralmind/gateway,40,fix: add ModelId and MaxTokens to ConversationRequest for LLM stability,kemalkochekov,2025-03-10T17:57:55Z,2025-03-10T18:26:34Z
+chroma-core__chroma-mcp#33,chroma-core/chroma-mcp,33,Fix/list collection return empty check test,leomonan,2025-05-17T02:46:47Z,2025-06-11T23:36:06Z
+chroma-core__chroma-mcp#6,chroma-core/chroma-mcp,6,add ssl parsing fix and tests,jairad26,2025-03-15T16:33:58Z,2025-03-15T16:35:01Z
+chroma-core__chroma-mcp#2,chroma-core/chroma-mcp,2,fix compilation error,jairad26,2025-02-20T23:33:38Z,2025-02-20T23:34:22Z
+cr7258__elasticsearch-mcp-server#79,cr7258/elasticsearch-mcp-server,79,fix: use published image tags by default in Helm chart,cr7258,2026-10-19T15:06:58Z,2026-10-19T15:13:12Z
+cr7258__elasticsearch-mcp-server#72,cr7258/elasticsearch-mcp-server,72,fix: warn when unauthenticated server listens on all interfaces,cr7258,2026-08-01T08:26:07Z,2026-08-02T02:39:32Z
+cr7258__elasticsearch-mcp-server#71,cr7258/elasticsearch-mcp-server,71,fix: remove unused Anthropic dependency,cr7258,2026-08-01T07:44:51Z,2026-08-01T08:03:57Z
+cr7258__elasticsearch-mcp-server#62,cr7258/elasticsearch-mcp-server,62,PR: Add SSE Connection Authentication and Fix Serialization Issues After FastMCP Upgrade,yusiwen,2026-04-16T06:26:47Z,2026-04-22T13:36:07Z
+cr7258__elasticsearch-mcp-server#51,cr7258/elasticsearch-mcp-server,51,fix: pydantic fastmcp compatibility issues,cr7258,2025-10-12T15:02:46Z,2025-10-12T15:02:57Z
+cr7258__elasticsearch-mcp-server#48,cr7258/elasticsearch-mcp-server,48,fix: log display issue,cr7258,2025-09-15T14:16:29Z,2025-09-15T14:16:36Z
+cr7258__elasticsearch-mcp-server#37,cr7258/elasticsearch-mcp-server,37,Fix version check,cr7258,2025-07-17T12:48:44Z,2025-07-17T12:48:50Z
+cr7258__elasticsearch-mcp-server#35,cr7258/elasticsearch-mcp-server,35,fix: auth header in different ES versions,cr7258,2025-07-17T05:01:45Z,2025-07-17T05:01:53Z
+cr7258__elasticsearch-mcp-server#32,cr7258/elasticsearch-mcp-server,32,fix: parse arguments,cr7258,2025-06-12T01:43:43Z,2025-06-12T01:43:50Z
+cr7258__elasticsearch-mcp-server#28,cr7258/elasticsearch-mcp-server,28,fix: ELASTICSEARCH_HOSTS env,cr7258,2025-04-25T09:54:56Z,2025-04-25T09:55:02Z
+cr7258__elasticsearch-mcp-server#11,cr7258/elasticsearch-mcp-server,11,fix: Dockerfile dependency,cr7258,2025-01-30T15:05:44Z,2025-01-30T15:05:51Z
+cr7258__elasticsearch-mcp-server#4,cr7258/elasticsearch-mcp-server,4,fix: Kibana URL,cr7258,2025-01-17T11:47:15Z,2025-01-17T11:47:22Z
+cr7258__elasticsearch-mcp-server#2,cr7258/elasticsearch-mcp-server,2,fix: query parameter structure incorrectly nested,cr7258,2025-01-17T11:34:19Z,2025-01-17T11:34:32Z
+crystaldba__postgres-mcp#201,crystaldba/postgres-mcp,201,fix: Pin mcp[cli]<2.0 to prevent breaking import change #187,jssmith,2026-08-16T05:29:22Z,2026-08-16T05:33:37Z
+crystaldba__postgres-mcp#132,crystaldba/postgres-mcp,132,fix: Support PostgreSQL 12 in get_top_queries,jssmith,2026-01-20T00:22:05Z,2026-01-20T00:38:23Z
+crystaldba__postgres-mcp#131,crystaldba/postgres-mcp,131,Fix broken links to Reference Postgres MCP Server,jssmith,2026-01-19T20:24:56Z,2026-01-19T20:27:22Z
+crystaldba__postgres-mcp#128,crystaldba/postgres-mcp,128,Fix escaping sequence names in health check,jssmith,2026-01-19T18:15:44Z,2026-01-19T19:11:51Z
+crystaldba__postgres-mcp#110,crystaldba/postgres-mcp,110,Fix up some docker build/running issues,stbenjam,2025-10-08T00:31:02Z,2026-01-19T19:08:40Z
+crystaldba__postgres-mcp#67,crystaldba/postgres-mcp,67,fix event loop for windows,jssmith,2025-04-25T20:52:05Z,2025-04-28T15:42:35Z
+crystaldba__postgres-mcp#40,crystaldba/postgres-mcp,40,update readme to fix docker,jssmith,2025-04-08T15:38:00Z,2025-04-08T20:11:54Z
+crystaldba__postgres-mcp#31,crystaldba/postgres-mcp,31,DBA-725 Fixed showing explain plan with hypothetical indexes on functional columns,mdashti,2025-04-05T00:54:04Z,2025-04-07T18:44:18Z
+crystaldba__postgres-mcp#29,crystaldba/postgres-mcp,29,DBA-725 Fixed the issue with running explain plan on cursor,mdashti,2025-04-04T22:33:53Z,2025-04-04T23:23:44Z
+crystaldba__postgres-mcp#26,crystaldba/postgres-mcp,26,DBA-719b: fix unrestricted mode,greglearns,2025-04-04T15:28:48Z,2025-04-04T19:01:25Z
+crystaldba__postgres-mcp#20,crystaldba/postgres-mcp,20,fix: tool: database_health,greglearns,2025-04-03T21:26:11Z,2025-04-03T21:35:25Z
+crystaldba__postgres-mcp#17,crystaldba/postgres-mcp,17,DBA-712 HotFix: a bug in prev. commit + Downgrade python version to align with crystaldba,mdashti,2025-04-03T07:10:45Z,2025-04-03T07:29:35Z
+designcomputer__mysql_mcp_server#72,designcomputer/mysql_mcp_server,72,Fix pytest error,yu-heejin,2025-08-17T12:18:04Z,2026-05-31T18:21:42Z
+designcomputer__mysql_mcp_server#45,designcomputer/mysql_mcp_server,45,Fix: Supplement the missing symbol in the readme.md mcp.json example,linauror,2025-04-25T08:38:53Z,2025-05-30T21:16:39Z
+designcomputer__mysql_mcp_server#38,designcomputer/mysql_mcp_server,38,Fix: Support for DESCRIBE and SHOW COLUMNS queries,paolobiancalana,2025-04-19T18:08:14Z,2026-05-31T18:21:42Z
+designcomputer__mysql_mcp_server#37,designcomputer/mysql_mcp_server,37,"fix: handle result sets for SHOW, CREATE TABLE, and DESCRIBE commands",designcomputer,2025-04-18T20:15:50Z,2025-04-18T20:17:57Z
+elastic__mcp-server-elasticsearch#233,elastic/mcp-server-elasticsearch,233,Fix add-comment workflow (again),JoshMock,2025-10-28T18:06:57Z,2025-10-28T18:07:08Z
+elastic__mcp-server-elasticsearch#207,elastic/mcp-server-elasticsearch,207,Fix mixup between `username` and `login`,swallez,2025-09-23T11:39:55Z,2025-09-23T11:49:53Z
+elastic__mcp-server-elasticsearch#167,elastic/mcp-server-elasticsearch,167,fix: typo in experimental message,brijeshprasad89,2025-07-20T13:41:50Z,2025-07-21T16:59:21Z
+elastic__mcp-server-elasticsearch#106,elastic/mcp-server-elasticsearch,106,Fix default user value,atline,2025-06-24T08:13:50Z,2025-06-24T16:40:30Z
+elastic__mcp-server-elasticsearch#97,elastic/mcp-server-elasticsearch,97,Fix Docker install and require the 'stdio' CLI parameter,swallez,2025-06-17T20:35:46Z,2025-06-18T14:59:33Z
+googleapis__mcp-toolbox#468,googleapis/mcp-toolbox,468,fix: update http error code from invocation,Yuan325,2025-04-23T01:06:17Z,2025-04-23T02:05:10Z
+googleapis__mcp-toolbox#454,googleapis/mcp-toolbox,454,fix(docs): fix link 'Edit this page',deining,2025-04-18T19:19:14Z,2025-04-18T20:38:04Z
+googleapis__mcp-toolbox#451,googleapis/mcp-toolbox,451,fix(docs): fix typos in docs,deining,2025-04-18T00:28:19Z,2025-04-18T00:40:43Z
+googleapis__mcp-toolbox#420,googleapis/mcp-toolbox,420,fix: #419 TLS https URL for SSE endpoint,jexp,2025-04-09T00:01:43Z,2025-04-09T18:43:23Z
+googleapis__mcp-toolbox#410,googleapis/mcp-toolbox,410,fix: run linter,Yuan325,2025-04-07T18:10:38Z,2025-04-07T18:18:04Z
+googleapis__mcp-toolbox#391,googleapis/mcp-toolbox,391,fix: fix casting to string,Yuan325,2025-04-04T01:53:52Z,2025-04-04T05:26:41Z
+googleapis__mcp-toolbox#385,googleapis/mcp-toolbox,385,fix: renovatebot to run go mod tidy post update,Yuan325,2025-04-02T21:23:51Z,2025-04-02T21:28:24Z
+googleapis__mcp-toolbox#384,googleapis/mcp-toolbox,384,fix: add `tools-file` flag and deprecate `tools_file` ,Yuan325,2025-04-02T21:10:26Z,2025-04-03T18:09:31Z
+googleapis__mcp-toolbox#336,googleapis/mcp-toolbox,336,fix: fix variable name in quickstart,twishabansal,2025-03-19T08:28:33Z,2025-03-19T09:02:35Z
+googleapis__mcp-toolbox#323,googleapis/mcp-toolbox,323,fix(source/alloydb): correct user agents not being sent,Yuan325,2025-03-11T15:45:32Z,2025-03-11T16:24:38Z
+googleapis__mcp-toolbox#306,googleapis/mcp-toolbox,306,fix(source/cloud-sql): correct user agents not being sent,Yuan325,2025-02-25T23:19:05Z,2025-02-25T23:35:24Z
+googleapis__mcp-toolbox#298,googleapis/mcp-toolbox,298,fix: validate required common fields for parameters,Yuan325,2025-02-18T23:29:29Z,2025-02-19T18:09:57Z
+googleapis__mcp-toolbox#296,googleapis/mcp-toolbox,296,fix: throw error when items field is missing from array parameter,Yuan325,2025-02-18T22:12:28Z,2025-02-19T02:52:37Z
+googleapis__mcp-toolbox#293,googleapis/mcp-toolbox,293,fix: add items to parameter manifest,Yuan325,2025-02-14T00:26:14Z,2025-02-14T23:29:16Z
+googleapis__mcp-toolbox#269,googleapis/mcp-toolbox,269,fix: Update README and quickstart with the correct async APIs.,anubhav756,2025-02-05T22:24:07Z,2025-02-05T22:39:24Z
+googleapis__mcp-toolbox#266,googleapis/mcp-toolbox,266,fix: update tool invoke to return json,Yuan325,2025-02-05T00:50:03Z,2025-02-05T21:45:02Z
+googleapis__mcp-toolbox#265,googleapis/mcp-toolbox,265,fix: typos at test cases,Yuan325,2025-02-04T22:22:14Z,2025-02-04T22:54:36Z
+googleapis__mcp-toolbox#264,googleapis/mcp-toolbox,264,fix: schema float type,Yuan325,2025-02-04T22:20:31Z,2025-02-05T18:04:44Z
+googleapis__mcp-toolbox#249,googleapis/mcp-toolbox,249,fix(mssql): fix mssql tool kind to mssql-sql,Yuan325,2025-01-29T21:51:19Z,2025-01-29T23:46:02Z
+googleapis__mcp-toolbox#248,googleapis/mcp-toolbox,248,fix(mysql): fix mysql tool kind to mysql-sql,Yuan325,2025-01-29T21:47:06Z,2025-01-29T23:09:13Z
+googleapis__mcp-toolbox#234,googleapis/mcp-toolbox,234,fix: Auth token verification failure should not throw error immedicately,duwenxin99,2025-01-24T08:46:56Z,2025-01-24T15:49:51Z
+googleapis__mcp-toolbox#228,googleapis/mcp-toolbox,228,fix: Add coverage file to .gitignore,anubhav756,2025-01-21T08:13:20Z,2025-01-22T08:45:27Z
+googleapis__mcp-toolbox#227,googleapis/mcp-toolbox,227,fix(langchain-sdk): Simplifying ToolboxTool with BaseTool inheritance,anubhav756,2025-01-20T16:23:54Z,2025-01-22T08:34:43Z
+googleapis__mcp-toolbox#216,googleapis/mcp-toolbox,216,fix: fix typo in postgres test,Yuan325,2025-01-15T17:49:20Z,2025-01-15T17:53:04Z
+googleapis__mcp-toolbox#206,googleapis/mcp-toolbox,206,fix: improve return error for parameters ,Yuan325,2025-01-14T03:11:02Z,2025-01-14T16:35:33Z
+googleapis__mcp-toolbox#198,googleapis/mcp-toolbox,198,fix(doc): Update example `clientId` field,duwenxin99,2025-01-12T16:25:01Z,2025-01-14T03:00:41Z
+googleapis__mcp-toolbox#186,googleapis/mcp-toolbox,186,fix: Fix config name in auth doc samples,duwenxin99,2025-01-06T18:41:23Z,2025-01-06T18:45:25Z
+googleapis__mcp-toolbox#181,googleapis/mcp-toolbox,181,fix: Update ctx and remove redundancy line,Yuan325,2025-01-02T23:31:37Z,2025-01-03T18:24:26Z
+googleapis__mcp-toolbox#180,googleapis/mcp-toolbox,180,fix: correct parsing of floats/ints from json,kurtisvg,2025-01-02T21:40:45Z,2025-01-03T17:09:45Z
+googleapis__mcp-toolbox#178,googleapis/mcp-toolbox,178,fix: handle shutdown gracefully,kurtisvg,2024-12-30T21:15:07Z,2024-12-31T16:53:54Z
+googleapis__mcp-toolbox#170,googleapis/mcp-toolbox,170,fix(toolbox-sdk)!: deprecate 'add_auth_headers' in favor of 'add_auth_tokens' ,anubhav756,2024-12-27T09:59:44Z,2024-12-28T06:29:08Z
+googleapis__mcp-toolbox#150,googleapis/mcp-toolbox,150,fix: Set server version,duwenxin99,2024-12-18T20:15:33Z,2024-12-18T22:15:55Z
+googleapis__mcp-toolbox#145,googleapis/mcp-toolbox,145,fix(langchain-sdk): Correct test name to ensure execution and full coverage.,anubhav756,2024-12-17T12:01:52Z,2024-12-17T12:05:10Z
+googleapis__mcp-toolbox#136,googleapis/mcp-toolbox,136,fix: fix release image version tag,Yuan325,2024-12-12T19:59:46Z,2024-12-12T20:05:38Z
+googleapis__mcp-toolbox#129,googleapis/mcp-toolbox,129,fix!(spanner): use googlesql for dialect name,Yuan325,2024-12-11T22:00:02Z,2024-12-11T22:11:34Z
+googleapis__mcp-toolbox#125,googleapis/mcp-toolbox,125,fix: modify README.md to make tool description consistent,AndrewBrook-Google,2024-12-10T04:19:04Z,2024-12-11T21:48:20Z
+googleapis__mcp-toolbox#115,googleapis/mcp-toolbox,115,fix: fix test cases for ip_type,Yuan325,2024-12-06T05:43:34Z,2024-12-06T19:53:57Z
+googleapis__mcp-toolbox#84,googleapis/mcp-toolbox,84,fix: fix go test workflow,duwenxin99,2024-11-19T22:18:40Z,2024-11-19T22:25:59Z
+googleapis__mcp-toolbox#82,googleapis/mcp-toolbox,82,fix(llamaindex-sdk): Fix issue causing client session to not close properly while closing SDK.,anubhav756,2024-11-19T08:18:54Z,2024-11-19T08:28:37Z
+googleapis__mcp-toolbox#81,googleapis/mcp-toolbox,81,fix: Fix issue causing client session to not close properly while closing SDK.,anubhav756,2024-11-19T07:52:45Z,2024-11-19T07:59:09Z
+googleapis__mcp-toolbox#74,googleapis/mcp-toolbox,74,fix: Fix the errors showing up after setting up mypy type checker.,anubhav756,2024-11-14T07:25:01Z,2024-11-14T22:04:25Z
+googleapis__mcp-toolbox#49,googleapis/mcp-toolbox,49,fix(docs): correct outdated references to tool kinds,twishabansal,2024-11-06T17:35:59Z,2024-11-06T18:27:14Z
+googleapis__mcp-toolbox#47,googleapis/mcp-toolbox,47,fix: correct source type validation for postgres-sql tool,kurtisvg,2024-11-04T20:42:38Z,2024-11-05T19:25:21Z
+googleapis__mcp-toolbox#1829,googleapis/mcp-toolbox,1829,fix(tools/postgres-execute-sql): do not ignore SQL failure,averikitsch,2025-10-30T20:31:33Z,2025-10-31T17:39:35Z
+googleapis__mcp-toolbox#1828,googleapis/mcp-toolbox,1828,fix: debug logging statements,averikitsch,2025-10-30T19:58:57Z,2025-11-03T19:24:11Z
+googleapis__mcp-toolbox#1822,googleapis/mcp-toolbox,1822,fix(source/cloud-sql-mssql): remove ip address field,Yuan325,2025-10-30T03:53:19Z,2025-10-31T00:14:19Z
+googleapis__mcp-toolbox#1819,googleapis/mcp-toolbox,1819,feat(tools/healthcare): fix birthdate parameter in fhir patient search,Quarz0,2025-10-29T21:17:35Z,2025-10-30T17:33:33Z
+googleapis__mcp-toolbox#1818,googleapis/mcp-toolbox,1818,feat: Added ExcludeValues + Fixed issue with regex matching type.,philBatardiere,2025-10-29T20:13:48Z,2025-10-29T23:32:57Z
+googleapis__mcp-toolbox#1800,googleapis/mcp-toolbox,1800,fix(cloudmonitoring): populate authRequired in tool manifest,twishabansal,2025-10-28T10:59:17Z,2025-11-05T08:14:56Z
+googleapis__mcp-toolbox#1794,googleapis/mcp-toolbox,1794,fix: instructions to quote filters that include commas,drstrangelooker,2025-10-27T17:38:59Z,2025-10-27T17:49:06Z
+googleapis__mcp-toolbox#1762,googleapis/mcp-toolbox,1762,fix(tools/http): omit optional nil query parameters,duwenxin99,2025-10-21T21:21:09Z,2025-10-23T02:56:13Z
+googleapis__mcp-toolbox#1761,googleapis/mcp-toolbox,1761,fix(tools/http): allow 2xx status code on tool invocation,duwenxin99,2025-10-21T20:52:47Z,2025-10-22T20:16:00Z
+googleapis__mcp-toolbox#1758,googleapis/mcp-toolbox,1758,fix(tools/looker): looker file content calls should not use url.QueryEscape,drstrangelooker,2025-10-21T18:13:11Z,2025-10-21T18:29:38Z
+googleapis__mcp-toolbox#1753,googleapis/mcp-toolbox,1753,fix(tools/alloydbainl)!: AlloyDB AI NL execute_sql statement order,tombotch,2025-10-21T09:50:24Z,2025-11-05T00:37:39Z
+googleapis__mcp-toolbox#1717,googleapis/mcp-toolbox,1717,fix(sources/mysql): escape program_name for MySQL,averikitsch,2025-10-15T16:19:20Z,2025-10-15T20:54:08Z
+googleapis__mcp-toolbox#1707,googleapis/mcp-toolbox,1707,fix(sources/mysql): escape mysql user agent,averikitsch,2025-10-13T22:10:33Z,2025-10-15T21:30:37Z
+googleapis__mcp-toolbox#1663,googleapis/mcp-toolbox,1663,fix(source/bigquery): allowed datasets project id issue with client oauth,Genesis929,2025-10-09T00:55:47Z,2025-10-09T17:29:02Z
+googleapis__mcp-toolbox#1629,googleapis/mcp-toolbox,1629,fix(tools/mysql-list-tables): Update sql query to resolve subquery scope error,Myst9,2025-10-04T06:16:08Z,2025-10-07T03:40:49Z
+googleapis__mcp-toolbox#1625,googleapis/mcp-toolbox,1625,fix: fix broken links,rahulpinto19,2025-10-03T15:16:53Z,2025-10-03T15:47:05Z
+googleapis__mcp-toolbox#1598,googleapis/mcp-toolbox,1598,fix: remove duplicated build type in Dockerfile,Yuan325,2025-09-29T21:00:38Z,2025-09-29T22:34:30Z
+googleapis__mcp-toolbox#1570,googleapis/mcp-toolbox,1570,fix(tool/mongodb-find): fix find tool `limit` field,duwenxin99,2025-09-25T21:54:46Z,2025-09-25T22:16:48Z
+googleapis__mcp-toolbox#1545,googleapis/mcp-toolbox,1545,fix(tools/mongodb): concat filter params only once in mongodb update tools,trehanshakuntG,2025-09-24T08:47:23Z,2025-09-25T18:37:07Z
+googleapis__mcp-toolbox#1505,googleapis/mcp-toolbox,1505,fix(tools/firestore-get-rules)!: Add databaseId from source to the firestore-get-rules tool,trehanshakuntG,2025-09-18T05:23:37Z,2025-09-18T22:52:30Z
+googleapis__mcp-toolbox#1497,googleapis/mcp-toolbox,1497,fix(tools/looker): Refactor run-inline-query logic to helper function,drstrangelooker,2025-09-17T18:05:13Z,2025-09-26T18:11:50Z
+googleapis__mcp-toolbox#1496,googleapis/mcp-toolbox,1496,fix(sources/looker): Allow Looker to be configured without setting a Client Id or Secret,drstrangelooker,2025-09-17T14:33:04Z,2025-09-26T17:10:57Z
+googleapis__mcp-toolbox#1494,googleapis/mcp-toolbox,1494,"fix(source/alloydb-admin, source/cloudsql-admin): Post append new user agent",prernakakkar-google,2025-09-17T09:11:27Z,2025-09-17T17:57:18Z
+googleapis__mcp-toolbox#1468,googleapis/mcp-toolbox,1468,fix(tools/alloydb): Update parameter names and set default description for alloydb control plane tools,Myst9,2025-09-16T06:30:33Z,2025-09-16T21:34:14Z
+googleapis__mcp-toolbox#1445,googleapis/mcp-toolbox,1445,fix: added google_ml_integration extension to use alloydb ai-nl support api,rahulpinto19,2025-09-13T07:26:38Z,2025-09-30T08:15:48Z
+googleapis__mcp-toolbox#1439,googleapis/mcp-toolbox,1439,fix(tools/mysql-list-tables): Update mysql-list-tables parameter table_names with default value,Myst9,2025-09-12T16:19:30Z,2025-09-16T02:42:59Z
+googleapis__mcp-toolbox#1428,googleapis/mcp-toolbox,1428,fix(tools/neo4j): Implement value conversion for Neo4j types to JSON-compatible,nester-neo4j,2025-09-11T21:45:06Z,2025-09-15T21:30:44Z
+googleapis__mcp-toolbox#1422,googleapis/mcp-toolbox,1422,fix : execute update_context_queries before verify_context_queries,rahulpinto19,2025-09-11T10:40:45Z,2025-09-11T13:36:47Z
+googleapis__mcp-toolbox#1386,googleapis/mcp-toolbox,1386,fix(bigquery)!: Add `Bearer` parsing to auth token,duwenxin99,2025-09-09T15:52:39Z,2025-09-09T19:47:53Z
+googleapis__mcp-toolbox#1381,googleapis/mcp-toolbox,1381,Fix(tools/bigquery-conversational-analytics): fix authentication scope error in Cloud Run,johanesalxd,2025-09-09T10:49:45Z,2025-09-17T23:06:22Z
+googleapis__mcp-toolbox#1338,googleapis/mcp-toolbox,1338,fix(looker): Fix Looker client OAuth check,duwenxin99,2025-09-04T20:24:45Z,2025-09-04T21:00:05Z
+googleapis__mcp-toolbox#1315,googleapis/mcp-toolbox,1315,fix: do not print usage on runtime error,averikitsch,2025-09-02T23:48:58Z,2025-09-04T20:04:09Z
+googleapis__mcp-toolbox#1312,googleapis/mcp-toolbox,1312,fix(tools/bigquerysql)!: remove `useClientOAuth` from tools config,Yuan325,2025-09-02T18:07:30Z,2025-09-02T21:45:39Z
+googleapis__mcp-toolbox#1285,googleapis/mcp-toolbox,1285,fix: update mcp implementation comments,twishabansal,2025-08-29T05:37:57Z,2025-09-11T21:35:32Z
+googleapis__mcp-toolbox#1283,googleapis/mcp-toolbox,1283,fix(tools/oceanbase): fix encoded text with mysql driver,Yuan325,2025-08-29T01:15:46Z,2025-09-02T18:47:54Z
+googleapis__mcp-toolbox#1279,googleapis/mcp-toolbox,1279,fix(bigquery)!: Move `useClientOAuth` config from tool to source,duwenxin99,2025-08-28T19:28:48Z,2025-08-29T17:47:00Z
+googleapis__mcp-toolbox#1260,googleapis/mcp-toolbox,1260,fix: update env var to allow empty string,Yuan325,2025-08-27T01:16:14Z,2025-08-27T01:25:28Z
+googleapis__mcp-toolbox#1255,googleapis/mcp-toolbox,1255,fix(tools/looker): lookergetdashboards uses proper Authorized helper func,drstrangelooker,2025-08-26T20:06:49Z,2025-08-26T20:32:08Z
+googleapis__mcp-toolbox#1238,googleapis/mcp-toolbox,1238,fix: removed sortPayload and sortParams from the reference,Ganga4060,2025-08-26T05:26:01Z,2025-12-10T19:19:08Z
+googleapis__mcp-toolbox#1229,googleapis/mcp-toolbox,1229,fix(tools/firestore): add document/collection path validation,trehanshakuntG,2025-08-25T05:08:48Z,2025-09-03T05:10:29Z
+googleapis__mcp-toolbox#1215,googleapis/mcp-toolbox,1215,fix(tools/looker): Minor fixes and refinements to Looker,drstrangelooker,2025-08-22T15:42:11Z,2025-08-26T18:55:23Z
+googleapis__mcp-toolbox#1167,googleapis/mcp-toolbox,1167,fix(tools/mongodb-find-one): ProjectPayload unmarshaling,averikitsch,2025-08-15T18:49:59Z,2025-08-21T18:01:36Z
+googleapis__mcp-toolbox#1161,googleapis/mcp-toolbox,1161,fix(tools/mysql): fix encoded text for mysql,Yuan325,2025-08-15T00:31:15Z,2025-08-26T04:24:00Z
+googleapis__mcp-toolbox#1139,googleapis/mcp-toolbox,1139,fix: Correct the capitalization of `map` manifests,duwenxin99,2025-08-12T15:18:53Z,2025-08-13T22:37:41Z
+googleapis__mcp-toolbox#1138,googleapis/mcp-toolbox,1138,fix: Remove unnecessary fields from `map` parameter manifests,duwenxin99,2025-08-12T14:55:45Z,2025-08-13T18:12:27Z
+googleapis__mcp-toolbox#1125,googleapis/mcp-toolbox,1125,"fix: inputting the -ui and -p parameters, the output information is i…",stone-py,2025-08-11T09:03:22Z,2025-08-11T18:15:06Z
+googleapis__mcp-toolbox#1091,googleapis/mcp-toolbox,1091,fix(tools/looker): add isAuthorized call to all Looker tools,drstrangelooker,2025-08-06T15:45:59Z,2025-08-06T16:15:05Z
+googleapis__mcp-toolbox#1034,googleapis/mcp-toolbox,1034,fix(tools/bigquery-execute-sql)!: update the return messages,Genesis929,2025-07-30T01:12:49Z,2025-08-01T21:39:16Z
+googleapis__mcp-toolbox#1032,googleapis/mcp-toolbox,1032,fix: template paramaters link in `bigquery-sql` tool,shobsi,2025-07-30T00:34:28Z,2025-07-31T02:57:09Z
+googleapis__mcp-toolbox#1020,googleapis/mcp-toolbox,1020,fix(tools/bigquery-sql)!: ensure invoke always returns a non-null value,Genesis929,2025-07-29T00:17:24Z,2025-08-01T21:16:57Z
+googleapis__mcp-toolbox#985,googleapis/mcp-toolbox,985,fix: replace 'float' with 'number' in McpManifest,bitsark,2025-07-24T14:38:08Z,2025-07-24T18:03:34Z
+googleapis__mcp-toolbox#979,googleapis/mcp-toolbox,979,fix(tools/mysqlsql): unmarshal json data from database during invoke,Yuan325,2025-07-24T00:41:46Z,2025-07-24T16:25:53Z
+googleapis__mcp-toolbox#966,googleapis/mcp-toolbox,966,fix: add agent tag to Looker API calls.,drstrangelooker,2025-07-23T19:09:40Z,2025-07-24T15:19:25Z
+googleapis__mcp-toolbox#959,googleapis/mcp-toolbox,959,fix: mark database field as required in the firestore prebuilt tools,trehanshakuntG,2025-07-23T08:54:22Z,2025-07-23T17:13:12Z
+googleapis__mcp-toolbox#950,googleapis/mcp-toolbox,950,fix: fix document preview pipeline for forked PRs,twishabansal,2025-07-22T06:14:34Z,2025-07-22T16:29:44Z
+googleapis__mcp-toolbox#938,googleapis/mcp-toolbox,938,fix: correct source reference for execute_sql tool in internal/prebuiltconfigs/tools/cloud-sql-mssql.yaml,NirajNandre,2025-07-21T11:42:20Z,2025-07-22T15:09:09Z
+googleapis__mcp-toolbox#925,googleapis/mcp-toolbox,925,fix(tools/bigquery-execute-sql): ensure invoke always returns a non-null value,Genesis929,2025-07-17T22:12:29Z,2025-07-18T17:17:45Z
+googleapis__mcp-toolbox#924,googleapis/mcp-toolbox,924,fix(prebuilt/cloud-sql-mysql): update list_table tool,Yuan325,2025-07-17T19:10:52Z,2025-07-17T20:40:25Z
+googleapis__mcp-toolbox#912,googleapis/mcp-toolbox,912,fix: Redis and Valkey docs,duwenxin99,2025-07-16T19:56:27Z,2025-07-16T22:19:33Z
+googleapis__mcp-toolbox#891,googleapis/mcp-toolbox,891,fix(server/api): add logger to context in tool invoke handler,drstrangelooker,2025-07-15T03:49:05Z,2025-07-15T04:02:10Z
+googleapis__mcp-toolbox#857,googleapis/mcp-toolbox,857,fix: cleanup unassigned err log,AlexTalreja,2025-07-11T00:21:14Z,2025-07-11T00:28:35Z
+googleapis__mcp-toolbox#854,googleapis/mcp-toolbox,854,fix: trigger reload on additional fsnotify operations,AlexTalreja,2025-07-10T23:01:05Z,2025-07-10T23:39:27Z
+googleapis__mcp-toolbox#823,googleapis/mcp-toolbox,823,"Revert ""fix: fix docs preview deployment pipeline""",twishabansal,2025-07-09T06:41:13Z,2025-07-10T16:17:16Z
+googleapis__mcp-toolbox#810,googleapis/mcp-toolbox,810,fix: update log to ensure consistent debug messages,AlexTalreja,2025-07-08T22:00:53Z,2025-07-08T22:21:27Z
+googleapis__mcp-toolbox#807,googleapis/mcp-toolbox,807,fix: update fsnotify comparison,AlexTalreja,2025-07-08T18:20:12Z,2025-07-08T18:31:59Z
+googleapis__mcp-toolbox#801,googleapis/mcp-toolbox,801,fix: nil parameter error when arrays are used,duwenxin99,2025-07-07T23:36:18Z,2025-07-09T21:40:49Z
+googleapis__mcp-toolbox#787,googleapis/mcp-toolbox,787,fix: fix docs preview deployment pipeline,twishabansal,2025-07-03T08:12:37Z,2025-07-03T16:24:10Z
+googleapis__mcp-toolbox#774,googleapis/mcp-toolbox,774,fix: set default value to field's type during unmarshalling,Yuan325,2025-07-01T20:51:39Z,2025-07-02T14:58:42Z
+googleapis__mcp-toolbox#758,googleapis/mcp-toolbox,758,fix(tools/mysqlsql): Handle nil panic and connection leak in invoke,Yuan325,2025-06-26T05:59:57Z,2025-06-26T20:55:00Z
+googleapis__mcp-toolbox#757,googleapis/mcp-toolbox,757,fix(tools/mysqlexecutesql): Handle nil panic and connection leak in Invoke,megatron0000,2025-06-26T03:58:37Z,2025-06-26T20:12:45Z
+googleapis__mcp-toolbox#727,googleapis/mcp-toolbox,727,"fix(postgres,mssql,cloudsqlmssql)!: encode source connection url for  sources",Yuan325,2025-06-17T23:24:15Z,2025-06-18T22:32:46Z
+googleapis__mcp-toolbox#722,googleapis/mcp-toolbox,722,"fix(bigquery,mssql): fix panic on tools with array param",duwenxin99,2025-06-16T21:19:46Z,2025-06-26T02:54:26Z
+googleapis__mcp-toolbox#719,googleapis/mcp-toolbox,719,fix(server/mcp): do not listen from port for stdio,Yuan325,2025-06-16T18:09:22Z,2025-06-17T18:35:05Z
+googleapis__mcp-toolbox#678,googleapis/mcp-toolbox,678,fix: update path library,Yuan325,2025-06-06T23:12:01Z,2025-06-09T17:00:27Z
+googleapis__mcp-toolbox#658,googleapis/mcp-toolbox,658,fix: improve versionString,kurtisvg,2025-06-04T23:17:09Z,2025-06-09T22:31:42Z
+googleapis__mcp-toolbox#641,googleapis/mcp-toolbox,641,fix(tools/mysqlsql): handled the null value for string case in mysqlsql tools,iammujtaba,2025-06-03T00:40:56Z,2025-06-03T18:33:41Z
+googleapis__mcp-toolbox#638,googleapis/mcp-toolbox,638,fix(server/stdio): notifications should not return a response,Yuan325,2025-06-02T22:46:19Z,2025-06-02T23:59:40Z
+googleapis__mcp-toolbox#586,googleapis/mcp-toolbox,586,fix: explicitly set query location for BigQuery queries,Genesis929,2025-05-20T19:51:24Z,2025-05-20T22:07:44Z
+googleapis__mcp-toolbox#571,googleapis/mcp-toolbox,571,fix: reinitialize required slice if nil,Yuan325,2025-05-16T00:24:20Z,2025-05-16T00:54:03Z
+googleapis__mcp-toolbox#561,googleapis/mcp-toolbox,561,fix: fix spellings in comments,Yuan325,2025-05-13T20:56:13Z,2025-05-13T21:09:38Z
+googleapis__mcp-toolbox#544,googleapis/mcp-toolbox,544,fix: prevent tool calls through MCP when auth is required,duwenxin99,2025-05-07T17:44:12Z,2025-05-07T19:24:13Z
+googleapis__mcp-toolbox#3147,googleapis/mcp-toolbox,3147,fix: mcpManifest return empty tools list instead of nil,Yuan325,2026-04-29T18:11:55Z,2026-05-07T17:55:01Z
+googleapis__mcp-toolbox#3067,googleapis/mcp-toolbox,3067,fix(mcp): implement router-level logger injection for MCP auth,duwenxin99,2026-04-15T21:21:13Z,2026-05-04T03:59:27Z
+googleapis__mcp-toolbox#3058,googleapis/mcp-toolbox,3058,fix(tool/looker-conversational-analytics): OAuth token in GDA payload fix,flaviojdz,2026-04-14T18:18:26Z,2026-04-15T15:17:42Z
+googleapis__mcp-toolbox#3056,googleapis/mcp-toolbox,3056,fix(tools/bigquery-execute-sql): avoid surfacing invalid queries as MCP 500s,jack-larch,2026-04-14T17:03:44Z,2026-04-20T17:31:36Z
+googleapis__mcp-toolbox#3054,googleapis/mcp-toolbox,3054,fix: remove hardcoded * allowed origin for sse,Yuan325,2026-04-14T16:28:48Z,2026-04-16T17:29:51Z
+googleapis__mcp-toolbox#3052,googleapis/mcp-toolbox,3052,fix(postgres): use net.JoinHostPort to support IPv6 hosts,kaldown,2026-04-14T10:03:18Z,2026-05-05T00:26:24Z
+googleapis__mcp-toolbox#3051,googleapis/mcp-toolbox,3051,fix(tool/bigquery): handle omitted optional parameters with typed NULLs,Deeven-Seru,2026-04-14T07:27:07Z,2026-05-07T16:51:17Z
+googleapis__mcp-toolbox#3050,googleapis/mcp-toolbox,3050,fix: allow converting string literal block with list,Yuan325,2026-04-14T02:37:23Z,2026-04-17T18:03:32Z
+googleapis__mcp-toolbox#3044,googleapis/mcp-toolbox,3044,fix(tools/looker): Fix OAuth for Converational Analytics,drstrangelooker,2026-04-13T20:12:29Z,2026-04-14T18:13:35Z
+googleapis__mcp-toolbox#3042,googleapis/mcp-toolbox,3042,fix: prevent test.db from being created during unit tests,helloeve,2026-04-13T13:26:57Z,2026-04-16T22:32:40Z
+googleapis__mcp-toolbox#3036,googleapis/mcp-toolbox,3036,fix: enforce toolset/promptset boundary on tools/call and prompts/get,sjhddh,2026-04-12T17:13:55Z,2026-05-08T18:45:06Z
+googleapis__mcp-toolbox#3022,googleapis/mcp-toolbox,3022,fix(looker): Convert prebuilt tool yaml to flat format,drstrangelooker,2026-04-10T13:56:21Z,2026-04-10T18:26:36Z
+googleapis__mcp-toolbox#3020,googleapis/mcp-toolbox,3020,fix(sources/postgres): apply URL encoding to query string params,sjvanrossum,2026-04-10T08:57:11Z,2026-04-17T18:44:30Z
+googleapis__mcp-toolbox#2993,googleapis/mcp-toolbox,2993,fix: error on invalid v1 config docs,Deeven-Seru,2026-04-08T12:25:35Z,2026-04-08T20:19:33Z
+googleapis__mcp-toolbox#2967,googleapis/mcp-toolbox,2967,fix(tools/looker): enforce critical safety annotations for agent tools,hiracky16,2026-04-06T21:44:23Z,2026-04-07T17:07:14Z
+googleapis__mcp-toolbox#2963,googleapis/mcp-toolbox,2963,fix(skills): prevent empty strings overriding optional env vars in node scripts,twishabansal,2026-04-06T12:55:49Z,2026-04-07T07:13:21Z
+googleapis__mcp-toolbox#2960,googleapis/mcp-toolbox,2960,fix(telemetry): allow GCP project override,Deeven-Seru,2026-04-06T10:50:40Z,2026-06-02T03:43:01Z
+googleapis__mcp-toolbox#2957,googleapis/mcp-toolbox,2957,fix(config): add doc/line context to parse errors,Deeven-Seru,2026-04-06T10:13:34Z,2026-06-17T21:02:05Z
+googleapis__mcp-toolbox#2914,googleapis/mcp-toolbox,2914,fix(skill): fix skill generation template,helloeve,2026-03-31T20:55:10Z,2026-04-01T05:02:43Z
+googleapis__mcp-toolbox#2887,googleapis/mcp-toolbox,2887,fix(tools/looker): address CI failures and enhance agent tool functionality,hiracky16,2026-03-29T22:03:51Z,2026-03-30T19:14:04Z
+googleapis__mcp-toolbox#2880,googleapis/mcp-toolbox,2880,fix(tests/Bigtable): implement uuid-based isolation and reliable resource cleanup,NirajNandre,2026-03-28T08:40:19Z,2026-03-30T13:23:13Z
+googleapis__mcp-toolbox#2864,googleapis/mcp-toolbox,2864,"fix(tools/looker): support instructions, sources, and code interpreter for agent tool",hiracky16,2026-03-26T22:27:40Z,2026-03-26T22:29:13Z
+googleapis__mcp-toolbox#2863,googleapis/mcp-toolbox,2863,fix(quickstart): robust tool lookup and modernize dependencies in Python samples,anubhav756,2026-03-26T22:03:52Z,2026-04-04T13:12:19Z
+googleapis__mcp-toolbox#2859,googleapis/mcp-toolbox,2859,fix(ci): Remove search index generation from preview deployment workflow,dishaprakash,2026-03-26T18:56:19Z,2026-03-26T19:33:41Z
+googleapis__mcp-toolbox#2853,googleapis/mcp-toolbox,2853,fix(docs): Skip empty folders in pagination & reduce PR comment noise,dishaprakash,2026-03-26T02:33:20Z,2026-03-26T10:16:55Z
+googleapis__mcp-toolbox#2847,googleapis/mcp-toolbox,2847,fix(skills): fix integer parameter parsing through agent skills,helloeve,2026-03-25T22:11:26Z,2026-03-25T23:04:23Z
+googleapis__mcp-toolbox#2834,googleapis/mcp-toolbox,2834,fix(tools/looker): address feedback for agent tool,hiracky16,2026-03-24T21:44:09Z,2026-03-25T14:21:04Z
+googleapis__mcp-toolbox#2772,googleapis/mcp-toolbox,2772,fix(cloudloggingadmin): increase log injesting time and add auth test,Yuan325,2026-03-17T21:25:11Z,2026-03-18T14:29:57Z
+googleapis__mcp-toolbox#2770,googleapis/mcp-toolbox,2770,fix(bigquery): add impersonateServiceAccount to prebuilt config,kwkeefer,2026-03-17T16:57:12Z,2026-03-27T21:05:48Z
+googleapis__mcp-toolbox#2759,googleapis/mcp-toolbox,2759,fix(skills): improve flag validation and silence unit test output,twishabansal,2026-03-17T04:38:25Z,2026-03-17T13:44:12Z
+googleapis__mcp-toolbox#2742,googleapis/mcp-toolbox,2742,fix(test): address flaky healthcare integration test run,helloeve,2026-03-13T14:36:03Z,2026-03-17T03:00:11Z
+googleapis__mcp-toolbox#2734,googleapis/mcp-toolbox,2734,fix: return AllParams for GetParameter(),Yuan325,2026-03-13T01:31:34Z,2026-03-13T21:44:49Z
+googleapis__mcp-toolbox#2729,googleapis/mcp-toolbox,2729,fix(telemetry): histogram buckets from OTel standard to MCP standards,AjmeraParth132,2026-03-12T19:49:09Z,2026-03-13T15:48:47Z
+googleapis__mcp-toolbox#2707,googleapis/mcp-toolbox,2707,fix(postgres): update execute-sql tool to avoid multi-statements parameter,Matthieu68857,2026-03-11T10:34:30Z,2026-03-20T00:26:43Z
+googleapis__mcp-toolbox#2703,googleapis/mcp-toolbox,2703,fix(ui): remove module from script,Yuan325,2026-03-11T04:26:04Z,2026-03-11T18:27:10Z
+googleapis__mcp-toolbox#2681,googleapis/mcp-toolbox,2681,fix(mcp): guard nil SSE session lookup and return 400 for missing session,bandrade,2026-03-09T17:57:57Z,2026-03-11T23:48:49Z
+googleapis__mcp-toolbox#2654,googleapis/mcp-toolbox,2654,fix(http)!: sanitize non-2xx error output,Deeven-Seru,2026-03-06T07:59:46Z,2026-03-25T23:46:59Z
+googleapis__mcp-toolbox#2645,googleapis/mcp-toolbox,2645,fix(skill): fix env variable propagation,helloeve,2026-03-05T19:26:24Z,2026-03-10T00:28:15Z
+googleapis__mcp-toolbox#2627,googleapis/mcp-toolbox,2627,fix(oracle): update oracle-execute-sql tool interface to match source signature,anubhav756,2026-03-04T19:55:14Z,2026-03-06T18:52:50Z
+googleapis__mcp-toolbox#2620,googleapis/mcp-toolbox,2620,fix(sources/looker): looker and looker-dev prebuilt tools should share one source definition.,drstrangelooker,2026-03-03T19:45:52Z,2026-03-11T14:36:06Z
+googleapis__mcp-toolbox#2597,googleapis/mcp-toolbox,2597,fix(tests): resolve LlamaIndex dependency conflict in JS quickstart,twishabansal,2026-03-02T08:23:35Z,2026-03-02T08:46:28Z
+googleapis__mcp-toolbox#2558,googleapis/mcp-toolbox,2558,fix(server/mcp): scope defer span.End inside loop iteration,marlonbarreto-git,2026-02-24T16:43:26Z,2026-03-03T00:47:11Z
+googleapis__mcp-toolbox#2557,googleapis/mcp-toolbox,2557,fix(server/mcp): guard nil dereference in sseManager.get,marlonbarreto-git,2026-02-24T16:42:00Z,2026-03-02T02:59:49Z
+googleapis__mcp-toolbox#2554,googleapis/mcp-toolbox,2554,fix: update toolset attributes naming and closing of stdio/sse spans,AjmeraParth132,2026-02-24T05:21:11Z,2026-03-09T23:19:46Z
+googleapis__mcp-toolbox#2547,googleapis/mcp-toolbox,2547,fix(tests/bigquery): implement uuid-based isolation and reliable resource cleanup,NirajNandre,2026-02-23T06:29:37Z,2026-03-27T15:32:02Z
+googleapis__mcp-toolbox#2540,googleapis/mcp-toolbox,2540,fix(ci): add path for forked PR unit test runs,twishabansal,2026-02-20T08:00:54Z,2026-02-20T08:23:52Z
+googleapis__mcp-toolbox#2521,googleapis/mcp-toolbox,2521,fix(tests/postgres): restore list_schemas test and implement dynamic owner,NirajNandre,2026-02-19T08:05:58Z,2026-02-24T06:09:15Z
+googleapis__mcp-toolbox#2519,googleapis/mcp-toolbox,2519,fix: enforce required validation for explicit null parameter values,twishabansal,2026-02-19T06:25:53Z,2026-02-27T16:08:54Z
+googleapis__mcp-toolbox#2469,googleapis/mcp-toolbox,2469,fix(oracle): normalize encoded proxy usernames in go-ora DSN,Deeven-Seru,2026-02-13T06:23:51Z,2026-03-17T03:53:23Z
+googleapis__mcp-toolbox#2465,googleapis/mcp-toolbox,2465,fix(sources/cockroachdb): update kind to type,Yuan325,2026-02-12T23:37:07Z,2026-02-12T23:59:55Z
+googleapis__mcp-toolbox#2431,googleapis/mcp-toolbox,2431,fix: Deflake alloydb omni,ankel,2026-02-06T22:28:54Z,2026-02-13T17:55:54Z
+googleapis__mcp-toolbox#2426,googleapis/mcp-toolbox,2426,fix(docs/langchain): fix core at 0.3.0 and align compatible dependencies,NirajNandre,2026-02-06T05:08:32Z,2026-02-26T08:43:25Z
+googleapis__mcp-toolbox#2418,googleapis/mcp-toolbox,2418,fix(docs/adk): Resolve dependency duplication,NirajNandre,2026-02-04T14:35:17Z,2026-03-02T06:12:52Z
+googleapis__mcp-toolbox#2377,googleapis/mcp-toolbox,2377,fix(tests/postgres): implement uuid-based isolation and reliable resource cleanup,NirajNandre,2026-01-28T06:37:13Z,2026-02-17T13:39:54Z
+googleapis__mcp-toolbox#2350,googleapis/mcp-toolbox,2350,fix(looker): upgrade go sdk to v0.25.22,duwenxin99,2026-01-22T20:21:30Z,2026-01-22T21:29:20Z
+googleapis__mcp-toolbox#2347,googleapis/mcp-toolbox,2347,fix: Capture GCP HTTP errors in MCP Toolbox,mahlevanshika,2026-01-22T06:18:07Z,2026-01-23T19:54:00Z
+googleapis__mcp-toolbox#2327,googleapis/mcp-toolbox,2327,fix: add check for client authorization before retrieving token string,Yuan325,2026-01-16T19:03:42Z,2026-01-20T18:57:12Z
+googleapis__mcp-toolbox#2323,googleapis/mcp-toolbox,2323,fix(oracle): enable DML operations and resolve incorrect array type error,ishatilwani1301,2026-01-16T06:56:35Z,2026-02-25T09:17:34Z
+googleapis__mcp-toolbox#2310,googleapis/mcp-toolbox,2310,fix(embeddingModel): add embedding model to MCP handler,duwenxin99,2026-01-14T21:05:19Z,2026-01-21T00:20:11Z
+googleapis__mcp-toolbox#2281,googleapis/mcp-toolbox,2281,fix(server): Add `embeddingModel` config initialization,duwenxin99,2026-01-08T18:25:04Z,2026-01-08T18:58:39Z
+googleapis__mcp-toolbox#2265,googleapis/mcp-toolbox,2265,fix(tools/alloydbainl): only add psv when NL Config Param is defined,Yuan325,2026-01-06T22:34:38Z,2026-01-08T21:52:05Z
+googleapis__mcp-toolbox#2231,googleapis/mcp-toolbox,2231,fix(tools/looker): Looker client OAuth nil pointer error,duwenxin99,2025-12-23T16:35:30Z,2026-01-06T17:51:24Z
+googleapis__mcp-toolbox#2228,googleapis/mcp-toolbox,2228,fix(tools/alloydb-wait-for-operation): Fix connection message generation,Myst9,2025-12-23T04:51:02Z,2025-12-23T18:32:32Z
+googleapis__mcp-toolbox#2217,googleapis/mcp-toolbox,2217,fix: add import for cloudgda source,Yuan325,2025-12-19T23:12:48Z,2025-12-19T23:36:17Z
+googleapis__mcp-toolbox#2159,googleapis/mcp-toolbox,2159,fix(looker): upgrade to latest go sdk,drstrangelooker,2025-12-11T16:00:12Z,2025-12-11T17:11:49Z
+googleapis__mcp-toolbox#2155,googleapis/mcp-toolbox,2155,feat(sources/trino): add ssl verification options and fix docs example,gRedHeadphone,2025-12-11T06:58:07Z,2026-01-08T01:19:23Z
+googleapis__mcp-toolbox#2154,googleapis/mcp-toolbox,2154,fix(spanner): move list graphs validation to runtime,ishatilwani1301,2025-12-11T06:54:49Z,2025-12-12T13:48:07Z
+googleapis__mcp-toolbox#2107,googleapis/mcp-toolbox,2107,fix: list tables tools null fix,gRedHeadphone,2025-12-04T05:58:30Z,2025-12-11T20:58:53Z
+googleapis__mcp-toolbox#2099,googleapis/mcp-toolbox,2099,fix(tools/mongodb): remove `required` tag from the `canonical` field,duwenxin99,2025-12-03T20:34:53Z,2025-12-04T18:25:16Z
+googleapis__mcp-toolbox#2084,googleapis/mcp-toolbox,2084,fix: format BigQuery numeric output as decimal strings,shobsi,2025-12-02T05:40:10Z,2025-12-04T18:06:12Z
+googleapis__mcp-toolbox#2049,googleapis/mcp-toolbox,2049,fix: set default annotations for tools in code if annotation not provided in yaml,drstrangelooker,2025-11-26T19:11:47Z,2025-12-01T22:17:11Z
+googleapis__mcp-toolbox#2046,googleapis/mcp-toolbox,2046,fix(tools/alloydb-postgres-list-tables): Exclude google_ml schema from list_tables,NirajNandre,2025-11-26T10:30:06Z,2025-12-01T21:51:06Z
+googleapis__mcp-toolbox#2045,googleapis/mcp-toolbox,2045,fix: add import for firebirdsql,Yuan325,2025-11-25T23:53:48Z,2025-11-27T17:58:27Z
+googleapis__mcp-toolbox#2028,googleapis/mcp-toolbox,2028,fix(tools/alloydbcreateuser): remove duplication of project praram,Yuan325,2025-11-25T01:54:31Z,2025-11-25T02:10:13Z
+googleapis__mcp-toolbox#1993,googleapis/mcp-toolbox,1993,fix(tools/alloydbgetinstance): remove parameter duplication,Yuan325,2025-11-19T19:20:31Z,2025-11-19T19:43:00Z
+googleapis__mcp-toolbox#1969,googleapis/mcp-toolbox,1969,fix(tools): check for query execution error for pgxpool.Pool,Yuan325,2025-11-17T22:47:20Z,2025-11-18T18:24:03Z
+googleapis__mcp-toolbox#1925,googleapis/mcp-toolbox,1925,fix: remove custom promptset support,twishabansal,2025-11-11T10:10:16Z,2025-11-11T10:27:39Z
+googleapis__mcp-toolbox#1924,googleapis/mcp-toolbox,1924,"Revert ""fix: remove custom promptset support""",twishabansal,2025-11-11T10:08:29Z,2025-11-11T10:08:53Z
+googleapis__mcp-toolbox#1894,googleapis/mcp-toolbox,1894,fix: return object_details as structured JSON in Spanner list tables tool,gRedHeadphone,2025-11-07T05:46:59Z,2025-11-14T22:18:57Z
+googleapis__mcp-toolbox#1884,googleapis/mcp-toolbox,1884,fix: bigquery result column order,Yuan325,2025-11-06T18:12:01Z,2025-11-06T22:02:26Z
+googleapis__mcp-toolbox#1863,googleapis/mcp-toolbox,1863,fix: remove custom promptset support,twishabansal,2025-11-05T19:41:33Z,2025-11-11T10:05:19Z
+googleapis__mcp-toolbox#4359,googleapis/mcp-toolbox,4359,fix(tool/bigquery-execute-sql): make writeMode protected fail-closed for non-SELECT statements,Genesis929,2026-10-28T19:32:58Z,2026-10-29T02:15:38Z
+googleapis__mcp-toolbox#4358,googleapis/mcp-toolbox,4358,fix(source/bigquery): set UseLegacySql to false when creating session,Genesis929,2026-10-28T19:32:56Z,2026-10-29T01:47:13Z
+googleapis__mcp-toolbox#4329,googleapis/mcp-toolbox,4329,fix(source/bigquery): recover default-ADC clients after on-disk re-auth,Genesis929,2026-10-23T22:33:30Z,2026-10-28T18:46:35Z
+googleapis__mcp-toolbox#4328,googleapis/mcp-toolbox,4328,fix(tool/bigquery-get-table-info): compact zero-valued schema fields,Genesis929,2026-10-23T21:33:41Z,2026-10-28T17:46:45Z
+googleapis__mcp-toolbox#4326,googleapis/mcp-toolbox,4326,fix(looker): bind all dashboard_filters in add_dashboard_element and update_dashboard_element,pjmsmithgoogle,2026-10-23T20:22:36Z,2026-10-23T20:40:49Z
+googleapis__mcp-toolbox#4296,googleapis/mcp-toolbox,4296,fix(auth/generic): validate issuer claim in GetClaimsFromHeader,wangauone,2026-10-21T01:27:47Z,2026-10-22T20:47:54Z
+googleapis__mcp-toolbox#4272,googleapis/mcp-toolbox,4272,fix(source/bigquery): sort allowedDatasets for deterministic tool manifests,Genesis929,2026-10-13T23:35:38Z,2026-10-15T19:31:32Z
+googleapis__mcp-toolbox#4260,googleapis/mcp-toolbox,4260,fix(resource/file): sanitize server filesystem paths from read errors,kpunde,2026-10-13T13:23:35Z,2026-10-19T13:18:13Z
+googleapis__mcp-toolbox#4254,googleapis/mcp-toolbox,4254,fix(tools): remove `Authorized()` from Tool interface to ensure centralized `authRequired` check,duwenxin99,2026-10-12T14:36:42Z,2026-10-12T15:28:30Z
+googleapis__mcp-toolbox#4231,googleapis/mcp-toolbox,4231,fix(looker): update looker test expectation,emagda97,2026-10-07T17:37:49Z,2026-10-07T18:34:36Z
+googleapis__mcp-toolbox#4230,googleapis/mcp-toolbox,4230,fix(telemetry): disable self-tracing on GCP telemetry exporters,kpunde,2026-10-07T17:13:49Z,2026-10-15T17:46:02Z
+googleapis__mcp-toolbox#4227,googleapis/mcp-toolbox,4227,fix(datalineage): increase timeouts,emagda97,2026-10-06T19:47:06Z,2026-10-06T20:09:57Z
+googleapis__mcp-toolbox#4164,googleapis/mcp-toolbox,4164,fix(tool/bigquery): check lexically referenced datasets before dry run,Genesis929,2026-09-29T02:28:59Z,2026-09-30T19:49:57Z
+googleapis__mcp-toolbox#4137,googleapis/mcp-toolbox,4137,"fix: revert ""feat(sources): connect sources on first use""",akangsha7,2026-09-25T21:00:53Z,2026-09-25T21:27:33Z
+googleapis__mcp-toolbox#4125,googleapis/mcp-toolbox,4125,fix(test/alloydbainl): match query value instead of model-chosen alias,wangauone,2026-09-24T18:21:06Z,2026-09-28T21:40:51Z
+googleapis__mcp-toolbox#4039,googleapis/mcp-toolbox,4039,fix(config): fix parseEnv inconsistent handling with YAML comments,AlexTalreja,2026-09-14T21:03:13Z,2026-09-24T08:13:15Z
+googleapis__mcp-toolbox#4035,googleapis/mcp-toolbox,4035,fix(tools/looker): add additional annotations to support OpenAI plugins,drstrangelooker,2026-09-14T19:20:29Z,2026-09-15T17:06:06Z
+googleapis__mcp-toolbox#4023,googleapis/mcp-toolbox,4023,fix(resources): normalize resource-template URI scheme to lowercase,Ashfaqbs,2026-09-11T17:44:36Z,2026-10-05T12:11:40Z
+googleapis__mcp-toolbox#3962,googleapis/mcp-toolbox,3962,fix(looker): update want clause,emagda97,2026-09-04T23:05:10Z,2026-09-08T15:38:48Z
+googleapis__mcp-toolbox#3933,googleapis/mcp-toolbox,3933,"fix(source/cockroachdb,source/redis): release the handle when a connect attempt fails",hktitof,2026-09-03T00:08:38Z,2026-09-17T05:52:03Z
+googleapis__mcp-toolbox#3921,googleapis/mcp-toolbox,3921,fix(sources): release the handle when a source fails to connect,akangsha7,2026-09-01T06:24:34Z,2026-09-02T03:29:52Z
+googleapis__mcp-toolbox#3919,googleapis/mcp-toolbox,3919,"fix(docs/cloudgda): document context fields, fix PSV example and links",wangauone,2026-09-01T01:41:57Z,2026-09-03T16:34:24Z
+googleapis__mcp-toolbox#3916,googleapis/mcp-toolbox,3916,fix(test/alloydbainl): use explicit SQL alias prompt in integration test,wangauone,2026-08-31T21:28:06Z,2026-08-31T22:38:20Z
+googleapis__mcp-toolbox#3913,googleapis/mcp-toolbox,3913,fix(tool/looker-generate-embed-url): require embed parameters,mikemikimike,2026-08-30T06:57:26Z,2026-09-17T21:37:19Z
+googleapis__mcp-toolbox#3909,googleapis/mcp-toolbox,3909,fix(source/http): block IETF protocol assignments range in default SSRF guard,hktitof,2026-08-29T10:06:14Z,2026-09-09T00:01:11Z
+googleapis__mcp-toolbox#3885,googleapis/mcp-toolbox,3885,fix(postgres): filter background processes in postgres-list-active-queries,anubhav756,2026-08-27T11:54:27Z,2026-08-27T16:03:21Z
+googleapis__mcp-toolbox#3884,googleapis/mcp-toolbox,3884,fix(prebuilt/cloud-sql-postgres): clarify execute_sql tool description,omkargaikwad23,2026-08-27T11:51:01Z,2026-09-16T20:57:23Z
+googleapis__mcp-toolbox#3864,googleapis/mcp-toolbox,3864,fix: merge prebuilt tools when reloading custom config,AlexTalreja,2026-08-24T18:21:37Z,2026-08-27T00:18:53Z
+googleapis__mcp-toolbox#3856,googleapis/mcp-toolbox,3856,fix(config): compare env var offsets in rune space when skipping comments,49EHyeon42,2026-08-21T04:43:40Z,2026-08-21T05:11:08Z
+googleapis__mcp-toolbox#3849,googleapis/mcp-toolbox,3849,fix(tests): prevent resource leaks by using context.WithoutCancel,emagda97,2026-08-19T22:39:48Z,2026-08-21T03:20:34Z
+googleapis__mcp-toolbox#3821,googleapis/mcp-toolbox,3821,feat(skill): add fix-failing-tests skill for mcp-toolbox,twishabansal,2026-08-13T15:57:42Z,2026-08-14T09:13:28Z
+googleapis__mcp-toolbox#3810,googleapis/mcp-toolbox,3810,fix(cloud-storage): resolve symlinks when enforcing local path boundaries,huangjiahua,2026-08-12T16:26:24Z,2026-08-20T08:03:18Z
+googleapis__mcp-toolbox#3807,googleapis/mcp-toolbox,3807,fix(config): ignore environment variables in YAML comments,camposperez-hub,2026-08-11T23:00:45Z,2026-08-13T23:12:01Z
+googleapis__mcp-toolbox#3806,googleapis/mcp-toolbox,3806,fix: normalize postgres UUIDs to strings,emagda97,2026-08-11T20:41:34Z,2026-08-24T23:07:49Z
+googleapis__mcp-toolbox#3799,googleapis/mcp-toolbox,3799,fix(mcp): return Tool execution error for invalid input param,duwenxin99,2026-08-10T19:37:33Z,2026-08-13T21:08:25Z
+googleapis__mcp-toolbox#3798,googleapis/mcp-toolbox,3798,fix(server/mcp): disallow client overriding URL bound parameters,duwenxin99,2026-08-10T18:40:52Z,2026-08-13T22:29:22Z
+googleapis__mcp-toolbox#3788,googleapis/mcp-toolbox,3788,fix(tools/looker): scope the filters quoting rule to values in query description,LacombeLouis,2026-08-07T22:36:56Z,2026-08-13T00:47:29Z
+googleapis__mcp-toolbox#3765,googleapis/mcp-toolbox,3765,fix(auth/mcp): derive PRM URL from Toolbox URL,duwenxin99,2026-08-03T20:16:31Z,2026-08-13T20:04:33Z
+googleapis__mcp-toolbox#3764,googleapis/mcp-toolbox,3764,fix(prebuilt/cloud-storage): declare tool collections as groups,twishabansal,2026-08-03T09:55:23Z,2026-08-10T06:39:15Z
+googleapis__mcp-toolbox#3738,googleapis/mcp-toolbox,3738,fix(tools/bigquery): keep the provider error classification in bigquery-execute-sql,he-yufeng,2026-07-28T21:19:18Z,2026-07-29T18:13:28Z
+googleapis__mcp-toolbox#3730,googleapis/mcp-toolbox,3730,fix(util): convert exponent-form JSON numbers in ConvertNumbers,saivedant169,2026-07-28T01:59:03Z,2026-08-12T22:44:19Z
+googleapis__mcp-toolbox#3705,googleapis/mcp-toolbox,3705,fix: re-add tool validation during startup,Yuan325,2026-07-24T06:47:55Z,2026-07-28T00:33:21Z
+googleapis__mcp-toolbox#3698,googleapis/mcp-toolbox,3698,fix(tools/looker): Enhance looker-run-dashboard to handle result maker structures and merge queries,drstrangelooker,2026-07-23T18:20:54Z,2026-07-23T19:26:59Z
+googleapis__mcp-toolbox#3666,googleapis/mcp-toolbox,3666,fix: update notice message,Yuan325,2026-07-20T22:42:15Z,2026-07-22T21:03:43Z
+googleapis__mcp-toolbox#3654,googleapis/mcp-toolbox,3654,fix: add name validation to tools name,Yuan325,2026-07-17T19:18:44Z,2026-07-18T05:30:47Z
+googleapis__mcp-toolbox#3630,googleapis/mcp-toolbox,3630,fix(server): reject non-string group names,twishabansal,2026-07-15T08:59:18Z,2026-07-20T07:31:35Z
+googleapis__mcp-toolbox#3627,googleapis/mcp-toolbox,3627,fix(source/dataplex): Cleanup Dataplex Data Product resources that may have leaked due to previously aborted tests,theantagonist9509,2026-07-15T06:04:11Z,2026-07-17T16:37:55Z
+googleapis__mcp-toolbox#3625,googleapis/mcp-toolbox,3625,fix(source/http): block CGNAT 100.64.0.0/10 in default SSRF guard,anxkhn,2026-07-15T02:57:17Z,2026-07-22T19:23:27Z
+googleapis__mcp-toolbox#3612,googleapis/mcp-toolbox,3612,fix(server): reject duplicate names across all primitives,twishabansal,2026-07-13T15:51:11Z,2026-07-20T07:32:17Z
+googleapis__mcp-toolbox#3603,googleapis/mcp-toolbox,3603,fix(source/looker): dynamically resolve public host URL,pushkar0108,2026-07-11T16:48:27Z,2026-07-16T16:56:15Z
+googleapis__mcp-toolbox#3594,googleapis/mcp-toolbox,3594,"fix(looker, tool/run-dashboard): add support for SQL Runner query tiles",pushkar0108,2026-07-10T07:39:27Z,2026-07-10T17:39:47Z
+googleapis__mcp-toolbox#3576,googleapis/mcp-toolbox,3576,fix(server): scope MCP prompts to the connected group,twishabansal,2026-07-08T10:38:09Z,2026-07-14T06:05:20Z
+googleapis__mcp-toolbox#3555,googleapis/mcp-toolbox,3555,fix(source/cloud-sql-admin): validate source instance for backup-run restore,anxkhn,2026-06-30T21:59:28Z,2026-07-21T01:47:54Z
+googleapis__mcp-toolbox#3554,googleapis/mcp-toolbox,3554,fix(source/cockroachdb): detect existing LIMIT regardless of whitespace,anxkhn,2026-06-30T21:03:29Z,2026-07-27T18:42:37Z
+googleapis__mcp-toolbox#3552,googleapis/mcp-toolbox,3552,"fix(tools/looker): log request/response traces at debug, not error",anxkhn,2026-06-30T20:11:51Z,2026-07-21T03:06:54Z
+googleapis__mcp-toolbox#3545,googleapis/mcp-toolbox,3545,fix: fix potential panic in tools call handler,Yuan325,2026-06-30T00:10:53Z,2026-06-30T20:58:11Z
+googleapis__mcp-toolbox#3541,googleapis/mcp-toolbox,3541,fix(docs): upgrade Docsy to v0.12.0 to render mermaid diagrams,twishabansal,2026-06-29T07:34:24Z,2026-07-09T09:20:03Z
+googleapis__mcp-toolbox#3539,googleapis/mcp-toolbox,3539,fix(server): sort default toolset alphabetically for stable ordering,vismaytiwari,2026-06-27T19:54:20Z,2026-07-21T16:20:12Z
+googleapis__mcp-toolbox#3531,googleapis/mcp-toolbox,3531,fix(looker): validate explore_references shape instead of panicking,he-yufeng,2026-06-25T23:53:39Z,2026-06-26T19:33:25Z
+googleapis__mcp-toolbox#3520,googleapis/mcp-toolbox,3520,fix(server): avoid a nil-flusher panic in the SSE handler,he-yufeng,2026-06-24T22:53:58Z,2026-08-13T23:53:57Z
+googleapis__mcp-toolbox#3516,googleapis/mcp-toolbox,3516,fix(parameters): return an error instead of panicking on a non-string type field,he-yufeng,2026-06-24T19:30:18Z,2026-07-07T03:39:07Z
+googleapis__mcp-toolbox#3515,googleapis/mcp-toolbox,3515,fix(tool/looker-create-view-from-table): correct Looker API payload s…,dhruvingandhi,2026-06-24T18:45:58Z,2026-06-25T17:35:10Z
+googleapis__mcp-toolbox#3512,googleapis/mcp-toolbox,3512,fix(parameters): report the offending value in array/map type errors,he-yufeng,2026-06-24T15:30:40Z,2026-07-07T04:03:12Z
+googleapis__mcp-toolbox#3460,googleapis/mcp-toolbox,3460,fix(gda): support mTLS and GOOGLE_API_USE_MTLS_ENDPOINT for GDA client,Genesis929,2026-06-17T02:02:04Z,2026-06-30T17:24:56Z
+googleapis__mcp-toolbox#3453,googleapis/mcp-toolbox,3453,fix(source/cloudhealthcare): validate pageURL parameter to prevent SSRF,duwenxin99,2026-06-16T13:57:55Z,2026-06-18T17:37:03Z
+googleapis__mcp-toolbox#3452,googleapis/mcp-toolbox,3452,fix(tool/bigquery-execute-sql): prevent dataset restriction bypass,duwenxin99,2026-06-16T13:27:52Z,2026-06-18T13:52:07Z
+googleapis__mcp-toolbox#3448,googleapis/mcp-toolbox,3448,fix(source/http): implement SSRF guard,duwenxin99,2026-06-16T12:10:47Z,2026-06-18T17:54:45Z
+googleapis__mcp-toolbox#3435,googleapis/mcp-toolbox,3435,fix(server): fail if MCP auth is enabled together with enable-api,duwenxin99,2026-06-15T23:19:05Z,2026-06-18T13:33:50Z
+googleapis__mcp-toolbox#3431,googleapis/mcp-toolbox,3431,fix(ci): write npm .npmrc to $HOME and pass --registry to npm publish,wangauone,2026-06-15T19:53:43Z,2026-06-15T20:09:30Z
+googleapis__mcp-toolbox#3417,googleapis/mcp-toolbox,3417,fix(npm): source binary version from cmd/version.txt,twishabansal,2026-06-15T05:37:16Z,2026-06-18T21:46:30Z
+googleapis__mcp-toolbox#3398,googleapis/mcp-toolbox,3398,fix(prebuilt/alloydb-omni): require password env var explicitly,twishabansal,2026-06-11T07:08:08Z,2026-06-11T17:59:20Z
+googleapis__mcp-toolbox#3397,googleapis/mcp-toolbox,3397,fix(server): return errors instead of panicking in InitializeConfigs,twishabansal,2026-06-11T06:29:29Z,2026-06-18T22:15:41Z
+googleapis__mcp-toolbox#3392,googleapis/mcp-toolbox,3392,fix: Update escape in bigquery_integration_test.go,averikitsch,2026-06-10T19:03:17Z,2026-06-10T22:08:51Z
+googleapis__mcp-toolbox#3385,googleapis/mcp-toolbox,3385,fix(bigquery): wire maximumBytesBilled into prebuilt config,mugioka,2026-06-10T07:18:21Z,2026-06-16T21:37:00Z
+googleapis__mcp-toolbox#3376,googleapis/mcp-toolbox,3376,"fix(source/dataplex,source/datalineage): specify cloud-platform scope for default credentials",Deeven-Seru,2026-06-07T03:52:45Z,2026-06-12T19:16:21Z
+googleapis__mcp-toolbox#3369,googleapis/mcp-toolbox,3369,fix(auth/dataplex): fix failing source with service account credentials,AnujJhunjhunwala,2026-06-05T12:16:44Z,2026-06-18T18:43:29Z
+googleapis__mcp-toolbox#3360,googleapis/mcp-toolbox,3360,fix(auth/generic): enforce issuer presence in opaque token validation,duwenxin99,2026-06-04T19:41:20Z,2026-06-04T20:01:22Z
+googleapis__mcp-toolbox#3341,googleapis/mcp-toolbox,3341,fix(auth): separate Google and Generic MCP OAuth verification,duwenxin99,2026-06-03T21:30:54Z,2026-06-04T19:22:58Z
+googleapis__mcp-toolbox#3340,googleapis/mcp-toolbox,3340,fix(tool/clickhouse): handle ignored ProcessParameters error,twishabansal,2026-06-03T17:55:06Z,2026-06-04T17:49:40Z
+googleapis__mcp-toolbox#3338,googleapis/mcp-toolbox,3338,"fix(tool/spanner-sql,tool/spanner-execute-sql): use read-only annotations when readOnly is set",twishabansal,2026-06-03T17:43:51Z,2026-06-18T22:42:59Z
+googleapis__mcp-toolbox#3335,googleapis/mcp-toolbox,3335,fix(server/auth): centralize tool scopes validation,duwenxin99,2026-06-02T23:22:03Z,2026-06-03T19:49:50Z
+googleapis__mcp-toolbox#3333,googleapis/mcp-toolbox,3333,fix(server): return null id for batch request rejection,twishabansal,2026-06-02T11:48:09Z,2026-06-04T07:29:44Z
+googleapis__mcp-toolbox#3324,googleapis/mcp-toolbox,3324,fix(tool/bigquery): prevent `allowedDatasets` bypass in forecast query,duwenxin99,2026-06-01T17:26:49Z,2026-06-04T20:50:49Z
+googleapis__mcp-toolbox#3323,googleapis/mcp-toolbox,3323,fix(source/dataplex): limit search results to pageSize,sumedhdk22,2026-06-01T09:37:47Z,2026-06-02T17:40:32Z
+googleapis__mcp-toolbox#3300,googleapis/mcp-toolbox,3300,fix: support annotations and metadata within Tools to earlier MCP schemas,Yuan325,2026-05-27T17:21:48Z,2026-06-04T21:19:41Z
+googleapis__mcp-toolbox#3289,googleapis/mcp-toolbox,3289,fix(tools/looker): escape filter values for unquoted parameters,anandnalya,2026-05-26T03:08:47Z,2026-05-28T19:50:08Z
+googleapis__mcp-toolbox#3273,googleapis/mcp-toolbox,3273,fix(tools/looker): strip wrapping quotes from filter values for unquoted parameters,anandnalya,2026-05-21T10:28:19Z,2026-05-21T17:12:41Z
+googleapis__mcp-toolbox#3251,googleapis/mcp-toolbox,3251,fix(auth/generic): fix generic auth expiration field and integration with `authRequired`,duwenxin99,2026-05-18T21:46:16Z,2026-05-21T18:20:21Z
+googleapis__mcp-toolbox#3250,googleapis/mcp-toolbox,3250,fix(tool)!: initialize query result slices to empty array,duwenxin99,2026-05-18T21:09:49Z,2026-05-21T16:21:50Z
+googleapis__mcp-toolbox#3235,googleapis/mcp-toolbox,3235,fix(tool/mysql-get-query-plan): prevent query execution bypass and statement injection,evilgensec,2026-05-15T06:52:18Z,2026-06-15T18:31:45Z
+googleapis__mcp-toolbox#3233,googleapis/mcp-toolbox,3233,fix(tools/looker): return a 401 error to MCP client when Looker returns a 401,drstrangelooker,2026-05-14T22:21:01Z,2026-05-15T03:18:09Z
+googleapis__mcp-toolbox#3219,googleapis/mcp-toolbox,3219,"fix(tools/clickhouse,tools/bigquery): validate identifier parameters to prevent injection",evilgensec,2026-05-12T18:41:04Z,2026-05-29T17:56:09Z
+googleapis__mcp-toolbox#3218,googleapis/mcp-toolbox,3218,fix(tools/http): prevent path traversal and base path scope escape,duwenxin99,2026-05-12T17:49:20Z,2026-05-12T21:31:48Z
+googleapis__mcp-toolbox#3216,googleapis/mcp-toolbox,3216,fix: bound MCP HTTP body size,Deeven-Seru,2026-05-12T10:04:51Z,2026-06-12T16:20:51Z
+googleapis__mcp-toolbox#3215,googleapis/mcp-toolbox,3215,fix(oracle): remove trailing semicolons from prebuilt tools and clean…,Deeven-Seru,2026-05-12T09:27:17Z,2026-06-03T21:22:31Z
+mongodb-js__mongodb-mcp-server#708,mongodb-js/mongodb-mcp-server,708,fix(atlas-local): improve error message when Docker is unavailable,jeroenvervaeke,2025-10-29T17:08:25Z,2025-10-31T08:24:04Z
+mongodb-js__mongodb-mcp-server#651,mongodb-js/mongodb-mcp-server,651,fix: accuracy test fixes,nirinchev,2025-10-14T11:35:36Z,2025-10-15T14:19:24Z
+mongodb-js__mongodb-mcp-server#649,mongodb-js/mongodb-mcp-server,649,fix: cleanup script should group errors,blva,2025-10-14T10:51:07Z,2025-10-14T11:39:40Z
+mongodb-js__mongodb-mcp-server#630,mongodb-js/mongodb-mcp-server,630,fix: update tool category for collection-indexes,nirinchev,2025-10-09T11:37:59Z,2025-10-09T13:31:44Z
+mongodb-js__mongodb-mcp-server#580,mongodb-js/mongodb-mcp-server,580,fix(schema): Use sample instead of find for schema sampling,kmruiz,2025-09-22T10:24:40Z,2025-09-22T12:16:07Z
+mongodb-js__mongodb-mcp-server#571,mongodb-js/mongodb-mcp-server,571,"fix: Use JSON for stdio, similiar to the HTTP Transport and use EJSON deserialize when necessary MCP-207",kmruiz,2025-09-18T16:04:50Z,2025-09-19T11:33:33Z
+mongodb-js__mongodb-mcp-server#569,mongodb-js/mongodb-mcp-server,569,fix: use correct expression for the release channel,nirinchev,2025-09-16T15:21:56Z,2025-09-17T12:29:53Z
+mongodb-js__mongodb-mcp-server#564,mongodb-js/mongodb-mcp-server,564,fix: Removes nullable from DBUser password MCP-212,cveticm,2025-09-16T10:20:19Z,2025-09-16T11:59:22Z
+mongodb-js__mongodb-mcp-server#562,mongodb-js/mongodb-mcp-server,562,fix: pin yargs-parser to 21 for VSCode compatibility,himanshusinghs,2025-09-16T09:22:32Z,2025-09-16T10:01:13Z
+mongodb-js__mongodb-mcp-server#561,mongodb-js/mongodb-mcp-server,561,fix: incorrect number of clusters found,nirinchev,2025-09-16T07:35:32Z,2025-09-16T08:35:05Z
+mongodb-js__mongodb-mcp-server#550,mongodb-js/mongodb-mcp-server,550,fix: add untrusted data wrapper to the export resource MCP-197,nirinchev,2025-09-12T09:47:53Z,2025-09-12T10:41:01Z
+mongodb-js__mongodb-mcp-server#548,mongodb-js/mongodb-mcp-server,548,fix: add untrusted data wrapper around logs response MCP-197,nirinchev,2025-09-11T13:05:15Z,2025-09-11T14:31:56Z
+mongodb-js__mongodb-mcp-server#545,mongodb-js/mongodb-mcp-server,545,fix: prevent $out and $merge stages when create/update/delete operations are disabled MCP-196,nirinchev,2025-09-11T11:24:17Z,2025-09-11T14:32:15Z
+mongodb-js__mongodb-mcp-server#543,mongodb-js/mongodb-mcp-server,543,fix: remove dependency on export tool input for generating export name MCP-189,himanshusinghs,2025-09-10T21:14:53Z,2025-09-11T16:08:56Z
+mongodb-js__mongodb-mcp-server#542,mongodb-js/mongodb-mcp-server,542,fix: add argument validation - MCP-188,blva,2025-09-10T16:49:52Z,2025-09-11T15:45:52Z
+mongodb-js__mongodb-mcp-server#536,mongodb-js/mongodb-mcp-server,536,fix: add guards against possible memory overflow in find and aggregate tools MCP-21,himanshusinghs,2025-09-09T14:52:01Z,2025-09-22T09:08:30Z
+mongodb-js__mongodb-mcp-server#525,mongodb-js/mongodb-mcp-server,525,fix(readOnly): Do not allow $out and $merge in readOnly mode,kmruiz,2025-09-05T13:33:33Z,2025-09-05T13:41:28Z
+mongodb-js__mongodb-mcp-server#523,mongodb-js/mongodb-mcp-server,523,fix: report correct number of projects,nirinchev,2025-09-05T07:19:35Z,2025-09-08T16:18:47Z
+mongodb-js__mongodb-mcp-server#521,mongodb-js/mongodb-mcp-server,521,fix: don't wait for telemetry events MCP-179,nirinchev,2025-09-05T00:23:13Z,2025-09-05T15:45:05Z
+mongodb-js__mongodb-mcp-server#517,mongodb-js/mongodb-mcp-server,517,feat(cli): notify when a flag is wrong and suggest a fix MCP-121,kmruiz,2025-09-04T14:01:40Z,2025-09-05T08:12:46Z
+mongodb-js__mongodb-mcp-server#515,mongodb-js/mongodb-mcp-server,515,fix: typings for mongodb-connection-string-url,kmruiz,2025-09-04T11:07:06Z,2025-09-04T12:40:13Z
+mongodb-js__mongodb-mcp-server#514,mongodb-js/mongodb-mcp-server,514,fix(connection): support for multiple hosts urls #327,kmruiz,2025-09-04T06:52:53Z,2025-09-04T10:43:41Z
+mongodb-js__mongodb-mcp-server#503,mongodb-js/mongodb-mcp-server,503,fix: start mcp even if connection fails - [MCP-140],blva,2025-09-02T11:24:07Z,2025-09-02T17:57:51Z
+mongodb-js__mongodb-mcp-server#499,mongodb-js/mongodb-mcp-server,499,fix: allow connect tool on readOnly mode,blva,2025-09-01T15:28:19Z,2025-09-01T16:31:04Z
+mongodb-js__mongodb-mcp-server#491,mongodb-js/mongodb-mcp-server,491,fix: adapt deviceId import to cjs and esm ,blva,2025-08-28T14:52:56Z,2025-08-28T16:03:46Z
+mongodb-js__mongodb-mcp-server#487,mongodb-js/mongodb-mcp-server,487,fix: fetch dependencies before release,blva,2025-08-28T12:49:49Z,2025-08-28T12:58:12Z
+mongodb-js__mongodb-mcp-server#486,mongodb-js/mongodb-mcp-server,486,fix: handle setLogLevel requests,nirinchev,2025-08-28T11:56:38Z,2025-08-28T13:22:05Z
+mongodb-js__mongodb-mcp-server#484,mongodb-js/mongodb-mcp-server,484,fix: add a ping loop for http transport clients,nirinchev,2025-08-27T14:53:54Z,2025-08-28T09:47:47Z
+mongodb-js__mongodb-mcp-server#483,mongodb-js/mongodb-mcp-server,483,fix: don't execute cleanup code if setup failed,nirinchev,2025-08-27T12:02:40Z,2025-08-27T13:24:00Z
+mongodb-js__mongodb-mcp-server#482,mongodb-js/mongodb-mcp-server,482,fix: update atlas integration tests -- MCP-98,blva,2025-08-27T10:29:47Z,2025-08-27T11:18:16Z
+mongodb-js__mongodb-mcp-server#471,mongodb-js/mongodb-mcp-server,471,fix: atlas connectCluster defaults to readOnly DB roles - MCP-125,blva,2025-08-22T14:19:11Z,2025-08-22T17:09:16Z
+mongodb-js__mongodb-mcp-server#467,mongodb-js/mongodb-mcp-server,467,fix: minor tweaks to enable vscode integration MCP-134,nirinchev,2025-08-21T13:17:51Z,2025-08-28T09:30:31Z
+mongodb-js__mongodb-mcp-server#466,mongodb-js/mongodb-mcp-server,466,fix: fix expectations for export accuracy tests,nirinchev,2025-08-20T22:22:48Z,2025-08-21T10:11:32Z
+mongodb-js__mongodb-mcp-server#465,mongodb-js/mongodb-mcp-server,465,fix: wrap more tool responses in untrusted-user-data tags,nirinchev,2025-08-20T21:20:33Z,2025-08-22T16:09:57Z
+mongodb-js__mongodb-mcp-server#453,mongodb-js/mongodb-mcp-server,453,fix: update resolution and transition,blva,2025-08-13T13:25:09Z,2025-08-13T15:33:31Z
+mongodb-js__mongodb-mcp-server#430,mongodb-js/mongodb-mcp-server,430,fix: implement prompt poisoning mitigation,nirinchev,2025-08-07T15:09:12Z,2025-08-08T16:00:49Z
+mongodb-js__mongodb-mcp-server#425,mongodb-js/mongodb-mcp-server,425,fix: remove global logger MCP-103,nirinchev,2025-08-05T15:44:27Z,2025-08-06T23:17:31Z
+mongodb-js__mongodb-mcp-server#398,mongodb-js/mongodb-mcp-server,398,fix: fix team id in internal JIRA automation,blva,2025-07-24T14:10:53Z,2025-07-24T14:30:51Z
+mongodb-js__mongodb-mcp-server#393,mongodb-js/mongodb-mcp-server,393,fix: remove comment,blva,2025-07-23T14:01:38Z,2025-07-23T15:19:58Z
+mongodb-js__mongodb-mcp-server#381,mongodb-js/mongodb-mcp-server,381,fix: tweak the arg shapes to improve tool accuracy,nirinchev,2025-07-17T18:13:13Z,2025-07-18T09:13:51Z
+mongodb-js__mongodb-mcp-server#374,mongodb-js/mongodb-mcp-server,374,fix: dependabot PRs were not running CI after merge,fmenezes,2025-07-15T13:28:14Z,2025-07-15T13:34:09Z
+mongodb-js__mongodb-mcp-server#373,mongodb-js/mongodb-mcp-server,373,fix: atlas connection keeps reconnecting,fmenezes,2025-07-15T13:23:52Z,2025-07-15T13:31:24Z
+mongodb-js__mongodb-mcp-server#357,mongodb-js/mongodb-mcp-server,357,fix: always disconnect the session after a test run,nirinchev,2025-07-11T11:54:13Z,2025-07-11T12:13:57Z
+mongodb-js__mongodb-mcp-server#343,mongodb-js/mongodb-mcp-server,343,fix: turn atlas-connect-cluster async,fmenezes,2025-07-07T17:24:26Z,2025-07-10T12:10:33Z
+mongodb-js__mongodb-mcp-server#338,mongodb-js/mongodb-mcp-server,338,fix: Broken internal urls in readme,jeroenvervaeke,2025-07-02T09:26:00Z,2025-07-02T09:54:39Z
+mongodb-js__mongodb-mcp-server#331,mongodb-js/mongodb-mcp-server,331,fix: index tests,fmenezes,2025-06-30T16:48:05Z,2025-06-30T17:11:17Z
+mongodb-js__mongodb-mcp-server#322,mongodb-js/mongodb-mcp-server,322,fix: test fails with the latest sdk,kmruiz,2025-06-26T10:44:37Z,2025-06-26T10:59:50Z
+mongodb-js__mongodb-mcp-server#296,mongodb-js/mongodb-mcp-server,296,fix: don't log tool args,nirinchev,2025-06-13T00:49:26Z,2025-06-16T16:36:29Z
+mongodb-js__mongodb-mcp-server#259,mongodb-js/mongodb-mcp-server,259,fix: docker security warnings,fmenezes,2025-05-16T09:50:03Z,2025-05-16T13:11:40Z
+mongodb-js__mongodb-mcp-server#254,mongodb-js/mongodb-mcp-server,254,fix: updates count tool,blva,2025-05-15T09:48:44Z,2025-05-20T09:20:53Z
+mongodb-js__mongodb-mcp-server#224,mongodb-js/mongodb-mcp-server,224,fix: improve uncaught exception for getAccessToken,blva,2025-05-08T16:55:50Z,2025-05-12T09:00:56Z
+mongodb-js__mongodb-mcp-server#222,mongodb-js/mongodb-mcp-server,222,fix: validate creds,blva,2025-05-08T09:30:31Z,2025-05-08T13:53:26Z
+mongodb-js__mongodb-mcp-server#218,mongodb-js/mongodb-mcp-server,218,fix: use ejson parsing for stdio messages,nirinchev,2025-05-07T15:18:25Z,2025-05-08T09:15:01Z
+mongodb-js__mongodb-mcp-server#194,mongodb-js/mongodb-mcp-server,194,fix: fork checks,fmenezes,2025-05-02T13:01:28Z,2025-05-05T15:08:16Z
+mongodb-js__mongodb-mcp-server#187,mongodb-js/mongodb-mcp-server,187,fix: db user test error,fmenezes,2025-05-02T10:21:05Z,2025-05-02T10:36:23Z
+mongodb-js__mongodb-mcp-server#178,mongodb-js/mongodb-mcp-server,178,fix: bad auth error,fmenezes,2025-04-30T10:44:48Z,2025-04-30T13:10:36Z
+mongodb-js__mongodb-mcp-server#177,mongodb-js/mongodb-mcp-server,177,fix: instruct models not to generate passwords for createDBUser,nirinchev,2025-04-30T10:44:14Z,2025-05-01T11:17:52Z
+mongodb-js__mongodb-mcp-server#176,mongodb-js/mongodb-mcp-server,176,fix: improve api error messages,fmenezes,2025-04-30T09:38:45Z,2025-05-02T10:08:55Z
+mongodb-js__mongodb-mcp-server#173,mongodb-js/mongodb-mcp-server,173,fix: config resource,fmenezes,2025-04-29T17:28:22Z,2025-04-29T20:48:28Z
+mongodb-js__mongodb-mcp-server#172,mongodb-js/mongodb-mcp-server,172,fix: add atlas instance size,fmenezes,2025-04-29T17:14:59Z,2025-04-29T20:47:14Z
+mongodb-js__mongodb-mcp-server#167,mongodb-js/mongodb-mcp-server,167,fix: issue template with title twice,fmenezes,2025-04-29T15:54:45Z,2025-04-29T16:00:12Z
+mongodb-js__mongodb-mcp-server#166,mongodb-js/mongodb-mcp-server,166,fix: use proper ESM with jest,gagik,2025-04-29T15:51:03Z,2025-04-29T20:28:00Z
+mongodb-js__mongodb-mcp-server#143,mongodb-js/mongodb-mcp-server,143,fix: use record instead of a passthrough object,gagik,2025-04-28T13:10:11Z,2025-04-28T14:56:07Z
+mongodb-js__mongodb-mcp-server#116,mongodb-js/mongodb-mcp-server,116,fix: workaround models not providing arguments when everything is optional,nirinchev,2025-04-24T15:36:15Z,2025-04-24T16:31:54Z
+mongodb-js__mongodb-mcp-server#110,mongodb-js/mongodb-mcp-server,110,fix: tests,fmenezes,2025-04-24T10:33:33Z,2025-04-24T10:45:26Z
+mongodb-js__mongodb-mcp-server#107,mongodb-js/mongodb-mcp-server,107,fix: add isError in handleError,blva,2025-04-24T08:47:07Z,2025-04-24T08:54:22Z
+mongodb-js__mongodb-mcp-server#98,mongodb-js/mongodb-mcp-server,98,fix: close mongo client between runs,nirinchev,2025-04-23T11:13:20Z,2025-04-23T11:52:23Z
+mongodb-js__mongodb-mcp-server#88,mongodb-js/mongodb-mcp-server,88,fix: tweak the connect tool to prefer preconfigured connection string,nirinchev,2025-04-22T09:27:12Z,2025-04-22T16:47:35Z
+mongodb-js__mongodb-mcp-server#71,mongodb-js/mongodb-mcp-server,71,fix: release bug,fmenezes,2025-04-11T17:10:24Z,2025-04-11T17:11:49Z
+mongodb-js__mongodb-mcp-server#70,mongodb-js/mongodb-mcp-server,70,fix: github release,fmenezes,2025-04-11T17:06:01Z,2025-04-11T17:07:55Z
+mongodb-js__mongodb-mcp-server#67,mongodb-js/mongodb-mcp-server,67,fix: version,fmenezes,2025-04-11T15:29:58Z,2025-04-11T15:35:12Z
+mongodb-js__mongodb-mcp-server#61,mongodb-js/mongodb-mcp-server,61,fix: properly teardown mocks in server.test.ts,nirinchev,2025-04-11T11:40:20Z,2025-04-11T11:49:10Z
+mongodb-js__mongodb-mcp-server#28,mongodb-js/mongodb-mcp-server,28,fix: don't use mcp error for our errors,nirinchev,2025-04-09T08:30:37Z,2025-04-09T10:21:00Z
+mongodb-js__mongodb-mcp-server#10,mongodb-js/mongodb-mcp-server,10,fix: package name in package.json,fmenezes,2025-04-08T13:50:10Z,2025-04-08T13:57:59Z
+mongodb-js__mongodb-mcp-server#1639,mongodb-js/mongodb-mcp-server,1639,fix(atlas-local): bound healthcheck wait and add failure diagnostics for sample data loads CLOUDP-459388,fmenezes,2026-10-23T10:49:23Z,2026-10-27T13:35:03Z
+mongodb-js__mongodb-mcp-server#1638,mongodb-js/mongodb-mcp-server,1638,fix(explain): use timeoutMS for explain when maxTimeMS is configured CLOUDP-466187,blva,2026-10-22T19:25:09Z,2026-10-23T09:03:34Z
+mongodb-js__mongodb-mcp-server#1619,mongodb-js/mongodb-mcp-server,1619,fix(atlas): redact Streams password fields from the OpenAPI spec STREAMS-2672,jwongmongodb,2026-10-15T21:24:58Z,2026-10-16T08:15:57Z
+mongodb-js__mongodb-mcp-server#1617,mongodb-js/mongodb-mcp-server,1617,fix: distinguish declined confirmations from tool failures MCP-672,lerouxb,2026-10-15T13:05:47Z,2026-10-16T10:42:21Z
+mongodb-js__mongodb-mcp-server#1614,mongodb-js/mongodb-mcp-server,1614,fix: export defaultDriverOptions CLOUDP-459412,nirinchev,2026-10-15T10:55:36Z,2026-10-15T12:55:41Z
+mongodb-js__mongodb-mcp-server#1612,mongodb-js/mongodb-mcp-server,1612,fix(harness-tester): suppress claude auto-mode onboarding dialog in e2e,gagik,2026-10-14T16:15:29Z,2026-10-23T14:51:21Z
+mongodb-js__mongodb-mcp-server#1607,mongodb-js/mongodb-mcp-server,1607,fix(telemetry): flush events emitted after close,gagik,2026-10-14T14:09:06Z,2026-10-14T15:26:42Z
+mongodb-js__mongodb-mcp-server#1585,mongodb-js/mongodb-mcp-server,1585,fix(harness-tester): harden turn detection and tool parsing,gagik,2026-09-30T21:55:19Z,2026-10-01T17:02:30Z
+mongodb-js__mongodb-mcp-server#1584,mongodb-js/mongodb-mcp-server,1584,fix(scripts): use the release notes generator,gagik,2026-09-30T14:44:37Z,2026-10-01T12:24:04Z
+mongodb-js__mongodb-mcp-server#1582,mongodb-js/mongodb-mcp-server,1582,fix(sbom): drop stale fsevents entry from licenses config,gagik,2026-09-30T14:32:50Z,2026-09-30T14:34:37Z
+mongodb-js__mongodb-mcp-server#1577,mongodb-js/mongodb-mcp-server,1577,fix(tools-mongodb): include connectionName in list-connections text output MCP-666,gagik,2026-09-28T10:47:30Z,2026-09-29T11:52:48Z
+mongodb-js__mongodb-mcp-server#1563,mongodb-js/mongodb-mcp-server,1563,fix: return correct error code for modern-era mcp requests MCP-660,nirinchev,2026-09-23T10:51:32Z,2026-09-23T11:23:31Z
+mongodb-js__mongodb-mcp-server#1562,mongodb-js/mongodb-mcp-server,1562,fix(atlas): allow $iceberg pipelines by dropping last-stage validation STREAMS-2650,jwongmongodb,2026-09-22T22:38:22Z,2026-09-29T14:00:36Z
+mongodb-js__mongodb-mcp-server#1555,mongodb-js/mongodb-mcp-server,1555,fix(fetch): pair proxy fetch with a matching Request implementation MCP-662,gagik,2026-09-21T08:10:15Z,2026-09-21T08:16:29Z
+mongodb-js__mongodb-mcp-server#1542,mongodb-js/mongodb-mcp-server,1542,fix: return correct error code for modern-era methods called without _meta MCP-660,nirinchev,2026-09-18T12:46:06Z,2026-09-18T12:58:56Z
+mongodb-js__mongodb-mcp-server#1541,mongodb-js/mongodb-mcp-server,1541,fix(tools-atlas): declare mcp-metrics and mcp-types as runtime deps,gagik,2026-09-18T08:54:19Z,2026-09-18T12:37:15Z
+mongodb-js__mongodb-mcp-server#1538,mongodb-js/mongodb-mcp-server,1538,fix(core): resolve client identity from the per-request envelope,gagik,2026-09-17T14:00:49Z,2026-09-17T15:23:45Z
+mongodb-js__mongodb-mcp-server#1525,mongodb-js/mongodb-mcp-server,1525,"fix(http): make connection scoping an explicit, required library consumer policy",gagik,2026-09-14T08:45:43Z,2026-09-15T07:39:18Z
+mongodb-js__mongodb-mcp-server#1517,mongodb-js/mongodb-mcp-server,1517,fix: shut down stdio server on EOF,lambegraham,2026-09-10T16:25:41Z,2026-09-15T08:53:10Z
+mongodb-js__mongodb-mcp-server#1514,mongodb-js/mongodb-mcp-server,1514,fix(tools-mongodb): export ConnectionStateConnected as a value,gagik,2026-09-10T13:18:07Z,2026-09-10T13:59:21Z
+mongodb-js__mongodb-mcp-server#1507,mongodb-js/mongodb-mcp-server,1507,fix(release): sync server/test package versions to v3.0.0-prerelease.3,gagik,2026-09-09T11:24:25Z,2026-09-09T11:44:50Z
+mongodb-js__mongodb-mcp-server#1504,mongodb-js/mongodb-mcp-server,1504,fix: disallow write stages in export aggregations MCP-651,nirinchev,2026-09-08T13:11:33Z,2026-09-09T10:43:28Z
+mongodb-js__mongodb-mcp-server#1502,mongodb-js/mongodb-mcp-server,1502,fix: cover additional WASM/optional platform deps in licenses config,gagik,2026-09-08T12:55:24Z,2026-09-08T12:59:30Z
+mongodb-js__mongodb-mcp-server#1501,mongodb-js/mongodb-mcp-server,1501,fix: redact connection-string secrets from ConnectionEntry.lastError,SyedAnas01,2026-09-08T12:36:33Z,2026-09-10T14:05:32Z
+mongodb-js__mongodb-mcp-server#1500,mongodb-js/mongodb-mcp-server,1500,fix: resolve third-party-notices generation paths and refresh license config,gagik,2026-09-08T10:14:17Z,2026-09-08T11:27:59Z
+mongodb-js__mongodb-mcp-server#1484,mongodb-js/mongodb-mcp-server,1484,"fix: remove shared event cache, finalize events before storing them CLOUDP-440981",nirinchev,2026-09-02T23:24:12Z,2026-09-03T15:03:01Z
+mongodb-js__mongodb-mcp-server#1463,mongodb-js/mongodb-mcp-server,1463,fix(atlas): classify invalid Streams arguments MCP-628,jwongmongodb,2026-08-26T12:47:24Z,2026-08-31T22:09:31Z
+mongodb-js__mongodb-mcp-server#1458,mongodb-js/mongodb-mcp-server,1458,"fix(atlas): stop including counts in response, pagination hint on full page",gagik,2026-08-24T14:51:10Z,2026-08-25T10:14:42Z
+mongodb-js__mongodb-mcp-server#1453,mongodb-js/mongodb-mcp-server,1453,fix(atlas): report the full total count in atlas-list-orgs and atlas-list-projects,gagik,2026-08-24T11:23:02Z,2026-08-24T13:58:11Z
+mongodb-js__mongodb-mcp-server#1450,mongodb-js/mongodb-mcp-server,1450,fix: propagate connection error from db tools MCP-627,nirinchev,2026-08-24T10:30:53Z,2026-08-25T10:19:10Z
+mongodb-js__mongodb-mcp-server#1447,mongodb-js/mongodb-mcp-server,1447,fix(atlas): avoid counting alerts by default - CLOUDP-438116,blva,2026-08-23T15:59:52Z,2026-08-24T08:59:17Z
+mongodb-js__mongodb-mcp-server#1412,mongodb-js/mongodb-mcp-server,1412,fix(tests): increase mongot healthcheck wait timeouts,gagik,2026-08-05T14:01:05Z,2026-08-05T14:17:12Z
+mongodb-js__mongodb-mcp-server#1411,mongodb-js/mongodb-mcp-server,1411,fix(ci): open a PR for third-party notices instead of pushing to main,gagik,2026-08-05T12:54:39Z,2026-08-06T11:30:12Z
+mongodb-js__mongodb-mcp-server#1400,mongodb-js/mongodb-mcp-server,1400,fix: handle createCluster region in a backwards-compatible way CLOUDP-407395,nirinchev,2026-07-28T17:31:41Z,2026-07-28T19:02:12Z
+mongodb-js__mongodb-mcp-server#1382,mongodb-js/mongodb-mcp-server,1382,fix: fix regressed search index creation eval cases CLOUDP-424118,JimmyChoiMDB,2026-07-22T21:50:22Z,2026-07-23T22:33:34Z
+mongodb-js__mongodb-mcp-server#1381,mongodb-js/mongodb-mcp-server,1381,fix: remove get-search-stage-rules tool CLOUDP-424119,JimmyChoiMDB,2026-07-22T21:06:20Z,2026-07-23T22:32:06Z
+mongodb-js__mongodb-mcp-server#1379,mongodb-js/mongodb-mcp-server,1379,fix: allow empty loggers to be passed in userConfig CLOUDP-426852,nirinchev,2026-07-22T12:54:14Z,2026-07-22T13:03:38Z
+mongodb-js__mongodb-mcp-server#1374,mongodb-js/mongodb-mcp-server,1374,fix: accept no-recommendations response in performance advisor long-running test - MCP-604,blva,2026-07-21T20:33:47Z,2026-07-22T08:52:17Z
+mongodb-js__mongodb-mcp-server#1369,mongodb-js/mongodb-mcp-server,1369,fix: reject unrecognized tool arguments via strict input validation - MCP-602,blva,2026-07-19T12:47:07Z,2026-07-19T13:58:42Z
+mongodb-js__mongodb-mcp-server#1368,mongodb-js/mongodb-mcp-server,1368,fix: require projectName and orgId for atlas-create-project - MCP-602,blva,2026-07-19T11:39:25Z,2026-07-19T12:17:32Z
+mongodb-js__mongodb-mcp-server#1367,mongodb-js/mongodb-mcp-server,1367,fix: expose API for saving and restoring session capabilities,nirinchev,2026-07-18T17:37:34Z,2026-07-18T17:46:15Z
+mongodb-js__mongodb-mcp-server#1358,mongodb-js/mongodb-mcp-server,1358,fix(mongodb-atlas-mcp-remote): add missing OAuth base URL mapping for staging,blva,2026-07-15T15:26:03Z,2026-07-23T21:27:32Z
+mongodb-js__mongodb-mcp-server#1355,mongodb-js/mongodb-mcp-server,1355,fix: paginate atlas-list-orgs and atlas-list-projects - CLOUDP-422517,blva,2026-07-13T17:17:14Z,2026-07-22T12:08:06Z
+mongodb-js__mongodb-mcp-server#1332,mongodb-js/mongodb-mcp-server,1332,fix: validate streams resourceName/peeringId to block path traversal STREAMS-2485,jwongmongodb,2026-07-06T00:04:47Z,2026-07-16T10:47:50Z
+mongodb-js__mongodb-mcp-server#1317,mongodb-js/mongodb-mcp-server,1317,fix: update error handling output to include untrusted data formatting MCP-582,dudaschar,2026-07-03T14:42:33Z,2026-07-09T15:39:31Z
+mongodb-js__mongodb-mcp-server#1316,mongodb-js/mongodb-mcp-server,1316,"fix: update output messages to use ""requested collection"" and ""requested database"" - MCP-581",dudaschar,2026-07-03T14:18:49Z,2026-07-06T13:04:10Z
+mongodb-js__mongodb-mcp-server#1314,mongodb-js/mongodb-mcp-server,1314,"fix: update messages to use ""requested collection"" and keep collection name along with other parsed content - MCP-580",dudaschar,2026-07-03T10:35:45Z,2026-07-03T14:00:31Z
+mongodb-js__mongodb-mcp-server#1308,mongodb-js/mongodb-mcp-server,1308,fix: do not interpolate names in note for StreamsDiscoverTool output - MCP-578,dudaschar,2026-07-02T16:02:52Z,2026-07-03T14:01:42Z
+mongodb-js__mongodb-mcp-server#1306,mongodb-js/mongodb-mcp-server,1306,fix: update cluster listing output to include project name inside untrusted tag - MCP-576,dudaschar,2026-07-02T14:29:07Z,2026-07-03T09:21:01Z
+mongodb-js__mongodb-mcp-server#1304,mongodb-js/mongodb-mcp-server,1304,fix: use commit messages for release notes generation MCP-573,nirinchev,2026-07-02T13:09:31Z,2026-07-02T15:56:33Z
+mongodb-js__mongodb-mcp-server#1303,mongodb-js/mongodb-mcp-server,1303,fix: enforce redaction of sensitive information in mcp logger by default - MCP-574,dudaschar,2026-07-02T13:06:17Z,2026-07-02T14:25:16Z
+mongodb-js__mongodb-mcp-server#1301,mongodb-js/mongodb-mcp-server,1301,fix: make requestIdAttr case-insensitive CLOUDP-418875,lerouxb,2026-07-02T10:14:02Z,2026-07-02T10:26:00Z
+mongodb-js__mongodb-mcp-server#1292,mongodb-js/mongodb-mcp-server,1292,fix: mongot healtcheck failures,nirinchev,2026-06-29T15:07:03Z,2026-06-29T22:23:09Z
+mongodb-js__mongodb-mcp-server#1291,mongodb-js/mongodb-mcp-server,1291,fix: wait for connection string when creating a deployment,nirinchev,2026-06-28T13:49:42Z,2026-06-29T22:15:42Z
+mongodb-js__mongodb-mcp-server#1241,mongodb-js/mongodb-mcp-server,1241,fix: prevent dropTarget when delete operations are disabled MCP-526,nirinchev,2026-06-10T22:10:53Z,2026-06-11T14:00:36Z
+mongodb-js__mongodb-mcp-server#1233,mongodb-js/mongodb-mcp-server,1233,fix: use pnpm-workspace when packaging mcpb MCP-518,nirinchev,2026-06-08T10:15:41Z,2026-06-08T13:44:58Z
+mongodb-js__mongodb-mcp-server#1197,mongodb-js/mongodb-mcp-server,1197,refactor: fix knip patches,gagik,2026-05-20T10:57:58Z,2026-05-20T12:07:01Z
+mongodb-js__mongodb-mcp-server#1186,mongodb-js/mongodb-mcp-server,1186,fix: don't block aggregates when getSearchIndexes fails MCP-497,nirinchev,2026-05-15T13:01:09Z,2026-05-19T13:24:27Z
+mongodb-js__mongodb-mcp-server#1179,mongodb-js/mongodb-mcp-server,1179,fix: atlas-list-clusters returns empty result instead of throwing error - MCP-530 ,Luke-Sanderson,2026-05-13T10:36:25Z,2026-05-13T10:51:40Z
+mongodb-js__mongodb-mcp-server#1163,mongodb-js/mongodb-mcp-server,1163,fix public api,nirinchev,2026-05-07T09:15:06Z,2026-05-07T09:18:12Z
+mongodb-js__mongodb-mcp-server#1143,mongodb-js/mongodb-mcp-server,1143,fix(v2): use native fetch in OIDC curl.mjs fixture,gagik,2026-05-05T09:42:06Z,2026-05-05T11:13:28Z
+mongodb-js__mongodb-mcp-server#1121,mongodb-js/mongodb-mcp-server,1121,fix: apply mongosh CLI options (e.g. oidcTrustedEndpoint) in connect-tool path,KyriosGN0,2026-04-30T08:12:13Z,2026-06-11T14:52:59Z
+mongodb-js__mongodb-mcp-server#1113,mongodb-js/mongodb-mcp-server,1113,fix: fix aggregate-db schema to work with OpenAI models,nirinchev,2026-04-28T20:30:13Z,2026-04-29T07:45:51Z
+mongodb-js__mongodb-mcp-server#1095,mongodb-js/mongodb-mcp-server,1095,fix: use dynamic database lookup for search index check MCP-454,nirinchev,2026-04-23T21:19:06Z,2026-04-28T12:33:40Z
+mongodb-js__mongodb-mcp-server#1093,mongodb-js/mongodb-mcp-server,1093,fix: sanitize workflow inputs VULN-995 VULN-996,nirinchev,2026-04-23T15:08:57Z,2026-04-24T09:59:28Z
+mongodb-js__mongodb-mcp-server#1078,mongodb-js/mongodb-mcp-server,1078,fix: fall back to browser fetch in ApiClient MCP-473,nirinchev,2026-04-20T09:47:53Z,2026-04-20T13:56:52Z
+mongodb-js__mongodb-mcp-server#1065,mongodb-js/mongodb-mcp-server,1065,fix(atlas): add pagination to list alerts tool,gagik,2026-04-16T14:54:47Z,2026-04-17T11:02:19Z
+mongodb-js__mongodb-mcp-server#1005,mongodb-js/mongodb-mcp-server,1005,fix: add batching and exponential backoff to telemetry event sending,jeroenvervaeke,2026-03-25T13:51:50Z,2026-03-25T16:50:33Z
+mongodb-js__mongodb-mcp-server#1000,mongodb-js/mongodb-mcp-server,1000,fix: correct PrivateLink field descriptions and error template to match backend validation,jwongmongodb,2026-03-24T12:38:22Z,2026-03-24T15:07:23Z
+mongodb-js__mongodb-mcp-server#997,mongodb-js/mongodb-mcp-server,997,fix: handle setup without credentials,nirinchev,2026-03-22T08:27:09Z,2026-03-24T16:23:51Z
+mongodb-js__mongodb-mcp-server#996,mongodb-js/mongodb-mcp-server,996,fix: wait for exec to complete before exiting,nirinchev,2026-03-22T08:24:25Z,2026-03-24T15:12:06Z
+mongodb-js__mongodb-mcp-server#995,mongodb-js/mongodb-mcp-server,995,"fix: improve Streams MCP tool API compliance, error handling, PrivateLink descriptions and expose streams tools ",jwongmongodb,2026-03-20T19:02:19Z,2026-03-24T11:57:15Z
+mongodb-js__mongodb-mcp-server#994,mongodb-js/mongodb-mcp-server,994,fix: remove get-logs action from atlas-streams-discover,jwongmongodb,2026-03-20T17:27:55Z,2026-03-20T17:57:22Z
+mongodb-js__mongodb-mcp-server#985,mongodb-js/mongodb-mcp-server,985,fix: improve streams tool schemas and add accuracy tests,jwongmongodb,2026-03-16T21:18:11Z,2026-03-20T17:24:59Z
+mongodb-js__mongodb-mcp-server#950,mongodb-js/mongodb-mcp-server,950,fix: use lock to emit events and avoid event duplication ,blva,2026-03-04T15:02:51Z,2026-03-12T18:01:17Z
+mongodb-js__mongodb-mcp-server#938,mongodb-js/mongodb-mcp-server,938,fix: simplify userAgent,blva,2026-02-27T12:51:52Z,2026-03-02T14:36:10Z
+mongodb-js__mongodb-mcp-server#927,mongodb-js/mongodb-mcp-server,927,fix!: make connectionErrorHandler async-compatible,gagik,2026-02-20T13:19:13Z,2026-02-20T13:53:51Z
+mongodb-js__mongodb-mcp-server#914,mongodb-js/mongodb-mcp-server,914,fix: upgrade all mongosh and devtools-shared dependencies,addaleax,2026-02-17T15:40:52Z,2026-02-17T15:57:24Z
+mongodb-js__mongodb-mcp-server#907,mongodb-js/mongodb-mcp-server,907,fix: Upgrade the MongoDB driver and dependencies to v7.1.0,kmruiz,2026-02-13T08:16:33Z,2026-02-13T09:50:05Z
+mongodb-js__mongodb-mcp-server#893,mongodb-js/mongodb-mcp-server,893,fix: warn on insecure apiBaseUrl,nirinchev,2026-02-02T18:26:15Z,2026-02-03T12:44:39Z
+mongodb-js__mongodb-mcp-server#891,mongodb-js/mongodb-mcp-server,891,fix: ensure we don't log errors to console MCP-382,nirinchev,2026-02-02T13:15:23Z,2026-02-03T10:10:11Z
+mongodb-js__mongodb-mcp-server#890,mongodb-js/mongodb-mcp-server,890,fix(mongodb): correct limit usage in find tool count queries,grassfish1122,2026-02-02T04:07:54Z,2026-03-04T14:43:17Z
+mongodb-js__mongodb-mcp-server#855,mongodb-js/mongodb-mcp-server,855,fix: fixes wrong path getting updated with generated embeddings MCP-357,himanshusinghs,2026-01-13T13:09:42Z,2026-01-13T18:53:04Z
+mongodb-js__mongodb-mcp-server#853,mongodb-js/mongodb-mcp-server,853,fix: pass in abort signals correctly for read and metadata tools COMPASS-10236 MCP-200,nirinchev,2026-01-13T12:51:10Z,2026-01-13T13:00:01Z
+mongodb-js__mongodb-mcp-server#835,mongodb-js/mongodb-mcp-server,835,fix: improve wording of count response to include info about the query MCP-352,nirinchev,2026-01-08T17:03:06Z,2026-01-12T14:20:29Z
+mongodb-js__mongodb-mcp-server#833,mongodb-js/mongodb-mcp-server,833,fix: incorrect aggregate pipelines construction MCP-351,nirinchev,2026-01-07T17:48:42Z,2026-01-08T11:38:50Z
+mongodb-js__mongodb-mcp-server#794,mongodb-js/mongodb-mcp-server,794,fix: fixes vector stage input parsing for aggregate tool MCP-336,himanshusinghs,2025-12-11T10:36:51Z,2025-12-11T10:47:14Z
+mongodb-js__mongodb-mcp-server#763,mongodb-js/mongodb-mcp-server,763,fix: fix the schema for embeddings parameter MCP-281,himanshusinghs,2025-11-26T14:20:56Z,2025-11-26T15:31:19Z
+mongodb-js__mongodb-mcp-server#758,mongodb-js/mongodb-mcp-server,758,fix: don't setup node in publish.yml,nirinchev,2025-11-25T15:55:04Z,2025-11-25T17:06:54Z
+mongodb-js__mongodb-mcp-server#751,mongodb-js/mongodb-mcp-server,751,fix: add en-us to cursor deeplink,nirinchev,2025-11-24T21:21:33Z,2025-11-24T22:29:25Z
+mongodb-js__mongodb-mcp-server#725,mongodb-js/mongodb-mcp-server,725,fix: don't extract fields from lexical search indexes,nirinchev,2025-11-11T12:56:57Z,2025-11-13T12:34:14Z
+mongodb-js__mongodb-mcp-server#721,mongodb-js/mongodb-mcp-server,721,fix: creating multiple users on atlas connect [MCP-280],fmenezes,2025-11-10T18:23:21Z,2025-11-12T11:58:57Z
+mongodb-js__mongodb-mcp-server#720,mongodb-js/mongodb-mcp-server,720,fix: operation ids in the openapi spec,fmenezes,2025-11-10T11:29:47Z,2025-11-10T14:16:22Z
+motherduckdb__mcp-server-motherduck#87,motherduckdb/mcp-server-motherduck,87,"Revert ""fix: use conn.executescript() instead of conn.execute() for multi-statement SQL""",tdoehmen,2026-04-28T10:34:37Z,2026-04-28T10:34:46Z
+motherduckdb__mcp-server-motherduck#85,motherduckdb/mcp-server-motherduck,85,fix: use conn.executescript() instead of conn.execute() for multi-statement SQL,Will-hxw,2026-04-22T19:18:16Z,2026-04-28T10:19:13Z
+motherduckdb__mcp-server-motherduck#83,motherduckdb/mcp-server-motherduck,83,fix: redact motherduck_token from switch_database_connection response,michellepellon,2026-04-20T02:44:45Z,2026-04-28T10:18:53Z
+motherduckdb__mcp-server-motherduck#44,motherduckdb/mcp-server-motherduck,44,result truncation and catch broken pipe,tdoehmen,2025-11-04T23:39:17Z,2025-11-11T02:38:58Z
+motherduckdb__mcp-server-motherduck#35,motherduckdb/mcp-server-motherduck,35,Fixing hyperlink to install MCP server,mehd-io,2025-09-08T15:09:09Z,2025-09-08T15:10:46Z
+motherduckdb__mcp-server-motherduck#28,motherduckdb/mcp-server-motherduck,28,Fix missing pytz dependency for datetime queries,giovannirecurrency,2025-07-04T20:51:01Z,2025-07-07T09:14:18Z
+motherduckdb__mcp-server-motherduck#13,motherduckdb/mcp-server-motherduck,13,Fix syntax example on cursor rule,mehd-io,2025-04-01T12:39:00Z,2025-04-01T13:39:18Z
+motherduckdb__mcp-server-motherduck#11,motherduckdb/mcp-server-motherduck,11,Fix uv installation instructions in README,huynguyenh,2025-03-21T07:53:20Z,2025-03-21T08:38:02Z
+neo4j-contrib__mcp-neo4j#260,neo4j-contrib/mcp-neo4j,260,data modeling - fix f-string bug and github actions bug,a-s-g93,2025-12-22T14:02:47Z,2025-12-22T14:05:47Z
+neo4j-contrib__mcp-neo4j#238,neo4j-contrib/mcp-neo4j,238,memory - add regex checks to Entity and Relation fields,a-s-g93,2025-12-05T15:33:52Z,2025-12-05T17:18:05Z
+neo4j-contrib__mcp-neo4j#215,neo4j-contrib/mcp-neo4j,215,Data modeling add to GitHub registry - fix,a-s-g93,2025-11-06T20:44:38Z,2025-11-06T20:45:05Z
+neo4j-contrib__mcp-neo4j#205,neo4j-contrib/mcp-neo4j,205,Fix write query detection to recognise `INSERT`.,michael-simons,2025-10-13T08:49:17Z,2025-10-30T11:30:52Z
+neo4j-contrib__mcp-neo4j#178,neo4j-contrib/mcp-neo4j,178,"fix config parsing, remote deployments use stateful http to be consis…",a-s-g93,2025-09-16T15:02:04Z,2025-09-16T15:18:41Z
+neo4j-contrib__mcp-neo4j#174,neo4j-contrib/mcp-neo4j,174,"aura-manager - update PR tests, update utils bug",a-s-g93,2025-09-16T12:36:03Z,2025-09-16T12:38:32Z
+neo4j-contrib__mcp-neo4j#162,neo4j-contrib/mcp-neo4j,162,aura-management - fix docker hub integration bug,a-s-g93,2025-09-08T19:20:39Z,2025-09-08T19:56:41Z
+neo4j-contrib__mcp-neo4j#161,neo4j-contrib/mcp-neo4j,161,data modeling - fix docker hub integration bug,a-s-g93,2025-09-08T19:19:52Z,2025-09-08T19:56:06Z
+neo4j-contrib__mcp-neo4j#160,neo4j-contrib/mcp-neo4j,160,memory - fix docker hub integration bug,a-s-g93,2025-09-08T19:19:02Z,2025-09-08T19:56:24Z
+neo4j-contrib__mcp-neo4j#159,neo4j-contrib/mcp-neo4j,159,cypher - fix docker hub integration bug,a-s-g93,2025-09-08T19:17:09Z,2025-09-08T19:54:47Z
+neo4j-contrib__mcp-neo4j#153,neo4j-contrib/mcp-neo4j,153,"data modeling - udpate dockerfile, fix transport bug",a-s-g93,2025-09-05T20:32:10Z,2025-09-05T20:34:52Z
+neo4j-contrib__mcp-neo4j#104,neo4j-contrib/mcp-neo4j,104,Cypher fix params parsing issue,a-s-g93,2025-07-18T19:34:08Z,2025-07-18T19:36:10Z
+neo4j-contrib__mcp-neo4j#82,neo4j-contrib/mcp-neo4j,82,fix dxt generation,a-s-g93,2025-07-07T14:04:40Z,2025-07-07T14:04:45Z
+neo4j-contrib__mcp-neo4j#62,neo4j-contrib/mcp-neo4j,62,Fix a typo in README.md,schubertjan,2025-06-15T19:27:59Z,2025-06-16T15:23:38Z
+neo4j-contrib__mcp-neo4j#53,neo4j-contrib/mcp-neo4j,53,fix bug in github action for mcp cypher ,a-s-g93,2025-06-06T20:01:12Z,2025-06-06T20:01:29Z
+neo4j-contrib__mcp-neo4j#50,neo4j-contrib/mcp-neo4j,50,"add transport config, fix main async issue",a-s-g93,2025-06-06T19:19:52Z,2025-06-06T19:30:17Z
+neo4j-contrib__mcp-neo4j#49,neo4j-contrib/mcp-neo4j,49,Fix uri config,a-s-g93,2025-06-06T18:51:54Z,2025-06-06T19:04:23Z
+neo4j-contrib__mcp-neo4j#23,neo4j-contrib/mcp-neo4j,23,Fix readme cypher mcp,a-s-g93,2025-04-18T16:40:00Z,2025-04-18T16:44:31Z
+neo4j-contrib__mcp-neo4j#9,neo4j-contrib/mcp-neo4j,9,fix:distinct relations in load_graph,Howe829,2025-03-31T12:43:22Z,2025-04-11T19:37:58Z
+neo4j__mcp#337,neo4j/mcp,337,pin gorelease version as latest version contains a bug which prevent release,MacondoExpress,2026-09-10T15:21:04Z,2026-09-10T15:25:05Z
+neo4j__mcp#329,neo4j/mcp,329,Sync fix 2 0 branch,MacondoExpress,2026-08-24T10:00:18Z,2026-08-24T14:20:18Z
+neo4j__mcp#315,neo4j/mcp,315,Fix docker printed version (port to 2.x),vivientran42,2026-07-17T08:56:54Z,2026-07-17T10:52:37Z
+neo4j__mcp#308,neo4j/mcp,308,Fix docker printed version,vivientran42,2026-07-09T13:05:11Z,2026-07-10T09:29:59Z
+neo4j__mcp#275,neo4j/mcp,275,fix: read-cypher and write-cypher tools/list inputSchema was empty due to incompatible jsonschema tags,MacondoExpress,2026-04-23T11:14:41Z,2026-04-23T12:23:01Z
+neo4j__mcp#240,neo4j/mcp,240,Improve smoke test output and fix checkout order,keremgocen,2026-03-24T16:53:09Z,2026-03-25T10:13:09Z
+neo4j__mcp#235,neo4j/mcp,235,Update dependencies for improved support and fixes,keremgocen,2026-03-23T11:55:17Z,2026-03-24T11:59:52Z
+neo4j__mcp#216,neo4j/mcp,216,"Fix compatibility issue where input schema requires ""properties"" to be defined.",MacondoExpress,2026-03-03T17:54:24Z,2026-03-04T09:09:38Z
+neo4j__mcp#205,neo4j/mcp,205,Proposed fix for issue 204,LackOfMorals,2026-02-27T12:25:13Z,2026-02-27T15:08:22Z
+neo4j__mcp#193,neo4j/mcp,193,Fix flag parsing for Neo4j HTTP auth header name,keremgocen,2026-02-18T15:37:36Z,2026-02-19T13:15:29Z
+neo4j__mcp#154,neo4j/mcp,154,Fix incorrect Neo4j version error  ,keremgocen,2026-01-14T17:47:06Z,2026-01-15T11:54:01Z
+neo4j__mcp#104,neo4j/mcp,104,Fix: Correctly parse floats in Cypher parameters,MacondoExpress,2025-11-20T17:38:28Z,2025-11-21T11:22:06Z
+neo4j__mcp#99,neo4j/mcp,99,Fix typo on hostname during check for isAura metric,MacondoExpress,2025-11-18T17:27:47Z,2025-11-18T18:06:18Z
+neo4j__mcp#31,neo4j/mcp,31,Fix nil returns from Neo4jRecordsToJSON when the result is empty,keremgocen,2025-09-18T09:58:51Z,2025-09-18T10:15:40Z
+neo4j__mcp#16,neo4j/mcp,16,Fix a internal configuration,MacondoExpress,2025-09-17T10:56:04Z,2025-09-17T10:56:31Z
+neondatabase__mcp-server-neon#345,neondatabase/mcp-server-neon,345,Add fixed and editable OAuth consent with browser-bound grants,andrelandgraf,2026-09-07T20:15:29Z,2026-09-15T00:30:35Z
+neondatabase__mcp-server-neon#328,neondatabase/mcp-server-neon,328,fix(inspect): stop echoing databaseName on compute-wide checks,andrelandgraf,2026-08-24T21:17:55Z,2026-08-27T17:10:59Z
+neondatabase__mcp-server-neon#327,neondatabase/mcp-server-neon,327,fix(inspect): rank stalled-queries by oldest query group first,andrelandgraf,2026-08-24T21:17:50Z,2026-08-27T17:17:57Z
+neondatabase__mcp-server-neon#321,neondatabase/mcp-server-neon,321,fix: require write access for get_connection_string,thisistonydang,2026-08-13T18:17:38Z,2026-08-13T20:51:41Z
+neondatabase__mcp-server-neon#312,neondatabase/mcp-server-neon,312,fix(analytics): send clientApplication on tool_call events,andrelandgraf,2026-07-31T05:04:19Z,2026-08-03T21:13:20Z
+neondatabase__mcp-server-neon#311,neondatabase/mcp-server-neon,311,fix: restore the mcp-server-neon user agent on SDK requests,andrelandgraf,2026-07-31T04:07:20Z,2026-07-31T11:44:51Z
+neondatabase__mcp-server-neon#302,neondatabase/mcp-server-neon,302,fix: answer HEAD requests instead of hanging until the 800s timeout,andrelandgraf,2026-07-25T03:42:11Z,2026-07-27T22:36:51Z
+neondatabase__mcp-server-neon#299,neondatabase/mcp-server-neon,299,fix: support schema-qualified table descriptions,andrelandgraf,2026-07-23T03:26:52Z,2026-07-25T01:53:48Z
+neondatabase__mcp-server-neon#298,neondatabase/mcp-server-neon,298,fix: remove broken MCP prompt support,andrelandgraf,2026-07-23T03:16:32Z,2026-07-23T22:22:36Z
+neondatabase__mcp-server-neon#297,neondatabase/mcp-server-neon,297,Fix remote MCP analytics delivery,andrelandgraf,2026-07-22T17:23:37Z,2026-07-23T15:52:03Z
+neondatabase__mcp-server-neon#290,neondatabase/mcp-server-neon,290,fix: add create_branch expiresAt schema (#283),andrelandgraf,2026-07-03T15:39:42Z,2026-07-03T17:38:31Z
+neondatabase__mcp-server-neon#259,neondatabase/mcp-server-neon,259,fix(observability): retry SSE binding Redis ops once on transient failures,vadim2404,2026-05-13T09:53:35Z,2026-05-13T10:38:57Z
+neondatabase__mcp-server-neon#256,neondatabase/mcp-server-neon,256,fix(observability): plumb clientId into internal_error SLO + retry pg connect failures on /callback,vadim2404,2026-05-12T15:12:34Z,2026-05-12T16:04:08Z
+neondatabase__mcp-server-neon#254,neondatabase/mcp-server-neon,254,fix(branches): inherit project's provisioner instead of hardcoding k8s-neonvm,Kontakter,2026-05-12T14:10:58Z,2026-05-13T09:06:55Z
+neondatabase__mcp-server-neon#253,neondatabase/mcp-server-neon,253,fix(observability): accept URLSearchParams in upstream request summarizer,vadim2404,2026-05-12T12:31:27Z,2026-05-12T13:12:14Z
+neondatabase__mcp-server-neon#250,neondatabase/mcp-server-neon,250,fix(oauth): /callback error relay + auth-flow SLO + handleOAuthError bug,vadim2404,2026-05-11T20:12:37Z,2026-05-12T09:44:56Z
+neondatabase__mcp-server-neon#249,neondatabase/mcp-server-neon,249,fix(observability): capture upstream HTTP status + denoise expected paths,vadim2404,2026-05-11T14:39:51Z,2026-05-11T19:28:06Z
+neondatabase__mcp-server-neon#248,neondatabase/mcp-server-neon,248,fix(oauth): make upstream customFetch a pure pass-through when no signal,vadim2404,2026-05-11T13:26:21Z,2026-05-11T13:49:54Z
+neondatabase__mcp-server-neon#245,neondatabase/mcp-server-neon,245,"fix(transport): bind SSE identity to OAuth client_id, not bearer token",vadim2404,2026-05-11T09:57:48Z,2026-05-11T12:31:38Z
+neondatabase__mcp-server-neon#244,neondatabase/mcp-server-neon,244,fix(neon-auth): idempotent provision_neon_auth when Neon Auth already exists (409),Shridhad,2026-05-10T14:53:34Z,2026-05-11T11:17:38Z
+neondatabase__mcp-server-neon#241,neondatabase/mcp-server-neon,241,fix(oauth): refresh-lock resilience + upstream cap + cliff telemetry,vadim2404,2026-05-08T15:21:39Z,2026-05-11T09:21:36Z
+neondatabase__mcp-server-neon#240,neondatabase/mcp-server-neon,240,fix(oauth): release refresh lock + transient marker atomically,vadim2404,2026-05-08T09:33:37Z,2026-05-08T13:05:24Z
+neondatabase__mcp-server-neon#236,neondatabase/mcp-server-neon,236,Fix/oauth network retry and lock race,vadim2404,2026-05-07T09:18:45Z,2026-05-07T09:24:03Z
+neondatabase__mcp-server-neon#235,neondatabase/mcp-server-neon,235, fix(oauth): close residual refresh-token cliff sources + add SLO instrumentation,vadim2404,2026-05-06T15:22:32Z,2026-05-07T08:07:47Z
+neondatabase__mcp-server-neon#234,neondatabase/mcp-server-neon,234,fix(oauth): cache pre-upstream refresh failures so waiters get 400 not 503,vadim2404,2026-05-06T10:45:16Z,2026-05-06T10:49:31Z
+neondatabase__mcp-server-neon#233,neondatabase/mcp-server-neon,233,fix(oauth): distributed lock for refresh-token rotation,vadim2404,2026-05-06T08:52:18Z,2026-05-06T09:44:31Z
+neondatabase__mcp-server-neon#231,neondatabase/mcp-server-neon,231,fix(oauth): cache refresh failures and capture upstream error details,vadim2404,2026-05-05T14:45:31Z,2026-05-05T14:57:14Z
+neondatabase__mcp-server-neon#229,neondatabase/mcp-server-neon,229,fix(oauth): harden refresh path against missing fields and widen race window,vadim2404,2026-05-04T13:25:00Z,2026-05-04T13:31:34Z
+neondatabase__mcp-server-neon#227,neondatabase/mcp-server-neon,227,fix(oauth): reinit Keyv store on connection errors,vadim2404,2026-04-19T23:00:15Z,2026-04-19T23:06:18Z
+neondatabase__mcp-server-neon#226,neondatabase/mcp-server-neon,226,fix(transport): bind SSE sessions to caller identity,vadim2404,2026-04-17T10:50:37Z,2026-04-28T11:06:10Z
+neondatabase__mcp-server-neon#225,neondatabase/mcp-server-neon,225,fix: add OpenAI verification token and pass tool annotations to MCP response,andrelandgraf,2026-04-16T01:34:59Z,2026-04-16T18:05:27Z
+neondatabase__mcp-server-neon#210,neondatabase/mcp-server-neon,210,fix(auth): stop embedding grant in OAuth state + migrate headers to URL query params,andrelandgraf,2026-03-17T05:27:49Z,2026-04-16T17:49:44Z
+neondatabase__mcp-server-neon#209,neondatabase/mcp-server-neon,209,fix: Race Condition on Token Refresh,vadim2404,2026-03-16T15:07:23Z,2026-04-16T17:42:01Z
+neondatabase__mcp-server-neon#202,neondatabase/mcp-server-neon,202,fix(auth): restore broken logo on OAuth authorize page,andrelandgraf,2026-03-03T18:26:51Z,2026-03-03T19:07:18Z
+neondatabase__mcp-server-neon#190,neondatabase/mcp-server-neon,190,Fix grammar and formatting in README.md,danieltprice,2026-02-06T10:43:49Z,2026-02-06T16:48:21Z
+neondatabase__mcp-server-neon#188,neondatabase/mcp-server-neon,188,fix: implement RFC 8252 loopback redirect URI matching,pffigueiredo,2026-02-04T11:05:24Z,2026-02-04T15:12:55Z
+neondatabase__mcp-server-neon#185,neondatabase/mcp-server-neon,185,fix: correct MCP tool annotations for read-only safety and idempotency,pffigueiredo,2026-01-26T15:15:39Z,2026-01-26T15:29:42Z
+neondatabase__mcp-server-neon#182,neondatabase/mcp-server-neon,182,fix: make provision_neon_auth tool idempotent and return existing details,pffigueiredo,2026-01-25T12:04:41Z,2026-01-25T12:14:40Z
+neondatabase__mcp-server-neon#180,neondatabase/mcp-server-neon,180,fix broken link,dhanushreddy291,2026-01-20T13:33:24Z,2026-01-21T02:17:18Z
+neondatabase__mcp-server-neon#176,neondatabase/mcp-server-neon,176,fix: read-only mode detection from OAuth scopes and add scope selection UI,pffigueiredo,2026-01-14T11:25:58Z,2026-01-14T16:42:55Z
+neondatabase__mcp-server-neon#175,neondatabase/mcp-server-neon,175,fix: handle project-scoped API keys in account resolution,pffigueiredo,2026-01-10T11:45:43Z,2026-01-10T18:06:44Z
+neondatabase__mcp-server-neon#172,neondatabase/mcp-server-neon,172,fix: regression on OAuth token verification in verifyToken,pffigueiredo,2026-01-06T15:08:12Z,2026-01-06T16:15:07Z
+neondatabase__mcp-server-neon#171,neondatabase/mcp-server-neon,171,fix: update mcp-handler to 1.0.6 and remove compatibility patch,pffigueiredo,2026-01-06T09:50:51Z,2026-01-06T09:52:12Z
+neondatabase__mcp-server-neon#170,neondatabase/mcp-server-neon,170,fix: bug in mcp-handler,pffigueiredo,2026-01-05T10:46:27Z,2026-01-05T11:03:48Z
+neondatabase__mcp-server-neon#165,neondatabase/mcp-server-neon,165,fix: normalize legacy URLs for mcp-handler pathname matching,pffigueiredo,2025-12-31T11:07:41Z,2025-12-31T11:09:11Z
+neondatabase__mcp-server-neon#164,neondatabase/mcp-server-neon,164,fix: move OAuth callback route to allowlisted URL,pffigueiredo,2025-12-31T10:27:09Z,2025-12-31T10:28:47Z
+neondatabase__mcp-server-neon#163,neondatabase/mcp-server-neon,163,fix: backwards compatible rewrites,pffigueiredo,2025-12-31T10:06:56Z,2025-12-31T10:09:09Z
+neondatabase__mcp-server-neon#106,neondatabase/mcp-server-neon,106,fix: capture only axios 500 errors,Shridhad,2025-08-13T16:27:48Z,2025-08-18T21:31:47Z
+neondatabase__mcp-server-neon#105,neondatabase/mcp-server-neon,105,fix: do not log and capture NeonDbError,Shridhad,2025-08-13T15:44:34Z,2025-08-13T16:10:01Z
+neondatabase__mcp-server-neon#104,neondatabase/mcp-server-neon,104,fix: replace fetch error with no API KEY error message,andrelandgraf,2025-08-02T06:14:42Z,2025-08-04T10:50:23Z
+neondatabase__mcp-server-neon#96,neondatabase/mcp-server-neon,96,fix: wait for preview deployment to complete,Shridhad,2025-07-22T21:10:52Z,2025-07-23T11:46:29Z
+neondatabase__mcp-server-neon#88,neondatabase/mcp-server-neon,88,fix: mark params as required argument in tool arguments,Shridhad,2025-07-17T11:22:00Z,2025-07-17T14:37:35Z
+neondatabase__mcp-server-neon#73,neondatabase/mcp-server-neon,73,fix: adds remaining dependencies to package.json so that npm run build actualy works,davidgomes,2025-06-15T04:05:47Z,2025-06-16T09:08:42Z
+neondatabase__mcp-server-neon#70,neondatabase/mcp-server-neon,70,fix: issue with using org api keys while trying to identify users,Shridhad,2025-06-10T10:27:14Z,2025-06-16T09:49:18Z
+neondatabase__mcp-server-neon#59,neondatabase/mcp-server-neon,59,fix: save new refresh token,Shridhad,2025-05-13T10:45:40Z,2025-05-13T10:49:54Z
+neondatabase__mcp-server-neon#58,neondatabase/mcp-server-neon,58,fix: start command to start stdio transport mode,Shridhad,2025-05-12T18:25:34Z,2025-05-16T15:44:17Z
+neondatabase__mcp-server-neon#38,neondatabase/mcp-server-neon,38,fix: do not assume 'neondb' and 'neondb_owner' exists,Shridhad,2025-04-09T11:25:46Z,2025-04-11T08:56:44Z
+neondatabase__mcp-server-neon#35,neondatabase/mcp-server-neon,35,Fix issue #33: Doesn't initialise on Windows,devin-ai-integration[bot],2025-03-25T15:53:40Z,2025-03-26T08:51:47Z
+neondatabase__mcp-server-neon#19,neondatabase/mcp-server-neon,19,fix: make sure MCP starts with smithery ,Shridhad,2025-02-24T15:04:25Z,2025-02-24T15:10:54Z
+qdrant__mcp-server-qdrant#97,qdrant/mcp-server-qdrant,97,fix: pin pydantic <2.12.0 to avoid compatibility issues,thelinuxkid,2025-12-02T05:59:19Z,2025-12-10T09:30:06Z
+qdrant__mcp-server-qdrant#83,qdrant/mcp-server-qdrant,83,fix: return None if no results where found,tbung,2025-08-12T17:30:01Z,2025-08-19T11:45:01Z
+qdrant__mcp-server-qdrant#63,qdrant/mcp-server-qdrant,63,fix: do not set default value for required fields,joein,2025-06-11T12:15:38Z,2025-06-11T14:17:18Z
+qdrant__mcp-server-qdrant#15,qdrant/mcp-server-qdrant,15,Fix compatibility with the previous versions,kacperlukawski,2025-03-05T22:43:23Z,2025-03-05T22:43:30Z
+qdrant__mcp-server-qdrant#14,qdrant/mcp-server-qdrant,14,Fix pre-commit action,kacperlukawski,2025-03-05T22:00:37Z,2025-03-05T22:04:08Z
+redis__mcp-redis#164,redis/mcp-redis,164,fix: pin mcp to <2 (2.0.0 removed mcp.server.fastmcp),cyb3ralbert,2026-07-31T06:46:22Z,2026-07-31T12:21:56Z
+redis__mcp-redis#131,redis/mcp-redis,131,fix: prevent command injection in release workflow,vchomakov,2026-04-09T10:57:32Z,2026-04-09T12:25:26Z
+redis__mcp-redis#96,redis/mcp-redis,96,fix: upgrade nltk to 3.9.3 to fix Zip Slip vulnerability,vchomakov,2026-02-25T12:03:39Z,2026-02-25T12:05:51Z
+redis__mcp-redis#94,redis/mcp-redis,94,fix: add REDIS_URL in gemini-extension as a setting,shrutimantri,2026-02-17T12:37:23Z,2026-03-13T15:28:48Z
+redis__mcp-redis#81,redis/mcp-redis,81,Fix: Simplify json_set schema to avoid anyOf operator,vchomakov,2025-10-31T17:01:54Z,2025-11-03T08:41:26Z
+redis__mcp-redis#66,redis/mcp-redis,66,fix: handle literal  string when env var is unset,vchomakov,2025-10-10T15:15:10Z,2025-10-10T15:56:13Z
+redis__mcp-redis#63,redis/mcp-redis,63,fix(cli): handle whitespace-only Redis_URL properly,vchomakov,2025-10-08T15:30:25Z,2025-10-08T15:38:48Z
+redis__mcp-redis#59,redis/mcp-redis,59,Fix MCP tool schema types to resolve Gemini CLI compatibility issues,vchomakov,2025-10-02T11:20:37Z,2025-10-02T15:34:20Z
+redis__mcp-redis#55,redis/mcp-redis,55,Fix environment variable naming inconsistencies in documentation,taylorleese,2025-09-14T22:00:46Z,2025-10-16T09:01:13Z
+redis__mcp-redis#46,redis/mcp-redis,46,Fixing CI issues and adding tests for the list of tools,tishun,2025-08-15T16:03:34Z,2025-08-18T07:53:56Z
+redis__mcp-redis#44,redis/mcp-redis,44,fixed JsonType checking,mortensi,2025-08-12T08:31:37Z,2025-08-12T08:31:45Z
+redis__mcp-redis#43,redis/mcp-redis,43,fix(server): fix issue with tool discovery,mminichino,2025-08-11T23:51:11Z,2025-08-12T06:45:35Z
+redis__mcp-redis#21,redis/mcp-redis,21,Fix `rpush()` and `lpush()`,nafraf,2025-05-21T00:56:11Z,2025-05-21T06:23:55Z
+redis__mcp-redis#18,redis/mcp-redis,18,Fix `json_set()` `value` argument type,nafraf,2025-05-17T23:46:16Z,2025-05-18T13:00:51Z
+redis__mcp-redis#17,redis/mcp-redis,17,Fix error message in get_vector_from_hash,nafraf,2025-05-15T23:32:41Z,2025-05-16T05:00:56Z
+redis__mcp-redis#13,redis/mcp-redis,13,fix: update smithery yaml to use uv,arjunkmrm,2025-05-07T00:44:48Z,2025-05-07T05:31:38Z
+redis__mcp-redis#9,redis/mcp-redis,9,Fix import name from indexDefinition to index_definition,up1,2025-05-02T11:59:02Z,2025-05-02T14:36:06Z
+redis__mcp-redis#8,redis/mcp-redis,8,Fix the Dockerfile,dgageot,2025-05-02T07:49:19Z,2025-05-02T16:26:48Z
+subnetmarco__pgmcp#4,subnetmarco/pgmcp,4,fix: closing #3,subnetmarco,2025-09-18T21:49:24Z,2025-09-18T22:01:32Z
+subnetmarco__pgmcp#1,subnetmarco/pgmcp,1,Fix/relationships,subnetmarco,2025-09-17T18:24:31Z,2025-09-17T18:49:10Z
+supabase__mcp#504,supabase/mcp,504,fix(ci): pin Node 24 in mise.toml,claude[bot],2026-10-30T10:26:01Z,2026-10-30T11:50:36Z
+supabase__mcp#497,supabase/mcp,497,fix(pg-meta): order list_tables columns by ordinal position,janakmandavgade,2026-10-28T16:14:59Z,2026-10-28T18:17:40Z
+supabase__mcp#490,supabase/mcp,490,fix(mcp-server-supabase): return a tool error when a confirmation expires,barryroodt,2026-10-27T13:46:10Z,2026-10-27T15:06:38Z
+supabase__mcp#482,supabase/mcp,482,fix(mcp): don't split an UPDATE on a semicolon inside a dollar-quoted value,barryroodt,2026-10-23T09:10:07Z,2026-10-23T12:58:31Z
+supabase__mcp#468,supabase/mcp,468,fix(mcp): stop double cost confirmation on create_project and create_branch,barryroodt,2026-10-13T10:23:34Z,2026-10-13T11:41:45Z
+supabase__mcp#467,supabase/mcp,467,fix(mcp): clarify cost and deploy tool descriptions for OpenAI scanner,barryroodt,2026-10-12T12:48:42Z,2026-10-12T14:23:11Z
+supabase__mcp#459,supabase/mcp,459,fix(mcp): don't split an UPDATE on a semicolon inside a quoted value,kevin9327,2026-10-04T21:17:24Z,2026-10-20T08:22:44Z
+supabase__mcp#438,supabase/mcp,438,fix: tolerate non-URL edge function paths in api platform,claude[bot],2026-09-18T22:42:53Z,2026-10-30T12:44:34Z
+supabase__mcp#410,supabase/mcp,410,fix: discourage host-filesystem access in raw-SQL tool descriptions,stoallan,2026-09-03T18:57:39Z,2026-09-08T09:40:09Z
+supabase__mcp#407,supabase/mcp,407,fix: ensure correct escaping in advisor,staaldraad,2026-09-03T11:04:25Z,2026-09-03T11:15:24Z
+supabase__mcp#393,supabase/mcp,393,fix(mcp-server-supabase): use POSIX path resolution for edge function filenames,PranshulSoni,2026-08-28T21:54:53Z,2026-10-27T18:36:32Z
+supabase__mcp#382,supabase/mcp,382,fix(pg-meta): order primary key columns by key position and exclude INCLUDE columns,Rjabov,2026-08-25T15:01:12Z,2026-10-26T19:07:17Z
+supabase__mcp#372,supabase/mcp,372,fix: make server instructions intent-based instead of naming tools,claude[bot],2026-08-21T19:52:30Z,2026-08-21T20:24:12Z
+supabase__mcp#371,supabase/mcp,371,Fix release registry restoration and safe tag retries,barryroodt,2026-08-20T12:35:42Z,2026-08-20T12:56:15Z
+supabase__mcp#363,supabase/mcp,363,fix: secrets context in workflow condition,staaldraad,2026-08-13T14:48:20Z,2026-08-13T15:49:38Z
+supabase__mcp#357,supabase/mcp,357,fix: select query_logs dialect via logsDialect,Rodriguespn,2026-08-10T12:40:39Z,2026-08-10T18:33:04Z
+supabase__mcp#349,supabase/mcp,349,fix: hide read-only mode,raulb,2026-07-29T18:04:39Z,2026-07-30T11:34:11Z
+supabase__mcp#329,supabase/mcp,329,fix: actionable error for wrong-org permission failures on database tools,barryroodt,2026-07-14T08:23:49Z,2026-07-15T09:41:37Z
+supabase__mcp#317,supabase/mcp,317,fix(pg-meta): pair composite FK columns positionally to avoid cartesi…,anp0429,2026-07-01T19:48:47Z,2026-07-17T21:19:02Z
+supabase__mcp#295,supabase/mcp,295,fix: update repo URLs after `supabase/mcp` transfer,mattrossman,2026-06-04T21:05:17Z,2026-06-04T21:25:43Z
+supabase__mcp#279,supabase/mcp,279,fix(test): resolve edge function test typo and invalid branch array access,hasithasandunlakshan,2026-05-09T21:50:15Z,2026-05-15T21:05:16Z
+supabase__mcp#269,supabase/mcp,269,fix: tools not loading on stdio server,gregnr,2026-05-01T19:52:11Z,2026-05-01T20:14:57Z
+supabase__mcp#268,supabase/mcp,268,fix: MCP registry publication in release workflow,mattrossman,2026-05-01T16:05:13Z,2026-05-01T20:46:07Z
+supabase__mcp#234,supabase/mcp,234,fix: sync management API types and add slug to list_organizations output,mattrossman,2026-03-10T19:11:50Z,2026-03-12T16:00:26Z
+supabase__mcp#222,supabase/mcp,222,fix: replace deprecated Anthropic model IDs in tests,mattrossman,2026-02-20T00:21:18Z,2026-02-20T14:19:05Z
+supabase__mcp#215,supabase/mcp,215,fix: move Zod .describe() schemas to module level to prevent memory leak,mattrossman,2026-02-02T22:34:15Z,2026-02-03T19:33:33Z
+supabase__mcp#213,supabase/mcp,213,fix: update JSON Schema target from `draft-07` to `draft-7`,mattrossman,2026-01-26T15:33:31Z,2026-01-26T15:49:39Z
+supabase__mcp#204,supabase/mcp,204,fix: target JSON Schema 'draft-07',mattrossman,2026-01-06T19:16:23Z,2026-01-06T19:26:01Z
+supabase__mcp#201,supabase/mcp,201,fix deploy edge function description,Rodriguespn,2025-12-31T15:59:08Z,2026-01-03T12:09:40Z
+supabase__mcp#194,supabase/mcp,194,fix(content api): use get requests,charislam,2025-12-17T21:01:48Z,2025-12-18T13:17:54Z
+supabase__mcp#168,supabase/mcp,168,fix: return success response from void operations (AI-164),Rodriguespn,2025-10-24T18:01:50Z,2025-10-28T12:48:52Z
+supabase__mcp#165,supabase/mcp,165,fix(list_table): preventing sql injection attack on list_tables,Rodriguespn,2025-10-22T15:40:35Z,2025-10-23T15:47:25Z
+supabase__mcp#131,supabase/mcp,131,fix: type checking,mattrossman,2025-08-27T19:25:30Z,2025-08-27T19:33:33Z
+supabase__mcp#129,supabase/mcp,129,fix: make list_tables more terse,mattrossman,2025-08-26T15:13:22Z,2025-08-26T21:10:54Z
+supabase__mcp#119,supabase/mcp,119,fix: add user-agent string to content api requests,charislam,2025-08-01T00:58:58Z,2025-08-04T15:41:12Z
+supabase__mcp#97,supabase/mcp,97,fix: apply migration result,gregnr,2025-06-18T01:12:55Z,2025-06-18T01:15:19Z
+supabase__mcp#88,supabase/mcp,88,fix: clean up branching todo,sweatybridge,2025-06-06T03:31:58Z,2025-06-06T04:00:53Z
+supabase__mcp#76,supabase/mcp,76,fix: edge function path parsing on windows,gregnr,2025-05-08T15:55:44Z,2025-05-08T16:42:17Z
+supabase__mcp#65,supabase/mcp,65,fix: exclude timescale internal schema from list_tables,gregnr,2025-04-25T18:11:25Z,2025-04-25T20:53:14Z
+supabase__mcp#50,supabase/mcp,50,fix: tool calls with undefined args,gregnr,2025-04-11T16:11:11Z,2025-04-11T17:05:10Z
+supabase__mcp#44,supabase/mcp,44,fix: remove system schemas from table list,gregnr,2025-04-09T05:36:25Z,2025-04-09T05:39:58Z
+supabase__mcp#43,supabase/mcp,43,fix: remove pg-meta dep by embedding required logic,gregnr,2025-04-08T22:45:51Z,2025-04-09T04:56:10Z
+supabase__mcp#35,supabase/mcp,35,fix: tool param not set to default value when omitted,gregnr,2025-04-07T19:03:50Z,2025-04-07T21:09:55Z
+supabase__mcp#34,supabase/mcp,34,fix: error when fetching edge function logs,gregnr,2025-04-07T18:43:33Z,2025-04-07T20:15:21Z

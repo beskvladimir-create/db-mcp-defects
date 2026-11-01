@@ -1,0 +1,47 @@
+{
+ "include": {
+  "agreement": 1.0,
+  "kappa": 1.0,
+  "n": 60
+ },
+ "element": {
+  "agreement": 0.975,
+  "kappa": 0.9701492537313433,
+  "n": 40,
+  "disagreements": [
+   [
+    "redis__mcp-redis#46",
+    "CONFIG",
+    "TOOL_DEF"
+   ]
+  ]
+ },
+ "symptom": {
+  "agreement": 0.925,
+  "kappa": 0.9126001456664239,
+  "n": 40,
+  "disagreements": [
+   [
+    "benborla__mcp-server-mysql#93",
+    "REJECT",
+    "UNAVAIL"
+   ],
+   [
+    "mongodb-js__mongodb-mcp-server#630",
+    "TOOLS",
+    "UNKNOWN"
+   ],
+   [
+    "redis__mcp-redis#46",
+    "UNAVAIL",
+    "TOOLS"
+   ]
+  ]
+ },
+ "client_specific": {
+  "agreement": 1.0,
+  "kappa": 1.0,
+  "n": 40,
+  "disagreements": []
+ }
+}

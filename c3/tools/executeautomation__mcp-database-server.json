@@ -1,0 +1,163 @@
+{
+ "command": [
+  "npx",
+  "-y",
+  "@executeautomation/database-server",
+  "/tmp/claude-0/-home-claude/b5086a7f-2afd-5691-bf85-0dd4644db36b/scratchpad/kaggle/c3/x.db"
+ ],
+ "server_info": {
+  "name": "executeautomation/database-server",
+  "version": "1.1.0"
+ },
+ "protocol_version": "2024-11-05",
+ "tools": [
+  {
+   "name": "read_query",
+   "description": "Execute SELECT queries to read data from the database",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  {
+   "name": "write_query",
+   "description": "Execute INSERT, UPDATE, or DELETE queries",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  {
+   "name": "create_table",
+   "description": "Create new tables in the database",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  {
+   "name": "alter_table",
+   "description": "Modify existing table schema (add columns, rename tables, etc.)",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  {
+   "name": "drop_table",
+   "description": "Remove a table from the database with safety confirmation",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "table_name": {
+      "type": "string"
+     },
+     "confirm": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "table_name",
+     "confirm"
+    ]
+   }
+  },
+  {
+   "name": "export_query",
+   "description": "Export query results to various formats (CSV, JSON)",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string"
+     },
+     "format": {
+      "type": "string",
+      "enum": [
+       "csv",
+       "json"
+      ]
+     }
+    },
+    "required": [
+     "query",
+     "format"
+    ]
+   }
+  },
+  {
+   "name": "list_tables",
+   "description": "Get a list of all tables in the database",
+   "inputSchema": {
+    "type": "object",
+    "properties": {}
+   }
+  },
+  {
+   "name": "describe_table",
+   "description": "View schema information for a specific table",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "table_name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "table_name"
+    ]
+   }
+  },
+  {
+   "name": "append_insight",
+   "description": "Add a business insight to the memo",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "insight": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "insight"
+    ]
+   }
+  },
+  {
+   "name": "list_insights",
+   "description": "List all business insights in the memo",
+   "inputSchema": {
+    "type": "object",
+    "properties": {}
+   }
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "unsafe_kind": {
+  "policy": 11,
+  "vuln": 14
+ },
+ "policy_mechanism": {
+  "statement classifier bypass": 8,
+  "wrong identity/role applied to the call": 1,
+  "enforcement fail-open": 1,
+  "over-privileged database user created by tool": 1
+ },
+ "unsafe_vuln_items": [
+  [
+   "FreePeak__db-mcp-server#63",
+   "SQL injection via identifiers (timescale)"
+  ],
+  [
+   "FreePeak__db-mcp-server#65",
+   "identifier sanitisation follow-up"
+  ],
+  [
+   "bytebase__dbhub#340",
+   "DNS rebinding host check"
+  ],
+  [
+   "googleapis__mcp-toolbox#3219",
+   "identifier injection clickhouse/bigquery"
+  ],
+  [
+   "googleapis__mcp-toolbox#3448",
+   "SSRF in http source"
+  ],
+  [
+   "googleapis__mcp-toolbox#3810",
+   "symlinks escape local path boundary"
+  ],
+  [
+   "mongodb-js__mongodb-mcp-server#465",
+   "tool responses not wrapped as untrusted data (prompt injecti"
+  ],
+  [
+   "mongodb-js__mongodb-mcp-server#550",
+   "export resource not wrapped as untrusted"
+  ],
+  [
+   "mongodb-js__mongodb-mcp-server#1317",
+   "debug resource errors not wrapped as untrusted"
+  ],
+  [
+   "mongodb-js__mongodb-mcp-server#1332",
+   "path traversal in Atlas API URL"
+  ],
+  [
+   "motherduckdb__mcp-server-motherduck#83",
+   "token exposed in tool response"
+  ],
+  [
+   "neo4j-contrib__mcp-neo4j#238",
+   "injection via entity type fields"
+  ],
+  [
+   "neondatabase__mcp-server-neon#226",
+   "SSE session not bound to caller; cross-channel injection"
+  ],
+  [
+   "supabase__mcp#165",
+   "SQL injection via schemas parameter"
+  ]
+ ],
+ "headline_all": {
+  "undetectable": 59,
+  "untrustworthy": 81,
+  "denominator": 205,
+  "undetectable_pct": 28.8,
+  "untrustworthy_pct": 39.5,
+  "undetectable_wilson": [
+   23.0,
+   35.3
+  ]
+ },
+ "headline_excl_GUARD": {
+  "undetectable": 35,
+  "untrustworthy": 55,
+  "denominator": 174,
+  "undetectable_pct": 20.1,
+  "untrustworthy_pct": 31.6,
+  "undetectable_wilson": [
+   14.8,
+   26.7
+  ]
+ },
+ "headline_excl_vuln": {
+  "undetectable": 45,
+  "untrustworthy": 67,
+  "denominator": 191,
+  "undetectable_pct": 23.6,
+  "untrustworthy_pct": 35.1,
+  "undetectable_wilson": [
+   18.1,
+   30.1
+  ]
+ },
+ "headline_excl_oversized": {
+  "undetectable": 56,
+  "untrustworthy": 78,
+  "denominator": 202,
+  "undetectable_pct": 27.7,
+  "untrustworthy_pct": 38.6,
+  "undetectable_wilson": [
+   22.0,
+   34.3
+  ]
+ },
+ "boot_excl_GUARD": [
+  11.688311688311689,
+  27.884615384615383
+ ],
+ "boot_excl_vuln": [
+  14.917127071823204,
+  31.36094674556213
+ ],
+ "dedup_units": 244,
+ "headline_dedup": {
+  "undetectable": 52,
+  "untrustworthy": 74,
+  "denominator": 194,
+  "undetectable_pct": 26.8,
+  "untrustworthy_pct": 38.1,
+  "undetectable_wilson": [
+   21.1,
+   33.4
+  ]
+ },
+ "agentic_fixlike_all": [
+  81,
+  1051
+ ],
+ "agentic_non_fixlike": [
+  128,
+  4691
+ ],
+ "cmh_chi2": 13.09,
+ "cmh_p": 0.00029678180462541364,
+ "mh_odds_ratio": 2.05,
+ "cmh_fixlike_chi2": 11.82,
+ "cmh_fixlike_p": 0.0005851687246111632,
+ "mh_fixlike_odds_ratio": 1.95
+}

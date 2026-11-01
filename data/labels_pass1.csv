@@ -1,0 +1,377 @@
+idx|id|include|exclude_reason|element|symptom|client_specific|note|unsafe_kind
+0|ClickHouse__mcp-clickhouse#4|no|refactor||||import order|
+1|ClickHouse__mcp-clickhouse#26|yes||ERROR|UNAVAIL|no|query error raised BrokenResourceError, breaking session; now structured error result|
+2|ClickHouse__mcp-clickhouse#30|yes||CONFIG|UNAVAIL|no|.env not loaded before config -> startup ValueError|
+3|ClickHouse__mcp-clickhouse#35|yes||CONFIG|REJECT|no|client readonly setting conflicts with server readonly user|
+4|ClickHouse__mcp-clickhouse#136|yes||SESSION|UNAVAIL|no|long query blocks event loop; list_tools hangs|
+5|ClickHouse__mcp-clickhouse#173|yes||CONFIG|UNAVAIL|no|OAuth providers broken; startup error|
+6|ClickHouse__mcp-clickhouse#187|no|build||||docker tag|
+7|ClickHouse__mcp-clickhouse#212|yes||ERROR|MISLEAD|no|opaque connection error; adds actionable hints|
+8|ClickHouse__mcp-clickhouse#220|yes||GUARD|UNSAFE|no|DROP/TRUNCATE guard regex bypass|policy
+9|ClickHouse__mcp-clickhouse#221|yes||SESSION|UNSAFE|no|request-scoped client overrides/roles lost across executor handoff|policy
+10|ClickHouse__mcp-clickhouse#228|yes||SESSION|OPERATOR|no|health endpoint probe cost|
+11|ClickHouse__mcp-clickhouse#229|yes||INPUT|SILENT|no|page_size=0 returned empty page|
+12|ClickHouse__mcp-clickhouse#230|yes||PROTOCOL|UNAVAIL|no|Host validation 421 behind proxy|
+13|FreePeak__db-mcp-server#4|no|unclear||||no body, 44 files|
+14|FreePeak__db-mcp-server#5|no|build||||go version downgrade|
+15|FreePeak__db-mcp-server#12|no|unclear||||no body|
+16|FreePeak__db-mcp-server#23|no|unclear||||no body|
+17|FreePeak__db-mcp-server#24|no|unclear||||no body|
+18|FreePeak__db-mcp-server#27|no|build||||docker build|
+19|FreePeak__db-mcp-server#36|yes||OUTPUT|SILENT|no|result rendered in Go format not JSON|
+20|FreePeak__db-mcp-server#45|yes||CONFIG|OPERATOR|no|log-dir flag ignored|
+21|FreePeak__db-mcp-server#50|no|build||||ci|
+22|FreePeak__db-mcp-server#53|no|test||||CI/test failures|
+23|FreePeak__db-mcp-server#56|yes||CONFIG|SILENT|no|sqlite path not unmarshalled -> empty db file created and used|
+24|FreePeak__db-mcp-server#61|yes||CONFIG|OPERATOR|no|log level|
+25|FreePeak__db-mcp-server#62|yes||CONFIG|MISLEAD|no|relative sqlite path -> 'connection not found'|
+26|FreePeak__db-mcp-server#63|yes||GUARD|UNSAFE|no|SQL injection via identifiers (timescale)|vuln
+27|FreePeak__db-mcp-server#64|yes||SESSION|OPERATOR|no|fd leak + log schema failure|
+28|FreePeak__db-mcp-server#65|yes||GUARD|UNSAFE|no|identifier sanitisation follow-up|vuln
+29|FreePeak__db-mcp-server#66|yes||EXEC|SILENT|no|regression fix of #63 (round-1 correction): identifier quoting in WHERE vs TEXT column -> column-not-found errors; ListHypertables flags silently false; not an injection|
+30|FreePeak__db-mcp-server#67|yes||OUTPUT|SILENT|no|MCP envelope Go-stringified into text|
+31|FreePeak__db-mcp-server#70|yes||SESSION|UNAVAIL|no|query_timeout not propagated; 30s driver timeout; round-1 correction: 30 s timeout -> codebook UNAVAIL (call times out)|
+32|FreePeak__db-mcp-server#72|no|build||||docker metadata|
+33|FreePeak__db-mcp-server#96|no|build||||npm tarball checksum|
+34|FreePeak__db-mcp-server#107|yes||CONFIG|UNAVAIL|no|special chars in password break DSN|
+35|RichardHan__mssql_mcp_server#21|yes||CONFIG|UNAVAIL|no|unsupported encrypt kwarg -> connect error|
+36|Snowflake-Labs__mcp#18|yes||CONFIG|UNAVAIL|no|import path breaks startup|
+37|Snowflake-Labs__mcp#35|yes||EXEC|UNKNOWN|no|wrong payload key for Cortex API; round-1 correction: no error text described -> UNKNOWN|
+38|Snowflake-Labs__mcp#44|yes||TOOL_DEF|TOOLS|no|space in service name -> invalid tool name breaks all tools|
+39|Snowflake-Labs__mcp#96|yes||CONFIG|UNAVAIL|no|private key pwd typo|
+40|Snowflake-Labs__mcp#114|yes||ERROR|UNKNOWN|no|error handling in config loader|
+41|Snowflake-Labs__mcp#115|yes||ERROR|MISLEAD|no|stale/misleading exception messages|
+42|Snowflake-Labs__mcp#121|yes||ERROR|UNKNOWN|no|stack trace in error logging, no body|
+43|Snowflake-Labs__mcp#124|no|build||||server.json|
+44|Snowflake-Labs__mcp#127|no|build||||publish workflow|
+45|Snowflake-Labs__mcp#140|yes||SESSION|UNAVAIL|no|missing request timeouts and limits|
+46|Snowflake-Labs__mcp#141|no|build||||server.json|
+47|Snowflake-Labs__mcp#142|no|build||||server.json|
+48|Snowflake-Labs__mcp#144|no|build||||server.json|
+49|Snowflake-Labs__mcp#157|yes||CONFIG|UNAVAIL|no|--verbose flag rejected at startup|
+50|Snowflake-Labs__mcp#170|yes||GUARD|MISLEAD|no|permission classifier parses without dialect -> valid SELECT rejected as Unknown|
+51|Snowflake-Labs__mcp#175|yes||OUTPUT|SILENT|no|agent API response parse -> always 'No final response found'|
+52|alexander-zuev__supabase-mcp-server#12|yes||EXEC|REJECT|no|transaction handling blocked DDL|
+53|alexander-zuev__supabase-mcp-server#15|yes||INTROSPECT|SILENT|no|get_tables omitted foreign tables and views|
+54|alexander-zuev__supabase-mcp-server#41|no|feature||||release overhaul|
+55|alexander-zuev__supabase-mcp-server#42|no|test||||tests|
+56|alexander-zuev__supabase-mcp-server#43|yes||EXEC|REJECT|no|wrong api_spec path|
+57|alexander-zuev__supabase-mcp-server#48|no|feature||||enhancements|
+58|alexander-zuev__supabase-mcp-server#49|no|build||||deploy|
+59|alexander-zuev__supabase-mcp-server#51|yes||EXEC|REJECT|no|queries failed without migrations schema|
+60|benborla__mcp-server-mysql#51|no|feature||||socket support + build|
+61|benborla__mcp-server-mysql#87|no|docs||||attribution|
+62|benborla__mcp-server-mysql#93|yes||SESSION|REJECT|no|pool keep-alive/queue; idle connection timeouts error|
+63|benborla__mcp-server-mysql#106|yes||CONFIG|UNAVAIL|no|symlink main-module detection -> server never starts|
+64|benborla__mcp-server-mysql#119|yes||GUARD|UNSAFE|no|schema permission bypass via SQL comments|policy
+65|benborla__mcp-server-mysql#132|yes||OUTPUT|SILENT|no|BIGINT precision loss|
+66|benborla__mcp-server-mysql#136|yes||PROTOCOL|UNAVAIL|no|parallel POST /mcp: shared server closed -> call never returns|
+67|benborla__mcp-server-mysql#137|no|build||||package metadata|
+68|bytebase__dbhub#17|yes||CONFIG|UNAVAIL|no|URL-encoded password not decoded -> auth fails|
+69|bytebase__dbhub#116|yes||SESSION|SILENT|no|multi-source sqlite: all source_ids query last db|
+70|bytebase__dbhub#132|yes||SESSION|SILENT|no|multi-source postgres same overwrite|
+71|bytebase__dbhub#140|yes||CONFIG|UNAVAIL|no|windows absolute sqlite path|
+72|bytebase__dbhub#141|no|unclear||||bundle path / demo route|
+73|bytebase__dbhub#145|yes||PROTOCOL|UNAVAIL|yes|stateless HTTP advertised SSE; LibreChat fails|
+74|bytebase__dbhub#155|yes||GUARD|UNKNOWN|no|read-only flag fix, no body|
+75|bytebase__dbhub#166|yes||CONFIG|UNAVAIL|no|DSN special-char password regression|
+76|bytebase__dbhub#196|yes||SESSION|OPERATOR|no|ssh tunnel listener leak|
+77|bytebase__dbhub#212|no|nonserver||||frontend placeholder|
+78|bytebase__dbhub#242|yes||CONFIG|UNAVAIL|no|mariadb ESM import crashes on Node 24|
+79|bytebase__dbhub#255|yes||CONFIG|OPERATOR|no|ssh keepalive validation warnings|
+80|bytebase__dbhub#260|yes||SESSION|OPERATOR|no|IAM refresh timer race on shutdown|
+81|bytebase__dbhub#268|yes||CONFIG|UNAVAIL|no|ssh config alias not resolved for TOML sources|
+82|bytebase__dbhub#275|yes||GUARD|UNSAFE|no|mutating CTE bypasses read-only|policy
+83|bytebase__dbhub#326|yes||INTROSPECT|REJECT|no|search_objects queried indexes on views -> throws|
+84|bytebase__dbhub#331|yes||GUARD|REJECT|no|read-only allow-list had non-existent T-SQL keywords; no query plans|
+85|bytebase__dbhub#340|yes||GUARD|UNSAFE|no|DNS rebinding host check|vuln
+86|bytebase__dbhub#348|yes||CONFIG|UNAVAIL|no|ProxyJump alias not resolved|
+87|bytebase__dbhub#350|yes||GUARD|UNSAFE|no|SQL Server read-only bypass via EXEC dynamic SQL|policy
+88|bytebase__dbhub#362|yes||GUARD|REJECT|no|TiDB rejects START TRANSACTION READ ONLY -> every call fails|
+89|bytebase__dbhub#364|yes||INTROSPECT|SILENT|no|view search enumerated all databases|
+90|bytebase__dbhub#365|yes||CONFIG|UNKNOWN|no|DSN without database silently tolerated, broken mode|
+91|bytebase__dbhub#369|yes||GUARD|UNSAFE|no|OPENQUERY/OPENROWSET bypass read-only|policy
+92|bytebase__dbhub#379|yes||GUARD|UNSAFE|no|SELECT-invocable escape functions in readonly|policy
+93|bytebase__dbhub#388|yes||EXEC|SILENT|no|max_rows not applied across UNION|
+94|bytebase__dbhub#394|yes||CONFIG|UNAVAIL|no|@ in password split wrongly|
+95|bytebase__dbhub#414|no|nonserver||||frontend workbench|
+96|bytebase__dbhub#417|yes||OUTPUT|SILENT|no|timestamp shifted by host timezone|
+97|bytebase__dbhub#419|yes||INTROSPECT|SILENT|no|foreign tables missing from search_objects|
+98|bytebase__dbhub#425|yes||SESSION|MISLEAD|no|failed IAM refresh loses source; self-contradicting 'not found'|
+99|bytebase__dbhub#429|yes||EXEC|SILENT|no|max_rows skipped for comment-prefixed/CTE queries|
+100|bytebase__dbhub#431|yes||GUARD|OPERATOR|no|raw DSN password echoed in startup error|
+101|bytebase__dbhub#438|yes||CONFIG|UNAVAIL|no|cached AWS credentials -> IAM auth fails after rotation|
+102|bytebase__dbhub#451|yes||CONFIG|UNKNOWN|no|empty sslmode silently replaced|
+103|bytebase__dbhub#461|yes||SESSION|MISLEAD|no|config reload ends pools; 'Cannot use a pool after calling end'|
+104|bytebase__dbhub#463|yes||CONFIG|UNAVAIL|no|rotated TLS certs not re-read|
+105|bytebase__dbhub#465|yes||SESSION|UNAVAIL|no|query_timeout inconsistent; stuck clients|
+106|bytebase__dbhub#475|yes||PROTOCOL|UNAVAIL|yes|subscriptions/listen held open; tools delayed ~25s behind proxies|
+107|bytebase__dbhub#480|yes||SESSION|UNAVAIL|no|process exits when server drops checked-out connection|
+108|centralmind__gateway#40|no|nonserver||||LLM prompting CLI|
+109|centralmind__gateway#77|no|docs||||example config|
+110|centralmind__gateway#79|yes||TOOL_DEF|TOOLS|no|tool descriptions dropped|
+111|centralmind__gateway#86|yes||TOOL_DEF|TOOLS|yes|inputSchema.properties omitted; n8n rejects|
+112|chroma-core__chroma-mcp#2|yes||CONFIG|UNAVAIL|no|compilation error|
+113|chroma-core__chroma-mcp#6|yes||CONFIG|UNAVAIL|no|ssl parsing|
+114|chroma-core__chroma-mcp#33|yes||TOOL_DEF|TOOLS|yes|Optional annotations -> params not recognised in Cursor|
+115|cr7258__elasticsearch-mcp-server#2|yes||INPUT|REJECT|yes|model nests query param; normalise|
+116|cr7258__elasticsearch-mcp-server#4|no|unclear||||no body|
+117|cr7258__elasticsearch-mcp-server#11|no|build||||Dockerfile|
+118|cr7258__elasticsearch-mcp-server#28|no|build||||deployment env|
+119|cr7258__elasticsearch-mcp-server#32|yes||CONFIG|UNKNOWN|no|parse arguments, no body|
+120|cr7258__elasticsearch-mcp-server#35|yes||CONFIG|UNAVAIL|no|auth header across ES versions|
+121|cr7258__elasticsearch-mcp-server#37|yes||CONFIG|UNKNOWN|no|version check, no body|
+122|cr7258__elasticsearch-mcp-server#48|yes||CONFIG|OPERATOR|no|log display|
+123|cr7258__elasticsearch-mcp-server#51|no|build||||dependency compatibility pin|
+124|cr7258__elasticsearch-mcp-server#62|yes||OUTPUT|REJECT|no|serialization errors after FastMCP upgrade (+auth)|
+125|cr7258__elasticsearch-mcp-server#71|no|build||||unused dependency|
+126|cr7258__elasticsearch-mcp-server#72|yes||GUARD|OPERATOR|no|warning for unauthenticated bind|
+127|cr7258__elasticsearch-mcp-server#79|no|build||||helm tag|
+128|crystaldba__postgres-mcp#17|no|unclear||||hotfix no body|
+129|crystaldba__postgres-mcp#20|yes||EXEC|UNKNOWN|no|database_health tool, no body|
+130|crystaldba__postgres-mcp#26|yes||GUARD|UNKNOWN|no|unrestricted mode, no body|
+131|crystaldba__postgres-mcp#29|yes||EXEC|UNKNOWN|no|explain plan on cursor|
+132|crystaldba__postgres-mcp#31|yes||EXEC|UNKNOWN|no|explain with hypothetical index on functional columns|
+133|crystaldba__postgres-mcp#40|no|docs||||readme|
+134|crystaldba__postgres-mcp#67|yes||CONFIG|UNAVAIL|no|windows event loop|
+135|crystaldba__postgres-mcp#110|yes||SESSION|OPERATOR|no|signals not forwarded; containers hang|
+136|crystaldba__postgres-mcp#128|yes||EXEC|REJECT|no|double-quoted sequence identifiers -> health check fails|
+137|crystaldba__postgres-mcp#131|no|docs||||links|
+138|crystaldba__postgres-mcp#132|yes||EXEC|REJECT|no|PG12 column names in top queries|
+139|crystaldba__postgres-mcp#201|no|build||||dependency pin|
+140|designcomputer__mysql_mcp_server#37|yes||EXEC|MISLEAD|no|SHOW/DESCRIBE -> 'Unread result found'|
+141|designcomputer__mysql_mcp_server#38|yes||INTROSPECT|UNKNOWN|no|DESCRIBE/SHOW COLUMNS handling|
+142|designcomputer__mysql_mcp_server#45|no|docs||||readme json|
+143|designcomputer__mysql_mcp_server#72|no|test||||pytest path|
+144|elastic__mcp-server-elasticsearch#97|yes||PROTOCOL|UNAVAIL|no|OTel output polluted stdio|
+145|elastic__mcp-server-elasticsearch#106|yes||CONFIG|UNAVAIL|no|username/password skipped when no api key|
+146|elastic__mcp-server-elasticsearch#167|no|docs||||typo|
+147|elastic__mcp-server-elasticsearch#207|yes||CONFIG|UNAVAIL|no|username/login mixup|
+148|elastic__mcp-server-elasticsearch#233|no|build||||workflow|
+149|googleapis__mcp-toolbox#47|yes||CONFIG|UNAVAIL|no|source type validation rejects all sources|
+150|googleapis__mcp-toolbox#186|no|docs||||docs|
+151|googleapis__mcp-toolbox#234|yes||GUARD|REJECT|no|invalid extra token -> 401 for tools not needing it|
+152|googleapis__mcp-toolbox#248|no|refactor||||tool kind rename|
+153|googleapis__mcp-toolbox#323|no|build||||dependency bump for user agent|
+154|googleapis__mcp-toolbox#561|no|docs||||spelling|
+155|googleapis__mcp-toolbox#571|yes||TOOL_DEF|TOOLS|no|required null in schema for parameterless tool|
+156|googleapis__mcp-toolbox#586|yes||EXEC|REJECT|no|BigQuery query location not set|
+157|googleapis__mcp-toolbox#774|yes||INPUT|REJECT|no|non-string default values fail parse|
+158|googleapis__mcp-toolbox#807|no|test||||flaky test fsnotify|
+159|googleapis__mcp-toolbox#810|no|test||||log consistency for tests|
+160|googleapis__mcp-toolbox#1229|yes||INPUT|UNKNOWN|no|firestore path validation|
+161|googleapis__mcp-toolbox#1629|yes||INTROSPECT|REJECT|no|mysql-list-tables Unknown column error|
+162|googleapis__mcp-toolbox#1924|no|feature||||revert|
+163|googleapis__mcp-toolbox#2049|yes||TOOL_DEF|TOOLS|no|missing default tool annotations|
+164|googleapis__mcp-toolbox#2155|no|feature||||ssl options|
+165|googleapis__mcp-toolbox#2159|no|build||||fix delivered only by SDK upgrade (expiring Looker creds)|
+166|googleapis__mcp-toolbox#2281|yes||CONFIG|UNKNOWN|no|embedding models only initialised on hot reload|
+167|googleapis__mcp-toolbox#2627|yes||EXEC|MISLEAD|no|signature mismatch -> every call 500 incompatible source type|
+168|googleapis__mcp-toolbox#2742|no|test||||flaky test|
+169|googleapis__mcp-toolbox#2887|no|feature||||CI + enhancements|
+170|googleapis__mcp-toolbox#2914|no|nonserver||||skill generator|
+171|googleapis__mcp-toolbox#3044|yes||CONFIG|REJECT|no|OAuth token sent in wrong JSON parameter|
+172|googleapis__mcp-toolbox#3056|yes||ERROR|MISLEAD|no|invalid SQL surfaced as JSON-RPC 500 instead of tool error|
+173|googleapis__mcp-toolbox#3147|yes||TOOL_DEF|TOOLS|no|tools/list returned null when empty|
+174|googleapis__mcp-toolbox#3219|yes||GUARD|UNSAFE|no|identifier injection clickhouse/bigquery|vuln
+175|googleapis__mcp-toolbox#3233|yes||ERROR|MISLEAD|no|Looker 401 not propagated; client cannot refresh token|
+176|googleapis__mcp-toolbox#3431|no|build||||ci|
+177|googleapis__mcp-toolbox#3448|yes||GUARD|UNSAFE|no|SSRF in http source|vuln
+178|googleapis__mcp-toolbox#3512|yes||ERROR|MISLEAD|no|type error reports nil instead of offending value|
+179|googleapis__mcp-toolbox#3576|yes||TOOL_DEF|TOOLS|no|prompts not scoped to connected toolset|
+180|googleapis__mcp-toolbox#3705|yes||CONFIG|UNKNOWN|no|tool validation missing at startup|
+181|googleapis__mcp-toolbox#3788|yes||TOOL_DEF|TOOLS|no|contradictory tool description guidance (description defect)|
+182|googleapis__mcp-toolbox#3810|yes||GUARD|UNSAFE|no|symlinks escape local path boundary|vuln
+183|googleapis__mcp-toolbox#3913|yes||TOOL_DEF|TOOLS|no|required params advertised as optional|
+184|googleapis__mcp-toolbox#3916|no|test||||test prompt|
+185|googleapis__mcp-toolbox#4023|yes||TOOL_DEF|UNKNOWN|no|resource template scheme not normalised|
+186|googleapis__mcp-toolbox#4039|yes||CONFIG|UNKNOWN|no|env placeholders silently unsubstituted near YAML comments|
+187|googleapis__mcp-toolbox#4164|yes||GUARD|MISLEAD|no|allowlist check after dry-run -> BQ 404/403 instead of restriction error|
+188|googleapis__mcp-toolbox#4359|yes||GUARD|UNSAFE|no|writeMode protected fail-open for DML; linked issue #4332 filed by paper author|policy
+189|mongodb-js__mongodb-mcp-server#67|no|build||||version|
+190|mongodb-js__mongodb-mcp-server#70|no|build||||release|
+191|mongodb-js__mongodb-mcp-server#107|yes||ERROR|MISLEAD|no|errors returned without isError|
+192|mongodb-js__mongodb-mcp-server#167|no|docs||||issue template|
+193|mongodb-js__mongodb-mcp-server#176|yes||ERROR|MISLEAD|no|uninformative Atlas API error messages|
+194|mongodb-js__mongodb-mcp-server#218|yes||INPUT|REJECT|no|EJSON $oid not parsed -> unknown operator|
+195|mongodb-js__mongodb-mcp-server#222|yes||CONFIG|UNKNOWN|no|server starts with invalid credentials|
+196|mongodb-js__mongodb-mcp-server#259|no|build||||docker security warnings|
+197|mongodb-js__mongodb-mcp-server#296|yes||GUARD|OPERATOR|no|tool args logged|
+198|mongodb-js__mongodb-mcp-server#322|no|test||||test|
+199|mongodb-js__mongodb-mcp-server#331|no|test||||tests|
+200|mongodb-js__mongodb-mcp-server#338|no|docs||||readme links|
+201|mongodb-js__mongodb-mcp-server#465|yes||GUARD|UNSAFE|no|tool responses not wrapped as untrusted data (prompt injection)|vuln
+202|mongodb-js__mongodb-mcp-server#466|no|test||||accuracy test expectations|
+203|mongodb-js__mongodb-mcp-server#471|yes||GUARD|UNSAFE|no|connectCluster created over-privileged DB user|policy
+204|mongodb-js__mongodb-mcp-server#514|yes||CONFIG|UNAVAIL|no|multi-host connection string parsed as array|
+205|mongodb-js__mongodb-mcp-server#525|yes||GUARD|UNSAFE|no|$out/$merge allowed in readOnly|policy
+206|mongodb-js__mongodb-mcp-server#550|yes||GUARD|UNSAFE|no|export resource not wrapped as untrusted|vuln
+207|mongodb-js__mongodb-mcp-server#580|yes||INTROSPECT|SILENT|no|schema sampling biased (find vs $sample)|
+208|mongodb-js__mongodb-mcp-server#630|yes||TOOL_DEF|TOOLS|no|wrong tool category|
+209|mongodb-js__mongodb-mcp-server#721|yes||EXEC|SILENT|no|atlas connect created multiple users|
+210|mongodb-js__mongodb-mcp-server#725|yes||EXEC|REJECT|no|aggregate throws with lexical search index|
+211|mongodb-js__mongodb-mcp-server#794|yes||INPUT|REJECT|no|vector search stage parsed by catch-all schema|
+212|mongodb-js__mongodb-mcp-server#891|yes||GUARD|OPERATOR|no|console logging leaks connection string|
+213|mongodb-js__mongodb-mcp-server#893|yes||CONFIG|UNAVAIL|no|insecure apiBaseUrl hard error at startup|
+214|mongodb-js__mongodb-mcp-server#950|yes||SESSION|OPERATOR|no|telemetry duplicate events race|
+215|mongodb-js__mongodb-mcp-server#1078|yes||CONFIG|UNAVAIL|no|node-only fetch in non-node runtime|
+216|mongodb-js__mongodb-mcp-server#1093|no|build||||workflow|
+217|mongodb-js__mongodb-mcp-server#1121|yes||CONFIG|UNAVAIL|no|CLI OIDC options ignored in connect tool; round-1 correction (rule 5): OIDC auth failure in connect tool|
+218|mongodb-js__mongodb-mcp-server#1291|yes||EXEC|MISLEAD|no|create-deployment returned before ready; later 'missing binding port'|
+219|mongodb-js__mongodb-mcp-server#1304|no|build||||release notes|
+220|mongodb-js__mongodb-mcp-server#1317|yes||GUARD|UNSAFE|no|debug resource errors not wrapped as untrusted|vuln
+221|mongodb-js__mongodb-mcp-server#1332|yes||GUARD|UNSAFE|no|path traversal in Atlas API URL|vuln
+222|mongodb-js__mongodb-mcp-server#1381|no|feature||||tool removal|
+223|mongodb-js__mongodb-mcp-server#1541|no|build||||runtime deps declaration|
+224|mongodb-js__mongodb-mcp-server#1563|yes||PROTOCOL|UNAVAIL|yes|wrong error code blocks protocol-version fallback for newer clients|
+225|mongodb-js__mongodb-mcp-server#1584|no|build||||release notes|
+226|mongodb-js__mongodb-mcp-server#1612|no|test||||e2e harness|
+227|mongodb-js__mongodb-mcp-server#1638|yes||EXEC|REJECT|no|explain maxTimeMS conflicts with timeoutMS|
+228|mongodb-js__mongodb-mcp-server#1639|yes||SESSION|UNAVAIL|no|unbounded wait for sample data load|
+229|motherduckdb__mcp-server-motherduck#11|no|docs||||readme|
+230|motherduckdb__mcp-server-motherduck#13|no|docs||||example|
+231|motherduckdb__mcp-server-motherduck#28|no|build||||missing dependency (datetime queries failed)|
+232|motherduckdb__mcp-server-motherduck#35|no|docs||||link|
+233|motherduckdb__mcp-server-motherduck#44|yes||OUTPUT|UNKNOWN|no|result truncation + broken pipe, no body|
+234|motherduckdb__mcp-server-motherduck#83|yes||GUARD|UNSAFE|no|token exposed in tool response|vuln
+235|motherduckdb__mcp-server-motherduck#85|yes||CONFIG|SILENT|no|init-sql runs only first statement|
+236|motherduckdb__mcp-server-motherduck#87|yes||CONFIG|UNAVAIL|no|revert of #85 which called non-existent executescript()|
+237|neo4j-contrib__mcp-neo4j#9|yes||EXEC|SILENT|no|duplicate relations in load_graph|
+238|neo4j-contrib__mcp-neo4j#23|no|docs||||readme|
+239|neo4j-contrib__mcp-neo4j#49|yes||CONFIG|UNAVAIL|no|NEO4J_URL vs NEO4J_URI|
+240|neo4j-contrib__mcp-neo4j#50|yes||CONFIG|UNKNOWN|no|main async issue (+transport feature)|
+241|neo4j-contrib__mcp-neo4j#53|no|build||||github action|
+242|neo4j-contrib__mcp-neo4j#62|no|docs||||typo|
+243|neo4j-contrib__mcp-neo4j#82|no|build||||dxt generation|
+244|neo4j-contrib__mcp-neo4j#104|yes||INPUT|UNKNOWN|no|params parsing, no body|
+245|neo4j-contrib__mcp-neo4j#153|yes||PROTOCOL|UNKNOWN|no|transport bug, no body|
+246|neo4j-contrib__mcp-neo4j#159|no|build||||docker hub|
+247|neo4j-contrib__mcp-neo4j#160|no|build||||docker hub|
+248|neo4j-contrib__mcp-neo4j#161|no|build||||docker hub|
+249|neo4j-contrib__mcp-neo4j#162|no|build||||docker hub|
+250|neo4j-contrib__mcp-neo4j#174|yes||CONFIG|UNAVAIL|no|f-string syntax on older Python|
+251|neo4j-contrib__mcp-neo4j#178|yes||CONFIG|UNKNOWN|no|config parsing|
+252|neo4j-contrib__mcp-neo4j#205|yes||GUARD|UNSAFE|no|write detection misses INSERT|policy
+253|neo4j-contrib__mcp-neo4j#215|no|build||||github action|
+254|neo4j-contrib__mcp-neo4j#238|yes||GUARD|UNSAFE|no|injection via entity type fields|vuln
+255|neo4j-contrib__mcp-neo4j#260|yes||CONFIG|UNAVAIL|no|f-string on Python<3.12|
+256|neo4j__mcp#16|no|build||||changelog only|
+257|neo4j__mcp#31|yes||OUTPUT|SILENT|no|empty result returned as null|
+258|neo4j__mcp#99|yes||CONFIG|OPERATOR|no|analytics hostname typo|
+259|neo4j__mcp#104|yes||INPUT|SILENT|no|1.0 parsed as integer|
+260|neo4j__mcp#154|no|unclear||||no files|
+261|neo4j__mcp#193|yes||CONFIG|UNAVAIL|no|auth header flag name|
+262|neo4j__mcp#205|no|feature||||unauthenticated tools/list option|
+263|neo4j__mcp#216|yes||TOOL_DEF|TOOLS|yes|inputSchema without properties rejected by some clients|
+264|neo4j__mcp#235|no|build||||dependency update|
+265|neo4j__mcp#240|no|build||||workflow|
+266|neo4j__mcp#275|yes||TOOL_DEF|TOOLS|no|empty inputSchema advertised; every call fails|
+267|neo4j__mcp#308|no|build||||docker version|
+268|neo4j__mcp#315|no|build||||docker version|
+269|neo4j__mcp#329|no|refactor||||branch sync|
+270|neo4j__mcp#337|no|build||||goreleaser pin|
+271|neondatabase__mcp-server-neon#19|no|build||||smithery|
+272|neondatabase__mcp-server-neon#38|yes||INPUT|REJECT|no|assumed default db/role names when args omitted|
+273|neondatabase__mcp-server-neon#58|yes||CONFIG|UNAVAIL|no|stdio start command|
+274|neondatabase__mcp-server-neon#59|yes||CONFIG|UNAVAIL|no|new refresh token not saved|
+275|neondatabase__mcp-server-neon#70|yes||CONFIG|REJECT|no|org API key breaks user lookup in list/create project|
+276|neondatabase__mcp-server-neon#73|no|build||||build deps|
+277|neondatabase__mcp-server-neon#88|yes||TOOL_DEF|TOOLS|yes|required params declared optional; clients send {}|
+278|neondatabase__mcp-server-neon#104|yes||ERROR|MISLEAD|no|fetch error instead of missing API key message|
+279|neondatabase__mcp-server-neon#106|yes||ERROR|OPERATOR|no|error capture filter|
+280|neondatabase__mcp-server-neon#172|yes||CONFIG|UNAVAIL|no|OAuth tokens verified as API keys|
+281|neondatabase__mcp-server-neon#175|yes||CONFIG|REJECT|no|project-scoped API keys fail account endpoints|
+282|neondatabase__mcp-server-neon#180|no|docs||||link|
+283|neondatabase__mcp-server-neon#182|no|feature||||idempotent provisioning improvement|
+284|neondatabase__mcp-server-neon#185|yes||TOOL_DEF|TOOLS|no|incorrect readOnly/idempotent annotations|
+285|neondatabase__mcp-server-neon#190|no|docs||||readme|
+286|neondatabase__mcp-server-neon#202|no|nonserver||||OAuth page logo|
+287|neondatabase__mcp-server-neon#209|yes||SESSION|UNAVAIL|no|token refresh race|
+288|neondatabase__mcp-server-neon#210|yes||CONFIG|UNAVAIL|no|grant context sent upstream in OAuth state|
+289|neondatabase__mcp-server-neon#225|yes||TOOL_DEF|TOOLS|no|tool annotations not passed in response|
+290|neondatabase__mcp-server-neon#226|yes||GUARD|UNSAFE|no|SSE session not bound to caller; cross-channel injection|vuln
+291|neondatabase__mcp-server-neon#227|yes||SESSION|UNAVAIL|no|poisoned pool cached for container lifetime|
+292|neondatabase__mcp-server-neon#229|yes||CONFIG|UNAVAIL|no|tokens minted already expired|
+293|neondatabase__mcp-server-neon#235|yes||CONFIG|UNAVAIL|no|refresh-token cliffs|
+294|neondatabase__mcp-server-neon#236|yes||SESSION|UNAVAIL|no|refresh lock race -> 503|
+295|neondatabase__mcp-server-neon#240|yes||SESSION|UNAVAIL|no|non-atomic lock release|
+296|neondatabase__mcp-server-neon#245|yes||GUARD|UNAVAIL|yes|session binding on bearer token forces Cursor re-auth|
+297|neondatabase__mcp-server-neon#248|yes||CONFIG|UNKNOWN|no|customFetch wrapper intercepted unrelated paths|
+298|neondatabase__mcp-server-neon#250|yes||CONFIG|UNAVAIL|no|upstream OAuth errors not relayed; round-1 correction (rule 5): OAuth callback failure; agent gets no tool response|
+299|neondatabase__mcp-server-neon#253|yes||ERROR|OPERATOR|no|observability summarizer|
+300|neondatabase__mcp-server-neon#256|yes||SESSION|UNAVAIL|no|no retry on pg scale-from-zero at callback|
+301|neondatabase__mcp-server-neon#259|yes||SESSION|UNAVAIL|no|redis timeout fail-closed 503|
+302|neondatabase__mcp-server-neon#290|yes||TOOL_DEF|SILENT|no|schema incomplete; undeclared params silently dropped|
+303|neondatabase__mcp-server-neon#297|yes||CONFIG|OPERATOR|no|analytics events dropped|
+304|neondatabase__mcp-server-neon#298|yes||TOOL_DEF|TOOLS|no|broken prompt removed|
+305|neondatabase__mcp-server-neon#299|yes||INTROSPECT|REJECT|no|describe_table hard-coded public schema|
+306|neondatabase__mcp-server-neon#311|yes||CONFIG|OPERATOR|no|user agent attribution|
+307|neondatabase__mcp-server-neon#312|yes||CONFIG|OPERATOR|no|analytics field|
+308|neondatabase__mcp-server-neon#327|yes||EXEC|SILENT|no|stalled queries ranked by pid|
+309|neondatabase__mcp-server-neon#328|yes||OUTPUT|SILENT|no|compute-wide checks labelled with a database name|
+310|neondatabase__mcp-server-neon#345|no|feature||||OAuth consent feature (filter matched 'fixed')|
+311|qdrant__mcp-server-qdrant#14|no|build||||pre-commit|
+312|qdrant__mcp-server-qdrant#15|yes||CONFIG|UNAVAIL|no|backward-compatible CLI parameter removed|
+313|qdrant__mcp-server-qdrant#63|yes||TOOL_DEF|TOOLS|no|defaults on required fields hide descriptions|
+314|qdrant__mcp-server-qdrant#83|yes||OUTPUT|SILENT|no|no-results returned as legitimate-looking text|
+315|qdrant__mcp-server-qdrant#97|no|build||||dependency pin|
+316|redis__mcp-redis#8|no|build||||Dockerfile|
+317|redis__mcp-redis#9|yes||CONFIG|UNAVAIL|no|import name breaks startup|
+318|redis__mcp-redis#13|no|build||||smithery|
+319|redis__mcp-redis#17|yes||ERROR|MISLEAD|no|error message used undefined variable|
+320|redis__mcp-redis#18|yes||INPUT|REJECT|no|json_set rejects numeric values|
+321|redis__mcp-redis#21|yes||INPUT|REJECT|no|rpush/lpush reject numeric values|
+322|redis__mcp-redis#43|yes||TOOL_DEF|TOOLS|no|tool discovery issue|
+323|redis__mcp-redis#44|yes||INPUT|UNKNOWN|no|JsonType checking, no body|
+324|redis__mcp-redis#46|yes||CONFIG|UNAVAIL|no|Any type breaks Python 3.10 (+CI)|
+325|redis__mcp-redis#55|no|docs||||env var docs|
+326|redis__mcp-redis#59|yes||TOOL_DEF|TOOLS|yes|Gemini CLI skips tools with missing schema types|
+327|redis__mcp-redis#63|yes||CONFIG|UNAVAIL|no|whitespace-only URL|
+328|redis__mcp-redis#66|yes||CONFIG|UNAVAIL|yes|gemini-cli passes literal ${REDIS_URL}|
+329|redis__mcp-redis#81|yes||TOOL_DEF|TOOLS|yes|nested anyOf schema breaks LLM clients|
+330|redis__mcp-redis#94|no|feature||||gemini extension setting|
+331|redis__mcp-redis#96|no|build||||dependency CVE bump|
+332|redis__mcp-redis#131|no|build||||workflow injection|
+333|redis__mcp-redis#164|no|build||||dependency pin|
+334|subnetmarco__pgmcp#1|no|unclear||||no body|
+335|subnetmarco__pgmcp#4|no|unclear||||no body|
+336|supabase__mcp#34|yes||EXEC|REJECT|no|wildcard in logs query rejected|
+337|supabase__mcp#35|yes||INPUT|SILENT|no|declared default not applied when param omitted|
+338|supabase__mcp#43|no|build||||remove dependency for Windows build|
+339|supabase__mcp#44|yes||INTROSPECT|SILENT|no|system schemas included; output floods context|
+340|supabase__mcp#50|yes||INPUT|REJECT|yes|undefined args from Windsurf rejected|
+341|supabase__mcp#65|yes||INTROSPECT|SILENT|no|timescale internal tables bloat list_tables (MBs)|
+342|supabase__mcp#76|yes||EXEC|MISLEAD|no|windows path parsing -> 'File URL path must be absolute'|
+343|supabase__mcp#88|no|refactor||||todo cleanup|
+344|supabase__mcp#97|yes||OUTPUT|UNKNOWN|no|apply_migration returned no result|
+345|supabase__mcp#119|yes||CONFIG|OPERATOR|no|user-agent missing|
+346|supabase__mcp#129|yes||OUTPUT|SILENT|no|oversized list_tables output fills context / exceeds payload limit|
+347|supabase__mcp#131|no|build||||typecheck script|
+348|supabase__mcp#165|yes||GUARD|UNSAFE|no|SQL injection via schemas parameter|vuln
+349|supabase__mcp#168|yes||OUTPUT|MISLEAD|no|void operations return nothing; LLM assumes failure and retries|
+350|supabase__mcp#194|no|feature||||GET caching|
+351|supabase__mcp#201|yes||TOOL_DEF|TOOLS|no|description misleads agent to create deno.json (description defect)|
+352|supabase__mcp#204|yes||TOOL_DEF|TOOLS|yes|JSON Schema draft 2020-12 breaks draft-07 clients|
+353|supabase__mcp#213|yes||TOOL_DEF|OPERATOR|no|invalid target warnings flood|
+354|supabase__mcp#215|yes||SESSION|OPERATOR|no|zod registry memory leak|
+355|supabase__mcp#222|no|test||||test model ids|
+356|supabase__mcp#234|yes||EXEC|REJECT|no|management API spec drift: endpoint paths|
+357|supabase__mcp#269|yes||TOOL_DEF|TOOLS|no|tools not loading on stdio (zod v4)|
+358|supabase__mcp#279|no|test||||test|
+359|supabase__mcp#295|no|build||||repo URLs|
+360|supabase__mcp#317|yes||INTROSPECT|SILENT|no|composite FK cartesian product|
+361|supabase__mcp#329|yes||ERROR|MISLEAD|no|bare permission error hides wrong-org cause|
+362|supabase__mcp#349|yes||TOOL_DEF|TOOLS|no|read-only mode still lists mutating tools|
+363|supabase__mcp#363|no|build||||workflow|
+364|supabase__mcp#371|no|build||||release workflow|
+365|supabase__mcp#372|yes||TOOL_DEF|TOOLS|no|server instructions name hidden/wrong tools (description defect)|
+366|supabase__mcp#382|yes||INTROSPECT|SILENT|no|PK column order and INCLUDE columns|
+367|supabase__mcp#393|yes||OUTPUT|SILENT|no|edge function file names wrong on Windows|
+368|supabase__mcp#407|yes||OUTPUT|SILENT|no|unescaped table name in suggested SQL|
+369|supabase__mcp#410|yes||TOOL_DEF|TOOLS|no|descriptions did not discourage host filesystem access via SQL; round-1 correction (rule 3): description-only change; description defect|
+370|supabase__mcp#438|yes||EXEC|MISLEAD|no|non-URL paths -> TypeError Invalid URL breaks listing|
+371|supabase__mcp#467|yes||TOOL_DEF|TOOLS|yes|descriptions/schema mismatch in OpenAI connector|
+372|supabase__mcp#468|yes||TOOL_DEF|UNKNOWN|yes|double cost confirmation|
+373|supabase__mcp#482|yes||GUARD|UNAVAIL|yes|destructive-SQL check false positive; confirmation hangs clients without forms|
+374|supabase__mcp#490|yes||ERROR|MISLEAD|no|expired confirmation -> generic JSON-RPC -32602|
+375|supabase__mcp#497|yes||INTROSPECT|SILENT|no|columns out of ordinal order|

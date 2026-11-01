@@ -1,0 +1,14 @@
+{
+ "params": 507,
+ "union_params": 83,
+ "nullable_union_params": 67,
+ "tools_with_nullable_union": 43,
+ "server_configs_with_nullable_union": [
+  "ClickHouse__mcp-clickhouse",
+  "chroma-core__chroma-mcp",
+  "cr7258__elasticsearch-mcp-server",
+  "motherduckdb__mcp-server-motherduck",
+  "neo4j-contrib__mcp-neo4j__aura-manager",
+  "redis__mcp-redis"
+ ]
+}

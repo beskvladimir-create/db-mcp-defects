@@ -1,0 +1,1001 @@
+{
+ "n_repos_queried": 26,
+ "n_repos_with_frame": 23,
+ "merged_prs_total": 5742,
+ "fixlike_total": 1051,
+ "auto_excluded_total": 230,
+ "frame_total": 821,
+ "sampled_total": 376,
+ "included_total": 256,
+ "included_repos": 22,
+ "exclusion_reasons": {
+  "refactor": 4,
+  "build": 58,
+  "unclear": 10,
+  "test": 13,
+  "feature": 12,
+  "docs": 18,
+  "nonserver": 5
+ },
+ "element": {
+  "CONFIG": {
+   "n": 72,
+   "pct": 28.125,
+   "ci95": [
+    22.972003729805778,
+    33.92481340801974
+   ],
+   "weighted_pct": 24.548057991766587
+  },
+  "GUARD": {
+   "n": 37,
+   "pct": 14.453125,
+   "ci95": [
+    10.671007484001693,
+    19.286320364964755
+   ],
+   "weighted_pct": 19.76463218185072
+  },
+  "TOOL_DEF": {
+   "n": 32,
+   "pct": 12.5,
+   "ci95": [
+    8.995128533891188,
+    17.113700845238252
+   ],
+   "weighted_pct": 15.025953105423287
+  },
+  "SESSION": {
+   "n": 25,
+   "pct": 9.765625,
+   "ci95": [
+    6.702355783594618,
+    14.018575737763012
+   ],
+   "weighted_pct": 7.392160372292824
+  },
+  "EXEC": {
+   "n": 25,
+   "pct": 9.765625,
+   "ci95": [
+    6.702355783594618,
+    14.018575737763012
+   ],
+   "weighted_pct": 9.544478253087524
+  },
+  "ERROR": {
+   "n": 16,
+   "pct": 6.25,
+   "ci95": [
+    3.8833304638490773,
+    9.910303811801937
+   ],
+   "weighted_pct": 7.781456953642385
+  },
+  "OUTPUT": {
+   "n": 15,
+   "pct": 5.859375,
+   "ci95": [
+    3.582628728223662,
+    9.44130585345995
+   ],
+   "weighted_pct": 3.0159298371218894
+  },
+  "INPUT": {
+   "n": 14,
+   "pct": 5.46875,
+   "ci95": [
+    3.285198767832931,
+    8.969036119883278
+   ],
+   "weighted_pct": 6.090030427778773
+  },
+  "INTROSPECT": {
+   "n": 13,
+   "pct": 5.078125,
+   "ci95": [
+    2.991352481075597,
+    8.493182712673212
+   ],
+   "weighted_pct": 4.702881689636658
+  },
+  "PROTOCOL": {
+   "n": 7,
+   "pct": 2.734375,
+   "ci95": [
+    1.330698669820071,
+    5.535638360124326
+   ],
+   "weighted_pct": 2.1344191873993195
+  }
+ },
+ "symptom": {
+  "UNAVAIL": {
+   "n": 66,
+   "pct": 25.78125,
+   "ci95": [
+    20.80850910625006,
+    31.47010986777104
+   ],
+   "weighted_pct": 19.630391981385337
+  },
+  "SILENT": {
+   "n": 34,
+   "pct": 13.28125,
+   "ci95": [
+    9.662098110089374,
+    17.986130656974872
+   ],
+   "weighted_pct": 8.734562376946485
+  },
+  "REJECT": {
+   "n": 30,
+   "pct": 11.71875,
+   "ci95": [
+    8.33307632374911,
+    16.236353667445528
+   ],
+   "weighted_pct": 14.323429389654544
+  },
+  "UNKNOWN": {
+   "n": 28,
+   "pct": 10.9375,
+   "ci95": [
+    7.67635515022126,
+    15.353675453038573
+   ],
+   "weighted_pct": 11.987649901557184
+  },
+  "TOOLS": {
+   "n": 28,
+   "pct": 10.9375,
+   "ci95": [
+    7.67635515022126,
+    15.353675453038573
+   ],
+   "weighted_pct": 13.025774118489343
+  },
+  "UNSAFE": {
+   "n": 25,
+   "pct": 9.765625,
+   "ci95": [
+    6.702355783594618,
+    14.018575737763012
+   ],
+   "weighted_pct": 13.424020046536597
+  },
+  "OPERATOR": {
+   "n": 23,
+   "pct": 8.984375,
+   "ci95": [
+    6.061292900002706,
+    13.12023923342012
+   ],
+   "weighted_pct": 6.9267943440128885
+  },
+  "MISLEAD": {
+   "n": 22,
+   "pct": 8.59375,
+   "ci95": [
+    5.743515427027679,
+    12.668317012427742
+   ],
+   "weighted_pct": 11.947377841417572
+  }
+ },
+ "agent_facing_known": 205,
+ "undetectable_n": 59,
+ "undetectable_pct": 28.78048780487805,
+ "undetectable_ci95_wilson": [
+  23.018030381570433,
+  35.32360270302573
+ ],
+ "undetectable_ci95_repo_bootstrap": [
+  20.28301886792453,
+  36.25
+ ],
+ "silent_or_mislead_n": 81,
+ "silent_or_mislead_pct": 39.51219512195122,
+ "silent_or_mislead_ci95_repo_bootstrap": [
+  29.38144329896907,
+  47.88135593220339
+ ],
+ "undetectable_weighted_pct": 27.32741018707577,
+ "symptom_operator_unknown": {
+  "OPERATOR": 23,
+  "UNKNOWN": 28
+ },
+ "crosstab": {
+  "CONFIG": {
+   "SILENT": 2,
+   "UNSAFE": 0,
+   "MISLEAD": 1,
+   "REJECT": 4,
+   "TOOLS": 0,
+   "UNAVAIL": 45,
+   "OPERATOR": 9,
+   "UNKNOWN": 11
+  },
+  "GUARD": {
+   "SILENT": 0,
+   "UNSAFE": 24,
+   "MISLEAD": 2,
+   "REJECT": 3,
+   "TOOLS": 0,
+   "UNAVAIL": 2,
+   "OPERATOR": 4,
+   "UNKNOWN": 2
+  },
+  "TOOL_DEF": {
+   "SILENT": 1,
+   "UNSAFE": 0,
+   "MISLEAD": 0,
+   "REJECT": 0,
+   "TOOLS": 28,
+   "UNAVAIL": 0,
+   "OPERATOR": 1,
+   "UNKNOWN": 2
+  },
+  "SESSION": {
+   "SILENT": 2,
+   "UNSAFE": 1,
+   "MISLEAD": 2,
+   "REJECT": 1,
+   "TOOLS": 0,
+   "UNAVAIL": 12,
+   "OPERATOR": 7,
+   "UNKNOWN": 0
+  },
+  "EXEC": {
+   "SILENT": 6,
+   "UNSAFE": 0,
+   "MISLEAD": 5,
+   "REJECT": 10,
+   "TOOLS": 0,
+   "UNAVAIL": 0,
+   "OPERATOR": 0,
+   "UNKNOWN": 4
+  },
+  "ERROR": {
+   "SILENT": 0,
+   "UNSAFE": 0,
+   "MISLEAD": 11,
+   "REJECT": 0,
+   "TOOLS": 0,
+   "UNAVAIL": 1,
+   "OPERATOR": 2,
+   "UNKNOWN": 2
+  },
+  "OUTPUT": {
+   "SILENT": 11,
+   "UNSAFE": 0,
+   "MISLEAD": 1,
+   "REJECT": 1,
+   "TOOLS": 0,
+   "UNAVAIL": 0,
+   "OPERATOR": 0,
+   "UNKNOWN": 2
+  },
+  "INPUT": {
+   "SILENT": 3,
+   "UNSAFE": 0,
+   "MISLEAD": 0,
+   "REJECT": 8,
+   "TOOLS": 0,
+   "UNAVAIL": 0,
+   "OPERATOR": 0,
+   "UNKNOWN": 3
+  },
+  "INTROSPECT": {
+   "SILENT": 9,
+   "UNSAFE": 0,
+   "MISLEAD": 0,
+   "REJECT": 3,
+   "TOOLS": 0,
+   "UNAVAIL": 0,
+   "OPERATOR": 0,
+   "UNKNOWN": 1
+  },
+  "PROTOCOL": {
+   "SILENT": 0,
+   "UNSAFE": 0,
+   "MISLEAD": 0,
+   "REJECT": 0,
+   "TOOLS": 0,
+   "UNAVAIL": 6,
+   "OPERATOR": 0,
+   "UNKNOWN": 1
+  }
+ },
+ "guard_unsafe": 24,
+ "unsafe_total": 25,
+ "silent_by_element": {
+  "CONFIG": 2,
+  "TOOL_DEF": 1,
+  "SESSION": 2,
+  "EXEC": 6,
+  "OUTPUT": 11,
+  "INPUT": 3,
+  "INTROSPECT": 9
+ },
+ "client_specific_n": 17,
+ "client_specific_items": [
+  [
+   "bytebase__dbhub#145",
+   "PROTOCOL",
+   "UNAVAIL",
+   "stateless HTTP advertised SSE; LibreChat fails"
+  ],
+  [
+   "bytebase__dbhub#475",
+   "PROTOCOL",
+   "UNAVAIL",
+   "subscriptions/listen held open; tools delayed ~25s behind proxies"
+  ],
+  [
+   "centralmind__gateway#86",
+   "TOOL_DEF",
+   "TOOLS",
+   "inputSchema.properties omitted; n8n rejects"
+  ],
+  [
+   "chroma-core__chroma-mcp#33",
+   "TOOL_DEF",
+   "TOOLS",
+   "Optional annotations -> params not recognised in Cursor"
+  ],
+  [
+   "cr7258__elasticsearch-mcp-server#2",
+   "INPUT",
+   "REJECT",
+   "model nests query param; normalise"
+  ],
+  [
+   "mongodb-js__mongodb-mcp-server#1563",
+   "PROTOCOL",
+   "UNAVAIL",
+   "wrong error code blocks protocol-version fallback for newer clients"
+  ],
+  [
+   "neo4j__mcp#216",
+   "TOOL_DEF",
+   "TOOLS",
+   "inputSchema without properties rejected by some clients"
+  ],
+  [
+   "neondatabase__mcp-server-neon#88",
+   "TOOL_DEF",
+   "TOOLS",
+   "required params declared optional; clients send {}"
+  ],
+  [
+   "neondatabase__mcp-server-neon#245",
+   "GUARD",
+   "UNAVAIL",
+   "session binding on bearer token forces Cursor re-auth"
+  ],
+  [
+   "redis__mcp-redis#59",
+   "TOOL_DEF",
+   "TOOLS",
+   "Gemini CLI skips tools with missing schema types"
+  ],
+  [
+   "redis__mcp-redis#66",
+   "CONFIG",
+   "UNAVAIL",
+   "gemini-cli passes literal ${REDIS_URL}"
+  ],
+  [
+   "redis__mcp-redis#81",
+   "TOOL_DEF",
+   "TOOLS",
+   "nested anyOf schema breaks LLM clients"
+  ],
+  [
+   "supabase__mcp#50",
+   "INPUT",
+   "REJECT",
+   "undefined args from Windsurf rejected"
+  ],
+  [
+   "supabase__mcp#204",
+   "TOOL_DEF",
+   "TOOLS",
+   "JSON Schema draft 2020-12 breaks draft-07 clients"
+  ],
+  [
+   "supabase__mcp#467",
+   "TOOL_DEF",
+   "TOOLS",
+   "descriptions/schema mismatch in OpenAI connector"
+  ],
+  [
+   "supabase__mcp#468",
+   "TOOL_DEF",
+   "UNKNOWN",
+   "double cost confirmation"
+  ],
+  [
+   "supabase__mcp#482",
+   "GUARD",
+   "UNAVAIL",
+   "destructive-SQL check false positive; confirmation hangs clients without forms"
+  ]
+ ],
+ "description_defects": [
+  "googleapis__mcp-toolbox#3788",
+  "supabase__mcp#201",
+  "supabase__mcp#372",
+  "supabase__mcp#410"
+ ],
+ "oversized_output": [
+  "supabase__mcp#44",
+  "supabase__mcp#65",
+  "supabase__mcp#129"
+ ],
+ "per_repo_included": {
+  "ClickHouse/mcp-clickhouse": 11,
+  "FreePeak/db-mcp-server": 12,
+  "RichardHan/mssql_mcp_server": 1,
+  "Snowflake-Labs/mcp": 11,
+  "alexander-zuev/supabase-mcp-server": 4,
+  "benborla/mcp-server-mysql": 5,
+  "bytebase/dbhub": 37,
+  "centralmind/gateway": 2,
+  "chroma-core/chroma-mcp": 3,
+  "cr7258/elasticsearch-mcp-server": 7,
+  "crystaldba/postgres-mcp": 8,
+  "designcomputer/mysql_mcp_server": 2,
+  "elastic/mcp-server-elasticsearch": 3,
+  "googleapis/mcp-toolbox": 26,
+  "mongodb-js/mongodb-mcp-server": 26,
+  "motherduckdb/mcp-server-motherduck": 4,
+  "neo4j-contrib/mcp-neo4j": 10,
+  "neo4j/mcp": 6,
+  "neondatabase/mcp-server-neon": 33,
+  "qdrant/mcp-server-qdrant": 3,
+  "redis/mcp-redis": 11,
+  "supabase/mcp": 31
+ },
+ "per_repo_undetectable": {
+  "ClickHouse/mcp-clickhouse": [
+   3,
+   10
+  ],
+  "FreePeak/db-mcp-server": [
+   6,
+   9
+  ],
+  "RichardHan/mssql_mcp_server": [
+   0,
+   1
+  ],
+  "Snowflake-Labs/mcp": [
+   1,
+   8
+  ],
+  "alexander-zuev/supabase-mcp-server": [
+   1,
+   4
+  ],
+  "benborla/mcp-server-mysql": [
+   2,
+   5
+  ],
+  "bytebase/dbhub": [
+   12,
+   30
+  ],
+  "centralmind/gateway": [
+   0,
+   2
+  ],
+  "chroma-core/chroma-mcp": [
+   0,
+   3
+  ],
+  "cr7258/elasticsearch-mcp-server": [
+   0,
+   3
+  ],
+  "crystaldba/postgres-mcp": [
+   0,
+   3
+  ],
+  "designcomputer/mysql_mcp_server": [
+   0,
+   1
+  ],
+  "elastic/mcp-server-elasticsearch": [
+   0,
+   3
+  ],
+  "googleapis/mcp-toolbox": [
+   4,
+   21
+  ],
+  "mongodb-js/mongodb-mcp-server": [
+   8,
+   22
+  ],
+  "motherduckdb/mcp-server-motherduck": [
+   2,
+   3
+  ],
+  "neo4j-contrib/mcp-neo4j": [
+   3,
+   6
+  ],
+  "neo4j/mcp": [
+   2,
+   5
+  ],
+  "neondatabase/mcp-server-neon": [
+   4,
+   27
+  ],
+  "qdrant/mcp-server-qdrant": [
+   1,
+   3
+  ],
+  "redis/mcp-redis": [
+   0,
+   10
+  ],
+  "supabase/mcp": [
+   10,
+   26
+  ]
+ },
+ "agentic_all_n": 5742,
+ "agentic_all_agent": 209,
+ "agentic_all_review_only": 154,
+ "agentic_frame": [
+  79,
+  821
+ ],
+ "agentic_nonframe": [
+  130,
+  4921
+ ],
+ "agentic_included": [
+  45,
+  256
+ ],
+ "agentic_included_items": [
+  [
+   "FreePeak__db-mcp-server#61",
+   "claude",
+   "CONFIG",
+   "OPERATOR"
+  ],
+  [
+   "FreePeak__db-mcp-server#62",
+   "claude",
+   "CONFIG",
+   "MISLEAD"
+  ],
+  [
+   "FreePeak__db-mcp-server#63",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "FreePeak__db-mcp-server#64",
+   "claude",
+   "SESSION",
+   "OPERATOR"
+  ],
+  [
+   "FreePeak__db-mcp-server#65",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "FreePeak__db-mcp-server#66",
+   "claude",
+   "EXEC",
+   "SILENT"
+  ],
+  [
+   "Snowflake-Labs__mcp#175",
+   "claude",
+   "OUTPUT",
+   "SILENT"
+  ],
+  [
+   "benborla__mcp-server-mysql#93",
+   "claude",
+   "SESSION",
+   "REJECT"
+  ],
+  [
+   "bytebase__dbhub#116",
+   "claude",
+   "SESSION",
+   "SILENT"
+  ],
+  [
+   "bytebase__dbhub#145",
+   "claude",
+   "PROTOCOL",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#166",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#196",
+   "copilot",
+   "SESSION",
+   "OPERATOR"
+  ],
+  [
+   "bytebase__dbhub#242",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#255",
+   "claude",
+   "CONFIG",
+   "OPERATOR"
+  ],
+  [
+   "bytebase__dbhub#260",
+   "claude",
+   "SESSION",
+   "OPERATOR"
+  ],
+  [
+   "bytebase__dbhub#268",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#275",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "bytebase__dbhub#326",
+   "claude",
+   "INTROSPECT",
+   "REJECT"
+  ],
+  [
+   "bytebase__dbhub#331",
+   "claude",
+   "GUARD",
+   "REJECT"
+  ],
+  [
+   "bytebase__dbhub#340",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "bytebase__dbhub#348",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#350",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "bytebase__dbhub#362",
+   "claude",
+   "GUARD",
+   "REJECT"
+  ],
+  [
+   "bytebase__dbhub#364",
+   "claude",
+   "INTROSPECT",
+   "SILENT"
+  ],
+  [
+   "bytebase__dbhub#365",
+   "claude",
+   "CONFIG",
+   "UNKNOWN"
+  ],
+  [
+   "bytebase__dbhub#369",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "bytebase__dbhub#379",
+   "claude",
+   "GUARD",
+   "UNSAFE"
+  ],
+  [
+   "bytebase__dbhub#394",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#417",
+   "claude",
+   "OUTPUT",
+   "SILENT"
+  ],
+  [
+   "bytebase__dbhub#419",
+   "claude",
+   "INTROSPECT",
+   "SILENT"
+  ],
+  [
+   "bytebase__dbhub#425",
+   "claude",
+   "SESSION",
+   "MISLEAD"
+  ],
+  [
+   "bytebase__dbhub#429",
+   "claude",
+   "EXEC",
+   "SILENT"
+  ],
+  [
+   "bytebase__dbhub#431",
+   "claude",
+   "GUARD",
+   "OPERATOR"
+  ],
+  [
+   "bytebase__dbhub#438",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#461",
+   "claude",
+   "SESSION",
+   "MISLEAD"
+  ],
+  [
+   "bytebase__dbhub#463",
+   "claude",
+   "CONFIG",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#465",
+   "claude",
+   "SESSION",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#475",
+   "claude",
+   "PROTOCOL",
+   "UNAVAIL"
+  ],
+  [
+   "bytebase__dbhub#480",
+   "claude",
+   "SESSION",
+   "UNAVAIL"
+  ],
+  [
+   "crystaldba__postgres-mcp#128",
+   "claude",
+   "EXEC",
+   "REJECT"
+  ],
+  [
+   "crystaldba__postgres-mcp#132",
+   "claude",
+   "EXEC",
+   "REJECT"
+  ],
+  [
+   "neondatabase__mcp-server-neon#38",
+   "devin",
+   "INPUT",
+   "REJECT"
+  ],
+  [
+   "supabase__mcp#372",
+   "claude",
+   "TOOL_DEF",
+   "TOOLS"
+  ],
+  [
+   "supabase__mcp#410",
+   "claude",
+   "TOOL_DEF",
+   "TOOLS"
+  ],
+  [
+   "supabase__mcp#438",
+   "claude",
+   "EXEC",
+   "MISLEAD"
+  ]
+ ],
+ "agentic_repos_with_any": [
+  "ClickHouse__mcp-clickhouse",
+  "FreePeak__db-mcp-server",
+  "Snowflake-Labs__mcp",
+  "benborla__mcp-server-mysql",
+  "bytebase__dbhub",
+  "cr7258__elasticsearch-mcp-server",
+  "crystaldba__postgres-mcp",
+  "designcomputer__mysql_mcp_server",
+  "googleapis__mcp-toolbox",
+  "mongodb-js__mongodb-mcp-server",
+  "neo4j-contrib__mcp-neo4j",
+  "neondatabase__mcp-server-neon",
+  "qdrant__mcp-server-qdrant",
+  "supabase__mcp"
+ ],
+ "agentic_by_half": {
+  "2024H2": [
+   0,
+   125
+  ],
+  "2025H1": [
+   8,
+   1206
+  ],
+  "2025H2": [
+   52,
+   1862
+  ],
+  "2026H1": [
+   81,
+   1542
+  ],
+  "2026H2": [
+   68,
+   1007
+  ]
+ },
+ "agentic_frame_by_half": {
+  "2024H2": [
+   0,
+   14
+  ],
+  "2025H1": [
+   2,
+   151
+  ],
+  "2025H2": [
+   12,
+   224
+  ],
+  "2026H1": [
+   29,
+   233
+  ],
+  "2026H2": [
+   36,
+   199
+  ]
+ },
+ "agentic_by_repo": {
+  "ClickHouse__mcp-clickhouse": [
+   1,
+   94
+  ],
+  "FreePeak__db-mcp-server": [
+   9,
+   64
+  ],
+  "RichardHan__mssql_mcp_server": [
+   0,
+   7
+  ],
+  "Snowflake-Labs__mcp": [
+   2,
+   97
+  ],
+  "alexander-zuev__supabase-mcp-server": [
+   0,
+   18
+  ],
+  "benborla__mcp-server-mysql": [
+   6,
+   44
+  ],
+  "bytebase__dbhub": [
+   125,
+   215
+  ],
+  "centralmind__gateway": [
+   0,
+   37
+  ],
+  "chroma-core__chroma-mcp": [
+   0,
+   23
+  ],
+  "cr7258__elasticsearch-mcp-server": [
+   2,
+   46
+  ],
+  "crystaldba__postgres-mcp": [
+   8,
+   73
+  ],
+  "designcomputer__mysql_mcp_server": [
+   1,
+   12
+  ],
+  "elastic__mcp-server-elasticsearch": [
+   0,
+   128
+  ],
+  "executeautomation__mcp-database-server": [
+   0,
+   9
+  ],
+  "googleapis__mcp-toolbox": [
+   10,
+   2566
+  ],
+  "mongodb-js__mongodb-mcp-server": [
+   10,
+   1145
+  ],
+  "motherduckdb__mcp-server-motherduck": [
+   0,
+   41
+  ],
+  "neo4j-contrib__mcp-neo4j": [
+   1,
+   175
+  ],
+  "neo4j__mcp": [
+   0,
+   280
+  ],
+  "neondatabase__mcp-server-neon": [
+   20,
+   244
+  ],
+  "qdrant__mcp-server-qdrant": [
+   1,
+   49
+  ],
+  "redis__mcp-redis": [
+   0,
+   132
+  ],
+  "runekaagaard__mcp-alchemy": [
+   0,
+   11
+  ],
+  "subnetmarco__pgmcp": [
+   0,
+   6
+  ],
+  "supabase__mcp": [
+   13,
+   226
+  ]
+ },
+ "agentic_fisher_p": 7.145488528413409e-18
+}

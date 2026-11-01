@@ -1,0 +1,138 @@
+{
+ "command": [
+  "uvx",
+  "--with",
+  "mcp<2",
+  "--with",
+  "sqlalchemy",
+  "mcp-alchemy"
+ ],
+ "server_info": {
+  "name": "MCP Alchemy",
+  "version": "1.30.0"
+ },
+ "protocol_version": "2025-06-18",
+ "tools": [
+  {
+   "name": "all_table_names",
+   "description": "Return all table names in the database separated by comma. Connected to sqlite version 3.45.1 database /tmp/claude-0/-home-claude/b5086a7f-2afd-5691-bf85-0dd4644db36b/scratchpad/kaggle/c3/x.db.",
+   "inputSchema": {
+    "properties": {},
+    "title": "all_table_namesArguments",
+    "type": "object"
+   },
+   "outputSchema": {
+    "properties": {
+     "result": {
+      "title": "Result",
+      "type": "string"
+     }
+    },
+    "required": [
+     "result"
+    ],
+    "title": "all_table_namesOutput",
+    "type": "object"
+   }
+  },
+  {
+   "name": "filter_table_names",
+   "description": "Return all table names in the database containing the substring 'q' separated by comma. Connected to sqlite version 3.45.1 database /tmp/claude-0/-home-claude/b5086a7f-2afd-5691-bf85-0dd4644db36b/scratchpad/kaggle/c3/x.db.",
+   "inputSchema": {
+    "properties": {
+     "q": {
+      "title": "Q",
+      "type": "string"
+     }
+    },
+    "required": [
+     "q"
+    ],
+    "title": "filter_table_namesArguments",
+    "type": "object"
+   },
+   "outputSchema": {
+    "properties": {
+     "result": {
+      "title": "Result",
+      "type": "string"
+     }
+    },
+    "required": [
+     "result"
+    ],
+    "title": "filter_table_namesOutput",
+    "type": "object"
+   }
+  },
+  {
+   "name": "schema_definitions",
+   "description": "Returns schema and relation information for the given tables. Connected to sqlite version 3.45.1 database /tmp/claude-0/-home-claude/b5086a7f-2afd-5691-bf85-0dd4644db36b/scratchpad/kaggle/c3/x.db.",
+   "inputSchema": {
+    "properties": {
+     "table_names": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Table Names",
+      "type": "array"
+     }
+    },
+    "required": [
+     "table_names"
+    ],
+    "title": "schema_definitionsArguments",
+    "type": "object"
+   },
+   "outputSchema": {
+    "properties": {
+     "result": {
+      "title": "Result",
+      "type": "string"
+     }
+    },
+    "required": [
+     "result"
+    ],
+    "title": "schema_definitionsOutput",
+    "type": "object"
+   }
+  },
+  {
+   "name": "execute_query",
+   "description": "Execute a SQL query and return results in a readable format. Results will be truncated after 4000 characters. IMPORTANT: You MUST use the params parameter for query parameter substitution (e.g. 'WHERE id = :id' with params={'id': 123}) to prevent SQL injection. Direct string concatenation is a serious security risk. Connected to sqlite version 3.45.1 database /tmp/claude-0/-home-claude/b5086a7f-2afd-5691-bf85-0dd4644db36b/scratchpad/kaggle/c3/x.db.",
+   "inputSchema": {
+    "properties": {
+     "query": {
+      "title": "Query",
+      "type": "string"
+     },
+     "params": {
+      "additionalProperties": true,
+      "default": {},
+      "title": "Params",
+      "type": "object"
+     }
+    },
+    "required": [
+     "query"
+    ],
+    "title": "execute_queryArguments",
+    "type": "object"
+   },
+   "outputSchema": {
+    "properties": {
+     "result": {
+      "title": "Result",
+      "type": "string"
+     }
+    },
+    "required": [
+     "result"
+    ],
+    "title": "execute_queryOutput",
+    "type": "object"
+   }
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "command": [
+  "uvx",
+  "mcp-server-qdrant"
+ ],
+ "error": "server exited: nes>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/root/.cache/uv/archive-v0/pqjQJlscLE2Ws6lH/lib/python3.13/site-packages/fastembed/text/onnx_embedding.py\", line 274, in __init__\n    self._model_dir = self.download_model(\n                      ~~~~~~~~~~~~~~~~~~~^\n        self.model_description,\n        ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n        specific_model_path=self._specific_model_path,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/root/.cache/uv/archive-v0/pqjQJlscLE2Ws6lH/lib/python3.13/site-packages/fastembed/common/model_management.py\", line 752, in download_model\n    raise ValueError(f\"Could not load model {model.model} from any source.\")\nValueError: Could not load model sentence-transformers/all-MiniLM-L6-v2 from any source.\n"
+}

@@ -1,0 +1,231 @@
+id,title,author,auto_reason
+ClickHouse__mcp-clickhouse#222,bump server version in ci and fix tests,joe-clickhouse,deps
+Snowflake-Labs__mcp#117,docs: fix spacing in README for endpoint export,sfc-gh-twhite,conventional_nonfix_prefix
+Snowflake-Labs__mcp#32,docs: fix typo in config,sfc-gh-twhite,conventional_nonfix_prefix
+bytebase__dbhub#222,chore: broken-link CI,tianzhou,conventional_nonfix_prefix
+bytebase__dbhub#122,chore: fix readme,tianzhou,conventional_nonfix_prefix
+cr7258__elasticsearch-mcp-server#75,fix: upgrade dependencies and base image to resolve Trivy-reported CVEs,lundsec,deps
+elastic__mcp-server-elasticsearch#242,fix(deps): update rust crate thiserror to v2.0.18,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#226,fix(deps): update rust crate thiserror to v2.0.17,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#224,fix(deps): update rust crate serde to v1.0.228,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#223,fix(deps): update rust crate reqwest to v0.12.24,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#127,fix(deps): update dependency @elastic/elasticsearch to v9.0.3,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#126,fix(deps): update dependency @arizeai/openinference-instrumentation-mcp to v0.2.2,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#113,fix(deps): update dependency @modelcontextprotocol/sdk to v1.13.2,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#76,fix(deps): update dependency @modelcontextprotocol/sdk to v1.12.1,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#74,fix(deps): update dependency @elastic/elasticsearch to v9.0.2,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#62,fix(deps): update dependency @elastic/elasticsearch to v9,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#59,fix(deps): update dependency @modelcontextprotocol/sdk to v1.11.2,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#53,fix(deps): update dependency @modelcontextprotocol/sdk to v1.10.2,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#42,fix(deps): update dependency @modelcontextprotocol/sdk to v1.9.0,elastic-renovate-prod[bot],bot_author
+elastic__mcp-server-elasticsearch#10,fix(deps): update dependency @modelcontextprotocol/sdk to v1.8.0,elastic-renovate-prod[bot],bot_author
+googleapis__mcp-toolbox#505,fix(deps): update module google.golang.org/api to v0.231.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#500,fix(deps): update module cloud.google.com/go/cloudsqlconn to v1.17.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#481,fix(deps): update module cloud.google.com/go/spanner to v1.80.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#471,fix(deps): update module modernc.org/sqlite to v1.37.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#469,fix(deps): update module cloud.google.com/go/bigquery to v1.67.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#467,fix(deps): update module google.golang.org/api to v0.230.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#456,ci(docs): fix docs deploy when changes in .hugo folder,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#453,chore(docs): fix duplicate persistance key warning,deining,conventional_nonfix_prefix
+googleapis__mcp-toolbox#452,fix(deps): update module cloud.google.com/go/bigtable to v1.37.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#448,fix(deps): update module cloud.google.com/go/cloudsqlconn to v1.16.1,renovate-bot,bot_author
+googleapis__mcp-toolbox#442,fix(deps): update module google.golang.org/api to v0.229.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#440,fix(deps): update module cloud.google.com/go/alloydbconn to v1.15.1,renovate-bot,bot_author
+googleapis__mcp-toolbox#430,chore: fix link,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#416,fix(deps): update module golang.org/x/oauth2 to v0.29.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#415,fix(deps): update module cloud.google.com/go/spanner to v1.79.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#408,fix(deps): update module github.com/go-sql-driver/mysql to v1.9.2,renovate-bot,bot_author
+googleapis__mcp-toolbox#402,doc: fix minor typo in MCP guide,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#401,doc: Fix typo in the MCP Quickstart,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#393,docs: fix typo in http tool,AndrewBrook-Google,conventional_nonfix_prefix
+googleapis__mcp-toolbox#378,fix(deps): update opentelemetry-go monorepo to v1.35.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#377,fix(deps): update module google.golang.org/api to v0.228.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#376,fix(deps): update module go.opentelemetry.io/contrib/propagators/autoprop to v0.60.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#375,fix(deps): update module github.com/spf13/cobra to v1.9.1,renovate-bot,bot_author
+googleapis__mcp-toolbox#374,fix(deps): update module github.com/neo4j/neo4j-go-driver/v5 to v5.28.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#373,fix(deps): update module github.com/googlecloudplatform/opentelemetry-operations-go/exporter/trace to v1.27.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#372,fix(deps): update module github.com/goccy/go-yaml to v1.17.1,renovate-bot,bot_author
+googleapis__mcp-toolbox#371,fix(deps): update module github.com/go-sql-driver/mysql to v1.9.1,renovate-bot,bot_author
+googleapis__mcp-toolbox#370,fix(deps): update module github.com/go-playground/validator/v10 to v10.26.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#369,fix(deps): update module github.com/go-chi/chi/v5 to v5.2.1,renovate-bot,bot_author
+googleapis__mcp-toolbox#368,fix(deps): update module cloud.google.com/go/spanner to v1.78.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#367,fix(deps): update module cloud.google.com/go/cloudsqlconn to v1.16.0,renovate-bot,bot_author
+googleapis__mcp-toolbox#365,fix(deps): update module github.com/jackc/pgx/v5 to v5.7.4,renovate-bot,bot_author
+googleapis__mcp-toolbox#364,docs: fix misc typos,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#359,docs: fix open quickstart in colab link,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#338,chore: fix indentation issue in Quickstart,arjunprabhulal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#303,docs(tool/spanner-sql): fix spanner-sql kind in example,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#284,docs(tools): fix broken links,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#283,chore: fix graphic with correct name,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#276,chore(docs): fix quickstart,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#271,chore: remove sdks and doc fixes,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#270,doc: fix typo for quickstart,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#260,chore(docs): fix favicon,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#254,chore(docs): Fix typo and language,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#247,docs(cloudsql-pg): fix typos,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#246,docs(cloudsql-mssql): fixing some typo and add doc to github pages,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#201,test: do not skip fixed tests,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#175,chore(docs): Fix source kind in example,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#168,docs: fix link in readme,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#163,chore: fix comments,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#144,chore(langchain-sdk): Fix warning about async session not closed after langchain utils tests.,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#108,chore: fix incorrect source name,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#85,chore(llamaindex-sdk): fix path,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#70,chore(langchain-sdk): Fix type checks,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#69,chore(llamaindex-sdk): Fix type checks,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#67,docs: fix link to sdk developer file,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#64,docs: fix links to SDKs in README,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#57,chore(llamaindex-sdk): fix url in README,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#44,chore(docs): fix reference to pg-sql page,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1793,docs: fix links,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1757,docs: fix broken links,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1677,docs: fix docs lint,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1651,docs: fix yugabytedb doc location,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1610,docs(sources/looker): Fix typos in Looker tools (#1608),drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1608,docs(sources/looker): Fix typos in Looker tools,davidtamaki,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1520,docs: fix docs linting,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1427,docs: fix broken links in python quickstart,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1340,docs: Fix PR template link,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1289,ci: fix dataplex integration tests,estshy,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1221,chore: fix looker label ,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1173,docs: fix connectionString in couchbase sources,Ganga4060,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1155,docs: fix genkit module name,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1154,docs: fix typos across docs,Ajay9330,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1114,docs: fix links,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1106,docs: Fix broken links,Ganga4060,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1104,docs: fix js quickstart,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1042,docs: fix method name,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1014,docs: add link checker and fix broken links,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1013,docs: Fix looker source links from looker tools.,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1003,Docs: Minor documentation fixes,prernakakkar-google,conventional_nonfix_prefix
+googleapis__mcp-toolbox#991,docs: fix typos in MCP docs for Postgres,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#990,docs: fix typos in MCP docs,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#968,docs: fix wait tool notice tag,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#957,chore: fix labels description,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#951,docs: fix type guidance for map parameter,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#947,chore: fix dry run location,Genesis929,conventional_nonfix_prefix
+googleapis__mcp-toolbox#944,style(tools/firestore): fix linting,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#916,docs: fix valkey doc broken link,rapid-killer-9,conventional_nonfix_prefix
+googleapis__mcp-toolbox#896,docs: fix to include correct way to authenticate to cloud run instances,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#826,docs: fix copy to clipboard button visibility in light mode,AnmolShukla2002,conventional_nonfix_prefix
+googleapis__mcp-toolbox#751,docs: fix grammar,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#749,docs: fix linting in docs,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#741,docs: fix adk quickstart,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#688,docs(tools/alloydbainl): update broken links,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#672,chore: fix typos in tests,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#667,docs: fix SQL capitalization,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#622,chore: fix release please version update,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#587,ci: fix preview pipeline for changes only in .hugo,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#582,chore: lint fix,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#570,chore: fix bigtable doc typo,annguy3n,conventional_nonfix_prefix
+googleapis__mcp-toolbox#565,docs: fix typo and import in local quickstart,AlexTalreja,conventional_nonfix_prefix
+googleapis__mcp-toolbox#540,docs: fix indentation for release please,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#533,docs: Bump Toolbox version in Colab Quickstart + fix typo,anubhav756,deps
+googleapis__mcp-toolbox#3150,docs(looker): fix search tags,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3146,docs: update broken links,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3131,docs: fix mcp sever command in readme,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3096,docs: fix typo in extensions command in README,NaniToka,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2833,ci: fix renovate config,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2818,docs(looker): Updates to docs for looker-dev prebuilt tools and fixing some out of date references.,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2802,ci(test): fix flaky alloydb ai nl integration test,helloeve,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2777,"test(cloudloggingadmin, serverlessspark): Fix flakey integration tests",duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2723,docs: Fix documentation after internal review,dishaprakash,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2682,docs: fix-link-checker-for-forked-repos,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2612,docs: fix links,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2605,ci(postgres): fix postgres list stored procedure flaky test,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2604,ci(dataproc): fix flakey list-clusters test,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2602,"ci(cloudhealthcare, dataproc, postgres): fix multiple integration test failures",duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2567,chore(bigquery): refactor conversational analytics handlers and fix tests,Genesis929,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2541,doc: Fix ADK quickstart rendering with shortcodes,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2533,docs: fix query for langchain pre and post processing docs,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2455,chore: fix license,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2440,docs: fix broken links,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2406,docs: fix JS quickstart,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2388,ci(oracle): fix Oracle integration test,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2372,docs: fix flag name,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2366,docs: fix dataplex tool names in reference,averikitsch,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2359,tests: fix tests,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2301,docs: fix redis array sample,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2251,docs(README.md): fix container section version 0.11.0 => 0.24.0,junminhong,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2235,test(source/postgres): fix list_database_stats integration test,srividyareddy786,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2223,docs: fix broken links,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2196,test(source/postgres): fix list_database_stats integration test,srividyareddy786,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2119,"chore: fix ""unused paramter"" lint in vscode",drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2114,ci: fix multiple source test failures,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2105,ci(cloudsqlmysql): fix Cloud SQL MySQL test failure,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2104,ci(postgres): Fix `postgres-list-triggers` flakey integration test,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2036,docs(fix): correct FAQ to mention HTTP tools,kurtisvg,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2018,chore(deps): Fix typo in package dependency name,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#2012,docs: Fix binary install commands for windows users,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1996,chore: fix release please path for server.json file,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1988,ci: fix quickstart tests to use deps from package-lock.json,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1980,docs: fix typo run_dashbaord,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1965,docs: Fix rendering issue with a note in the docs,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1946,ci(mcp-registry): fix path to retrieve version string,Yuan325,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1936,docs(alloydb): fix redirection link of the cgc doc for alloydb,Ajay9330,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1930,docs: fix prompt message,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1926,chore: fix merge issues,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1914,chore: fix links,rahulpinto19,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1891,chore: fix linter action to error on lint issue,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1890,chore(singlestore): fix lint issues,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1878,chore: fix import,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#1859,chore: fix linter issues,drstrangelooker,conventional_nonfix_prefix
+googleapis__mcp-toolbox#4099,ci(moss): fix double-nested UUIDs for test results,emagda97,conventional_nonfix_prefix
+googleapis__mcp-toolbox#4098,chore: Fix error message,dishaprakash,conventional_nonfix_prefix
+googleapis__mcp-toolbox#4096,ci(fix): add mutex locks to prevent race conditions,emagda97,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3976,"test(tool/mysql-list-table-stats,tool/mysql-list-active-queries): fix two flaky assertions",omkargaikwad23,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3873,docs: fix dead links to integration index pages,Ashfaqbs,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3863,docs(skills): add reproduce-bug skill for mcp-toolbox,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3813,test(dataplex): fix integration test failure,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3778,"test(mongodb,bigtable): migrate to `testcontainers` for integration tests and fix flakey test",duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3773,chore: Fix docsite links,dishaprakash,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3601,docs(introduction): fix broken relative link to configuration page,anxkhn,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3561,chore(ci): Add manual fixes to harden workflows,dishaprakash,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3473,docs(cli): fix sql-commenter flag description,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3442,fix(deps): patch npm audit vulnerabilities in JS doc samples,twishabansal,deps
+googleapis__mcp-toolbox#3429,fix(deps): bump picomatch to 4.0.4 to fix regex method injection,omkargaikwad23,deps
+googleapis__mcp-toolbox#3426,fix(deps): bump picomatch to 2.3.2 to fix regex method injection,omkargaikwad23,deps
+googleapis__mcp-toolbox#3425,fix(deps): bump fast-uri to 3.1.2 to fix path normalization bypass,omkargaikwad23,deps
+googleapis__mcp-toolbox#3401,ci: fix integration test skips and centralize core pattern,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3366,docs(contributing): fix copy typos,padmarajnidagundi,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3334,docs(datalineage): fix doc format,duwenxin99,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3315,ci(conformance): fix issue causing go version mismatch in presubmits,anubhav756,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3305,docs: fix mcp authn example,potterhe,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3193,ci: fix config for version update,twishabansal,conventional_nonfix_prefix
+googleapis__mcp-toolbox#3191,docs: fix broken relative links for build time and run time,averikitsch,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#539,chore: fix release channel detection script,himanshusinghs,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#516,chore: fix flakiness of exports by waiting to at least have 1 available,kmruiz,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#448,chore: fix apix action version,blva,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#433,chore: fix pre accuracy test script,himanshusinghs,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#418,chore: fix cursor link MCP-75,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#351,chore: fix cursor link,blva,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#152,fix: update dependency,blva,deps
+mongodb-js__mongodb-mcp-server#150,chore: add bug issue template,fmenezes,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#148,fix: version bump PR action,fmenezes,deps
+mongodb-js__mongodb-mcp-server#125,fix: duplicated v on version bump,fmenezes,deps
+mongodb-js__mongodb-mcp-server#112,chore: fix tests,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#66,chore: fix dependencies,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#6,chore: add LICENSE and fix version,fmenezes,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1632,ci: single release approval gate and fix MCP registry publish,gagik,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1610,fix(sbom): bump lightningcss entries to 1.33.0 in licenses config,gagik,deps
+mongodb-js__mongodb-mcp-server#1486,chore: backport telemetry fixes to v2 CLOUDP-440981 MCP-636 CLOUDP-440980,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1455,chore: fix flaky partial-export cleanup tests,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1451,ci: fix Jira issue creation and fail loudly on errors,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1439,ci: fix accuracy and braintrust tests,gagik,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1234,chore: fix flaky oidc test,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1151,chore: fixes test setup for getRandomUUID,himanshusinghs,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1137,chore: try to fix flaky agg abort test,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#1111,chore: fix flakey Atlas Local tests,nirinchev,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#786,chore: fix publish workflow for MCP registry,himanshusinghs,conventional_nonfix_prefix
+mongodb-js__mongodb-mcp-server#722,chore: fix perf advisor test,blva,conventional_nonfix_prefix
+neo4j__mcp#88,fix(deps): update minor-and-patch,renovate[bot],bot_author
+neondatabase__mcp-server-neon#232,fix(oauth): bump success-cache TTL from 5 min to 30 min,vadim2404,deps
+neondatabase__mcp-server-neon#134,chore: fix claude Inline-comments,pffigueiredo,conventional_nonfix_prefix
+neondatabase__mcp-server-neon#47,chore: fix lint issues,Shridhad,conventional_nonfix_prefix
+qdrant__mcp-server-qdrant#107,docs: fix config environment variables in README,akbad,conventional_nonfix_prefix
+redis__mcp-redis#116,chore: upgrade redis-entraid to 1.1.2 for security fixes,vchomakov,conventional_nonfix_prefix
+redis__mcp-redis#113,"[chore] bump mcp version, fix dependency confusion risk, and enable shell injection linting",shuvajyotikar13,deps
+redis__mcp-redis#57,docs: fix MCP config examples to use mcp.json with top-level servers,vchomakov,conventional_nonfix_prefix
+subnetmarco__pgmcp#18,"chore: bumped Go and deps versions, fixed/updated README.md",lospejos,conventional_nonfix_prefix
+supabase__mcp#266,chore: fix release-please setup follow-ups,mattrossman,conventional_nonfix_prefix
+supabase__mcp#191,chore: fix lint errors,Rodriguespn,conventional_nonfix_prefix

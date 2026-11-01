@@ -1,0 +1,13 @@
+{
+ "command": [
+  "npx",
+  "-y",
+  "@benborla29/mcp-server-mysql"
+ ],
+ "server_info": {
+  "name": "MySQL MCP Server",
+  "version": "1.0.0"
+ },
+ "protocol_version": "2025-06-18",
+ "error": "server exited: npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead\n"
+}

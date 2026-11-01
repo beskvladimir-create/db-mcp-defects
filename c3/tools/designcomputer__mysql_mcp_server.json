@@ -1,0 +1,77 @@
+{
+ "command": [
+  "uvx",
+  "mysql_mcp_server"
+ ],
+ "server_info": {
+  "name": "mysql_mcp_server",
+  "version": "1.30.0"
+ },
+ "protocol_version": "2025-06-18",
+ "tools": [
+  {
+   "name": "execute_sql",
+   "description": "Execute a SQL statement against the MySQL server. Use for SELECT, DML (INSERT/UPDATE/DELETE), SHOW, DESCRIBE, and ad-hoc queries. Supports cross-database queries using database.table notation. Single statements only \u2014 use fully qualified names instead of USE statements.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string",
+      "description": "The SQL statement to execute. Single statements only."
+     }
+    },
+    "required": [
+     "query"
+    ]
+   },
+   "annotations": {
+    "title": "Execute SQL",
+    "readOnlyHint": false,
+    "destructiveHint": true
+   }
+  },
+  {
+   "name": "get_schema_info",
+   "description": "Get column metadata for a table or all tables in the configured database: column names, data types, nullability, default values, and comments. Call this before querying an unfamiliar table. Omit table_name to see all tables at once. Accepts bare table names (uses MYSQL_DATABASE) or database.table for cross-database lookups.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "table_name": {
+      "type": "string",
+      "description": "Optional: bare table name, or database.table for a cross-database lookup."
+     }
+    }
+   },
+   "annotations": {
+    "title": "Get Schema Info",
+    "readOnlyHint": true,
+    "destructiveHint": false
+   }
+  },
+  {
+   "name": "get_table_sample",
+   "description": "Fetch a small sample of rows from a table to understand its data format and content. Use alongside get_schema_info before writing complex queries. Accepts bare table names (uses MYSQL_DATABASE) or database.table for cross-database lookups.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "table_name": {
+      "type": "string",
+      "description": "Table to sample. Use database.table notation for cross-database queries."
+     },
+     "limit": {
+      "type": "integer",
+      "description": "Number of rows to return (default 5, max 20)."
+     }
+    },
+    "required": [
+     "table_name"
+    ]
+   },
+   "annotations": {
+    "title": "Get Table Sample",
+    "readOnlyHint": true,
+    "destructiveHint": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+id|mechanism
+ClickHouse__mcp-clickhouse#220|statement classifier bypass (regex)
+benborla__mcp-server-mysql#119|statement classifier bypass (comment between USE and schema)
+bytebase__dbhub#275|statement classifier bypass (mutating CTE)
+bytebase__dbhub#350|statement classifier bypass (EXEC dynamic SQL)
+bytebase__dbhub#369|statement classifier bypass (OPENQUERY/OPENROWSET)
+bytebase__dbhub#379|statement classifier bypass (SELECT-invocable functions)
+mongodb-js__mongodb-mcp-server#525|statement classifier bypass ($out/$merge stages)
+neo4j-contrib__mcp-neo4j#205|statement classifier bypass (Cypher INSERT)
+googleapis__mcp-toolbox#4359|enforcement fail-open (protected write mode)
+ClickHouse__mcp-clickhouse#221|wrong identity/role applied to the call
+mongodb-js__mongodb-mcp-server#471|over-privileged database user created by tool

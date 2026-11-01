@@ -1,0 +1,7 @@
+{
+ "command": [
+  "uvx",
+  "mcp-neo4j-memory"
+ ],
+ "error": "server exited: viders/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.\nIt will be compatible before version 2.0.0.\n  from authlib.jose import JsonWebKey, JsonWebToken\n/root/.cache/uv/archive-v0/q4NrGLW0kanoi1HZ/lib/python3.13/site-packages/authlib/integrations/httpx_client/assertion_client.py:5: AuthlibDeprecationWarning: The httpx module is deprecated; please use httpx2 instead.\n  from ._compat import httpx2\nWarning: No Neo4j database provided. Using default: neo4j\nWarning: No transport type provided. Using default: stdio\nFailed to connect to Neo4j: Couldn't connect to localhost:7687 (resolved to ('127.0.0.1:7687',)):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connect call failed ('127.0.0.1', 7687))\n"
+}

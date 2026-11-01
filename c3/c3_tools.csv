@@ -1,0 +1,447 @@
+server,tool,variant,n_params,render_error,rendered_empty_type,union_or_ref,no_single_type,constraint_dropped,other_key_dropped,object_without_properties,array_without_items,items_union_passthrough,items_ref_unresolved,param_no_description,tool_no_description,top_key_dropped,defs_present,top_not_object,non_object_schema,type_lost,structure_misrendered,type_or_structure_lost,constraint_lost
+Anarkh-Lee__universal-db-mcp,execute_query,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,execute_query,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_schema,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_schema,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_table_info,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_table_info,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,clear_cache,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,clear_cache,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_enum_values,raw,4,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_enum_values,norm,4,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_sample_data,raw,3,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_sample_data,norm,3,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,connect_database,raw,11,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,connect_database,norm,11,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,disconnect_database,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,disconnect_database,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_connection_status,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+Anarkh-Lee__universal-db-mcp,get_connection_status,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+ClickHouse__mcp-clickhouse,list_databases,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+ClickHouse__mcp-clickhouse,list_databases,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+ClickHouse__mcp-clickhouse,list_tables,raw,6,,3,like; not_like; page_token,like; not_like; page_token,"like:default; not_like:default; page_token:default; page_size:default,exclusiveMinimum; include_detailed_columns:default",,,,,,,,,,,,True,False,True,True
+ClickHouse__mcp-clickhouse,list_tables,norm,6,,0,,,"like:default; not_like:default; page_token:default; page_size:default,exclusiveMinimum; include_detailed_columns:default",,,,,,,,,,,,False,False,False,True
+ClickHouse__mcp-clickhouse,run_query,raw,2,,1,params,params,params:default,,,,,,query; params,,,,,,True,False,True,True
+ClickHouse__mcp-clickhouse,run_query,norm,2,,2,,,"params:additionalProperties,default",,params,,,,query; params,,,,,,True,True,True,True
+RichardHan__mssql_mcp_server,execute_sql,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+RichardHan__mssql_mcp_server,execute_sql,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_schemas,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_schemas,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_tables,raw,1,,0,,,,,,,,,schema_name,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_tables,norm,1,,0,,,,,,,,,schema_name,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_table_schema,raw,2,,0,,,,,,,,,schema_name; table,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_table_schema,norm,2,,0,,,,,,,,,schema_name; table,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,execute_postgresql,raw,2,,0,,,migration_name:default,,,,,,query; migration_name,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,execute_postgresql,norm,2,,0,,,migration_name:default,,,,,,query; migration_name,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,retrieve_migrations,raw,4,,0,,,limit:default; offset:default; name_pattern:default; include_full_queries:default,,,,,,limit; offset; name_pattern; include_full_queries,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,retrieve_migrations,norm,4,,0,,,limit:default; offset:default; name_pattern:default; include_full_queries:default,,,,,,limit; offset; name_pattern; include_full_queries,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,send_management_api_request,raw,5,,5,,,path_params:additionalProperties; request_params:additionalProperties; request_body:additionalProperties,,path_params; request_params; request_body,,,,method; path; path_params; request_params; request_body,,,,,,True,True,True,True
+alexander-zuev__supabase-mcp-server,send_management_api_request,norm,5,,5,,,path_params:additionalProperties; request_params:additionalProperties; request_body:additionalProperties,,path_params; request_params; request_body,,,,method; path; path_params; request_params; request_body,,,,,,True,True,True,True
+alexander-zuev__supabase-mcp-server,get_management_api_spec,raw,1,,3,,,"params:additionalProperties,default",,params,,,,params,,,,,,True,True,True,True
+alexander-zuev__supabase-mcp-server,get_management_api_spec,norm,1,,3,,,"params:additionalProperties,default",,params,,,,params,,,,,,True,True,True,True
+alexander-zuev__supabase-mcp-server,get_auth_admin_methods_spec,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,get_auth_admin_methods_spec,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+alexander-zuev__supabase-mcp-server,call_auth_admin_method,raw,2,,2,,,params:additionalProperties,,params,,,,method; params,,,,,,True,True,True,True
+alexander-zuev__supabase-mcp-server,call_auth_admin_method,norm,2,,2,,,params:additionalProperties,,params,,,,method; params,,,,,,True,True,True,True
+alexander-zuev__supabase-mcp-server,live_dangerously,raw,2,,0,,,enable_unsafe_mode:default,,,,,,service; enable_unsafe_mode,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,live_dangerously,norm,2,,0,,,enable_unsafe_mode:default,,,,,,service; enable_unsafe_mode,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,confirm_destructive_operation,raw,3,,0,,,user_confirmation:default,,,,,,operation_type; confirmation_id; user_confirmation,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,confirm_destructive_operation,norm,3,,0,,,user_confirmation:default,,,,,,operation_type; confirmation_id; user_confirmation,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,retrieve_logs,raw,6,,0,,,limit:default; hours_ago:default; filters:default; search:default; custom_query:default,,,,,,collection; limit; hours_ago; filters; search; custom_query,,,,,,False,False,False,True
+alexander-zuev__supabase-mcp-server,retrieve_logs,norm,6,,0,,,limit:default; hours_ago:default; filters:default; search:default; custom_query:default,,,,,,collection; limit; hours_ago; filters; search; custom_query,,,,,,False,False,False,True
+bytebase__dbhub,execute_sql,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+bytebase__dbhub,execute_sql,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+bytebase__dbhub,search_objects,raw,6,,0,,,"pattern:default; detail_level:default; limit:default,exclusiveMinimum,maximum",,,,,,,,,,,,False,False,False,True
+bytebase__dbhub,search_objects,norm,6,,0,,,"pattern:default; detail_level:default; limit:default,exclusiveMinimum,maximum",,,,,,,,,,,,False,False,False,True
+chroma-core__chroma-mcp,chroma_list_collections,raw,2,,2,limit; offset,limit; offset,limit:default; offset:default,,,,,,limit; offset,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_list_collections,norm,2,,0,,,limit:default; offset:default,,,,,,limit; offset,,,,,,False,False,False,True
+chroma-core__chroma-mcp,chroma_create_collection,raw,3,,1,metadata,metadata,embedding_function_name:default; metadata:default,,,,,,collection_name; embedding_function_name; metadata,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_create_collection,norm,3,,3,,,"embedding_function_name:default; metadata:additionalProperties,default",,metadata,,,,collection_name; embedding_function_name; metadata,,,,,,True,True,True,True
+chroma-core__chroma-mcp,chroma_peek_collection,raw,2,,0,,,limit:default,,,,,,collection_name; limit,,,,,,False,False,False,True
+chroma-core__chroma-mcp,chroma_peek_collection,norm,2,,0,,,limit:default,,,,,,collection_name; limit,,,,,,False,False,False,True
+chroma-core__chroma-mcp,chroma_get_collection_info,raw,1,,0,,,,,,,,,collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_get_collection_info,norm,1,,0,,,,,,,,,collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_get_collection_count,raw,1,,0,,,,,,,,,collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_get_collection_count,norm,1,,0,,,,,,,,,collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_modify_collection,raw,3,,2,new_name; new_metadata,new_name; new_metadata,new_name:default; new_metadata:default,,,,,,collection_name; new_name; new_metadata,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_modify_collection,norm,3,,3,,,"new_name:default; new_metadata:additionalProperties,default",,new_metadata,,,,collection_name; new_name; new_metadata,,,,,,True,True,True,True
+chroma-core__chroma-mcp,chroma_fork_collection,raw,2,,0,,,,,,,,,collection_name; new_collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_fork_collection,norm,2,,0,,,,,,,,,collection_name; new_collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_delete_collection,raw,1,,0,,,,,,,,,collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_delete_collection,norm,1,,0,,,,,,,,,collection_name,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_add_documents,raw,4,,1,metadatas,metadatas,metadatas:default,,,,,,collection_name; documents; ids; metadatas,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_add_documents,norm,4,,0,,,metadatas:default,,,,,,collection_name; documents; ids; metadatas,,,,,,False,False,False,True
+chroma-core__chroma-mcp,chroma_query_documents,raw,6,,2,where; where_document,where; where_document,n_results:default; where:default; where_document:default; include:default,,,,,,collection_name; query_texts; n_results; where; where_document; include,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_query_documents,norm,6,,6,,,"n_results:default; where:additionalProperties,default; where_document:additionalProperties,default; include:default",,where; where_document,,,,collection_name; query_texts; n_results; where; where_document; include,,,,,,True,True,True,True
+chroma-core__chroma-mcp,chroma_get_documents,raw,7,,5,ids; where; where_document; limit; offset,ids; where; where_document; limit; offset,ids:default; where:default; where_document:default; include:default; limit:default; offset:default,,,,,,collection_name; ids; where; where_document; include; limit; offset,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_get_documents,norm,7,,6,,,"ids:default; where:additionalProperties,default; where_document:additionalProperties,default; include:default; limit:default; offset:default",,where; where_document,,,,collection_name; ids; where; where_document; include; limit; offset,,,,,,True,True,True,True
+chroma-core__chroma-mcp,chroma_update_documents,raw,5,,3,embeddings; metadatas; documents,embeddings; metadatas; documents,embeddings:default; metadatas:default; documents:default,,,,,,collection_name; ids; embeddings; metadatas; documents,,,,,,True,False,True,True
+chroma-core__chroma-mcp,chroma_update_documents,norm,5,,0,,,embeddings:default; metadatas:default; documents:default,,,,,,collection_name; ids; embeddings; metadatas; documents,,,,,,False,False,False,True
+chroma-core__chroma-mcp,chroma_delete_documents,raw,2,,0,,,,,,,,,collection_name; ids,,,,,,False,False,False,False
+chroma-core__chroma-mcp,chroma_delete_documents,norm,2,,0,,,,,,,,,collection_name; ids,,,,,,False,False,False,False
+cr7258__elasticsearch-mcp-server,list_indices,raw,1,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,list_indices,norm,1,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,get_index,raw,2,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,get_index,norm,2,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,create_index,raw,3,,2,body; cluster,body; cluster,body:default; cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,create_index,norm,3,,2,,,"body:additionalProperties,default; cluster:default",,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,delete_index,raw,2,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,delete_index,norm,2,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,search_documents,raw,3,,2,cluster,cluster,body:additionalProperties; cluster:default,,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,search_documents,norm,3,,1,,,body:additionalProperties; cluster:default,,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,index_document,raw,4,,3,id; cluster,id; cluster,document:additionalProperties; id:default; cluster:default,,document,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,index_document,norm,4,,1,,,document:additionalProperties; id:default; cluster:default,,document,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,get_document,raw,3,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,get_document,norm,3,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,delete_document,raw,3,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,delete_document,norm,3,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,delete_by_query,raw,3,,2,cluster,cluster,body:additionalProperties; cluster:default,,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,delete_by_query,norm,3,,1,,,body:additionalProperties; cluster:default,,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,get_cluster_health,raw,1,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,get_cluster_health,norm,1,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,get_cluster_stats,raw,1,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,get_cluster_stats,norm,1,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,list_aliases,raw,1,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,list_aliases,norm,1,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,get_alias,raw,2,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,get_alias,norm,2,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,put_alias,raw,4,,2,cluster,cluster,body:additionalProperties; cluster:default,,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,put_alias,norm,4,,1,,,body:additionalProperties; cluster:default,,body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,delete_alias,raw,3,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,delete_alias,norm,3,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,create_data_stream,raw,2,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,create_data_stream,norm,2,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,get_data_stream,raw,2,,2,name; cluster,name; cluster,name:default; cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,get_data_stream,norm,2,,0,,,name:default; cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,delete_data_stream,raw,2,,1,cluster,cluster,cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,delete_data_stream,norm,2,,0,,,cluster:default,,,,,,,,,,,,False,False,False,True
+cr7258__elasticsearch-mcp-server,general_api_request,raw,5,,3,params; body; cluster,params; body; cluster,params:default; body:default; cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,general_api_request,norm,5,,4,,,"params:additionalProperties,default; body:additionalProperties,default; cluster:default",,params; body,,,,,,,,,,True,True,True,True
+cr7258__elasticsearch-mcp-server,analyze_text,raw,9,,7,index; analyzer; tokenizer; filter; char_filter; attributes; cluster,index; analyzer; tokenizer; filter; char_filter; attributes; cluster,index:default; analyzer:default; tokenizer:default; filter:default; char_filter:default; explain:default; attributes:default; cluster:default,,,,,,,,,,,,True,False,True,True
+cr7258__elasticsearch-mcp-server,analyze_text,norm,9,,0,,,index:default; analyzer:default; tokenizer:default; filter:default; char_filter:default; explain:default; attributes:default; cluster:default,,,,,,,,,,,,False,False,False,True
+designcomputer__mysql_mcp_server,execute_sql,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+designcomputer__mysql_mcp_server,execute_sql,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+designcomputer__mysql_mcp_server,get_schema_info,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+designcomputer__mysql_mcp_server,get_schema_info,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+designcomputer__mysql_mcp_server,get_table_sample,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+designcomputer__mysql_mcp_server,get_table_sample,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+executeautomation__mcp-database-server,read_query,raw,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,read_query,norm,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,write_query,raw,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,write_query,norm,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,create_table,raw,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,create_table,norm,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,alter_table,raw,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,alter_table,norm,1,,0,,,,,,,,,query,,,,,,False,False,False,False
+executeautomation__mcp-database-server,drop_table,raw,2,,0,,,,,,,,,table_name; confirm,,,,,,False,False,False,False
+executeautomation__mcp-database-server,drop_table,norm,2,,0,,,,,,,,,table_name; confirm,,,,,,False,False,False,False
+executeautomation__mcp-database-server,export_query,raw,2,,0,,,,,,,,,query; format,,,,,,False,False,False,False
+executeautomation__mcp-database-server,export_query,norm,2,,0,,,,,,,,,query; format,,,,,,False,False,False,False
+executeautomation__mcp-database-server,list_tables,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+executeautomation__mcp-database-server,list_tables,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+executeautomation__mcp-database-server,describe_table,raw,1,,0,,,,,,,,,table_name,,,,,,False,False,False,False
+executeautomation__mcp-database-server,describe_table,norm,1,,0,,,,,,,,,table_name,,,,,,False,False,False,False
+executeautomation__mcp-database-server,append_insight,raw,1,,0,,,,,,,,,insight,,,,,,False,False,False,False
+executeautomation__mcp-database-server,append_insight,norm,1,,0,,,,,,,,,insight,,,,,,False,False,False,False
+executeautomation__mcp-database-server,list_insights,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+executeautomation__mcp-database-server,list_insights,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,database_overview,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,database_overview,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,execute_sql,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,execute_sql,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,get_column_cardinality,raw,3,,0,,,schema_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,get_column_cardinality,norm,3,,0,,,schema_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,get_query_plan,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,get_query_plan,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_active_queries,raw,3,,0,,,exclude_application_names:default; limit:default; min_duration:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_active_queries,norm,3,,0,,,exclude_application_names:default; limit:default; min_duration:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_autovacuum_configurations,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_autovacuum_configurations,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_available_extensions,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_available_extensions,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_database_stats,raw,6,,0,,,database_name:default; database_owner:default; default_tablespace:default; include_templates:default; limit:default; order_by:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_database_stats,norm,6,,0,,,database_name:default; database_owner:default; default_tablespace:default; include_templates:default; limit:default; order_by:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_indexes,raw,5,,0,,,index_name:default; limit:default; only_unused:default; schema_name:default; table_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_indexes,norm,5,,0,,,index_name:default; limit:default; only_unused:default; schema_name:default; table_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_installed_extensions,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_installed_extensions,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_invalid_indexes,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_invalid_indexes,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_locks,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_locks,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_memory_configurations,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_memory_configurations,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_pg_settings,raw,2,,0,,,limit:default; setting_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_pg_settings,norm,2,,0,,,limit:default; setting_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_publication_tables,raw,4,,0,,,limit:default; publication_names:default; schema_names:default; table_names:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_publication_tables,norm,4,,0,,,limit:default; publication_names:default; schema_names:default; table_names:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_query_stats,raw,2,,0,,,database_name:default; limit:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_query_stats,norm,2,,0,,,database_name:default; limit:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_replication_slots,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_replication_slots,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,list_roles,raw,2,,0,,,limit:default; role_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_roles,norm,2,,0,,,limit:default; role_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_schemas,raw,3,,0,,,limit:default; owner:default; schema_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_schemas,norm,3,,0,,,limit:default; owner:default; schema_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_sequences,raw,3,,0,,,limit:default; schema_name:default; sequence_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_sequences,norm,3,,0,,,limit:default; schema_name:default; sequence_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_stored_procedure,raw,3,,0,,,limit:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_stored_procedure,norm,3,,0,,,limit:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_table_stats,raw,5,,0,,,limit:default; schema_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_table_stats,norm,5,,0,,,limit:default; schema_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_tables,raw,2,,0,,,output_format:default; table_names:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_tables,norm,2,,0,,,output_format:default; table_names:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_tablespaces,raw,2,,0,,,limit:default; tablespace_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_tablespaces,norm,2,,0,,,limit:default; tablespace_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_top_bloated_tables,raw,1,,0,,,limit:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_top_bloated_tables,norm,1,,0,,,limit:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_triggers,raw,4,,0,,,limit:default; schema_name:default; table_name:default; trigger_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_triggers,norm,4,,0,,,limit:default; schema_name:default; table_name:default; trigger_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_views,raw,3,,0,,,limit:default; schema_name:default; view_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,list_views,norm,3,,0,,,limit:default; schema_name:default; view_name:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,long_running_transactions,raw,2,,0,,,limit:default; min_duration:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,long_running_transactions,norm,2,,0,,,limit:default; min_duration:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__postgres,replication_stats,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__postgres,replication_stats,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__sqlite,execute_sql,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__sqlite,execute_sql,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+googleapis__mcp-toolbox__sqlite,list_tables,raw,2,,0,,,output_format:default; table_names:default,,,,,,,,,,,,False,False,False,True
+googleapis__mcp-toolbox__sqlite,list_tables,norm,2,,0,,,output_format:default; table_names:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,aggregate-db,raw,4,,0,,,pipeline:minItems; responseBytesLimit:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,aggregate-db,norm,4,,0,,,pipeline:minItems; responseBytesLimit:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,aggregate,raw,5,,0,,,responseBytesLimit:default,,,,pipeline[],,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,aggregate,norm,5,,0,,,responseBytesLimit:default,,,,pipeline[],,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,collection-indexes,raw,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,collection-indexes,norm,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,collection-schema,raw,5,,0,,,sampleSize:default; responseBytesLimit:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,collection-schema,norm,5,,0,,,sampleSize:default; responseBytesLimit:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,collection-storage-size,raw,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,collection-storage-size,norm,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,connect,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,connect,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,count,raw,4,,0,,,query:additionalProperties,,query,,,,,,,,,,False,True,True,True
+mongodb-js__mongodb-mcp-server,count,norm,4,,0,,,query:additionalProperties,,query,,,,,,,,,,False,True,True,True
+mongodb-js__mongodb-mcp-server,create-collection,raw,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,create-collection,norm,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,create-index,raw,5,,0,,,,,,,definition[],,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,create-index,norm,5,,0,,,,,,,definition[],,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,db-stats,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,db-stats,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,delete-many,raw,4,,0,,,filter:additionalProperties,,filter,,,,,,,,,,False,True,True,True
+mongodb-js__mongodb-mcp-server,delete-many,norm,4,,0,,,filter:additionalProperties,,filter,,,,,,,,,,False,True,True,True
+mongodb-js__mongodb-mcp-server,disconnect,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,disconnect,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,drop-collection,raw,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,drop-collection,norm,3,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,drop-database,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,drop-database,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,drop-index,raw,5,,0,,,indexName:minLength,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,drop-index,norm,5,,0,,,indexName:minLength,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,explain,raw,5,,0,,,verbosity:default,,,,method[],,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,explain,norm,5,,0,,,verbosity:default,,,,method[],,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,export,raw,6,,0,,,jsonExportFormat:default,,,,exportTarget[],,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,export,norm,6,,0,,,jsonExportFormat:default,,,,exportTarget[],,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,find,raw,8,,1,,,"filter:additionalProperties; projection:additionalProperties; limit:default; sort:additionalProperties,propertyNames; responseBytesLimit:default",,filter; projection; sort,,,,,,,,,,True,True,True,True
+mongodb-js__mongodb-mcp-server,find,norm,8,,1,,,"filter:additionalProperties; projection:additionalProperties; limit:default; sort:additionalProperties,propertyNames; responseBytesLimit:default",,filter; projection; sort,,,,,,,,,,True,True,True,True
+mongodb-js__mongodb-mcp-server,insert-many,raw,4,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,insert-many,norm,4,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-collections,raw,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-collections,norm,2,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-connections,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-connections,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-databases,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-databases,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,mongodb-logs,raw,3,,0,,,"type:default; limit:default,maximum,minimum",,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,mongodb-logs,norm,3,,0,,,"type:default; limit:default,maximum,minimum",,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,rename-collection,raw,5,,0,,,dropTarget:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,rename-collection,norm,5,,0,,,dropTarget:default,,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,update-many,raw,6,,0,,,filter:additionalProperties; update:additionalProperties,,filter; update,,,,,,,,,,False,True,True,True
+mongodb-js__mongodb-mcp-server,update-many,norm,6,,0,,,filter:additionalProperties; update:additionalProperties,,filter; update,,,,,,,,,,False,True,True,True
+mongodb-js__mongodb-mcp-server,search-knowledge,raw,3,,0,,,"limit:default,maximum,minimum",,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,search-knowledge,norm,3,,0,,,"limit:default,maximum,minimum",,,,,,,,,,,,False,False,False,True
+mongodb-js__mongodb-mcp-server,list-knowledge-sources,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+mongodb-js__mongodb-mcp-server,list-knowledge-sources,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+motherduckdb__mcp-server-motherduck,execute_query,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+motherduckdb__mcp-server-motherduck,execute_query,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+motherduckdb__mcp-server-motherduck,list_databases,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+motherduckdb__mcp-server-motherduck,list_databases,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+motherduckdb__mcp-server-motherduck,list_tables,raw,2,,2,database; schema,database; schema,database:default; schema:default,,,,,,,,,,,,True,False,True,True
+motherduckdb__mcp-server-motherduck,list_tables,norm,2,,0,,,database:default; schema:default,,,,,,,,,,,,False,False,False,True
+motherduckdb__mcp-server-motherduck,list_columns,raw,3,,2,database; schema,database; schema,database:default; schema:default,,,,,,,,,,,,True,False,True,True
+motherduckdb__mcp-server-motherduck,list_columns,norm,3,,0,,,database:default; schema:default,,,,,,,,,,,,False,False,False,True
+neo4j-contrib__mcp-neo4j__aura-manager,list_instances,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,list_instances,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,get_instance_details,raw,1,,0,,,,,,,,,instance_ids,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,get_instance_details,norm,1,,0,,,,,,,,,instance_ids,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,get_instance_by_name,raw,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,get_instance_by_name,norm,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,create_instance,raw,9,,1,source_instance_id,source_instance_id,memory:default; region:default; type:default; vector_optimized:default; cloud_provider:default; graph_analytics_plugin:default; source_instance_id:default,,,,,,,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__aura-manager,create_instance,norm,9,,0,,,memory:default; region:default; type:default; vector_optimized:default; cloud_provider:default; graph_analytics_plugin:default; source_instance_id:default,,,,,,,,,,,,False,False,False,True
+neo4j-contrib__mcp-neo4j__aura-manager,update_instance_name,raw,2,,0,,,,,,,,,instance_id; name,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,update_instance_name,norm,2,,0,,,,,,,,,instance_id; name,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,update_instance_memory,raw,2,,0,,,,,,,,,instance_id; memory,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,update_instance_memory,norm,2,,0,,,,,,,,,instance_id; memory,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,update_instance_vector_optimization,raw,2,,0,,,,,,,,,instance_id; vector_optimized,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,update_instance_vector_optimization,norm,2,,0,,,,,,,,,instance_id; vector_optimized,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,pause_instance,raw,1,,0,,,,,,,,,instance_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,pause_instance,norm,1,,0,,,,,,,,,instance_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,resume_instance,raw,1,,0,,,,,,,,,instance_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,resume_instance,norm,1,,0,,,,,,,,,instance_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,list_tenants,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,list_tenants,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,get_tenant_details,raw,1,,0,,,,,,,,,tenant_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,get_tenant_details,norm,1,,0,,,,,,,,,tenant_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,delete_instance,raw,1,,0,,,,,,,,,instance_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__aura-manager,delete_instance,norm,1,,0,,,,,,,,,instance_id,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__cypher,get_neo4j_schema,raw,1,,0,,,sample_size:default,,,,,,,,,,,,False,False,False,True
+neo4j-contrib__mcp-neo4j__cypher,get_neo4j_schema,norm,1,,0,,,sample_size:default,,,,,,,,,,,,False,False,False,True
+neo4j-contrib__mcp-neo4j__cypher,read_neo4j_cypher,raw,2,,2,,,"params:additionalProperties,default",,params,,,,,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__cypher,read_neo4j_cypher,norm,2,,2,,,"params:additionalProperties,default",,params,,,,,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__cypher,write_neo4j_cypher,raw,2,,2,,,"params:additionalProperties,default",,params,,,,,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__cypher,write_neo4j_cypher,norm,2,,2,,,"params:additionalProperties,default",,params,,,,,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,validate_node,raw,2,,1,node,node,return_validated:default,,,,,,node; return_validated,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,validate_node,norm,2,,1,node,node,return_validated:default,,,,,,node; return_validated,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,validate_relationship,raw,2,,1,relationship,relationship,return_validated:default,,,,,,relationship; return_validated,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,validate_relationship,norm,2,,1,relationship,relationship,return_validated:default,,,,,,relationship; return_validated,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,validate_data_model,raw,2,,1,data_model,data_model,return_validated:default,,,,,,data_model; return_validated,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,validate_data_model,norm,2,,1,data_model,data_model,return_validated:default,,,,,,data_model; return_validated,,,,,,True,False,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,load_from_arrows_json,raw,1,,1,,,arrows_data_model_dict:additionalProperties,,arrows_data_model_dict,,,,arrows_data_model_dict,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,load_from_arrows_json,norm,1,,1,,,arrows_data_model_dict:additionalProperties,,arrows_data_model_dict,,,,arrows_data_model_dict,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_arrows_json,raw,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_arrows_json,norm,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_mermaid_config_str,raw,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_mermaid_config_str,norm,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_node_cypher_ingest_query,raw,1,,1,node,node,,,,,,,,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_node_cypher_ingest_query,norm,1,,1,node,node,,,,,,,,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_relationship_cypher_ingest_query,raw,4,,1,data_model,data_model,,,,,,,,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_relationship_cypher_ingest_query,norm,4,,1,data_model,data_model,,,,,,,,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_constraints_cypher_queries,raw,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_constraints_cypher_queries,norm,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_example_data_model,raw,1,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__data-modeling,get_example_data_model,norm,1,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__data-modeling,list_example_data_models,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__data-modeling,list_example_data_models,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__data-modeling,load_from_owl_turtle,raw,1,,0,,,,,,,,,owl_turtle_str,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__data-modeling,load_from_owl_turtle,norm,1,,0,,,,,,,,,owl_turtle_str,,,,,,False,False,False,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_owl_turtle,raw,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_owl_turtle,norm,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_pydantic_models,raw,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_pydantic_models,norm,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_neo4j_graphrag_pkg_schema,raw,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,export_to_neo4j_graphrag_pkg_schema,norm,1,,1,data_model,data_model,,,,,,,data_model,,,,,,True,False,True,False
+neo4j-contrib__mcp-neo4j__data-modeling,load_from_neo4j_graphrag_pkg_schema,raw,1,,1,,,neo4j_graphrag_python_package_schema:additionalProperties,,neo4j_graphrag_python_package_schema,,,,neo4j_graphrag_python_package_schema,,,,,,True,True,True,True
+neo4j-contrib__mcp-neo4j__data-modeling,load_from_neo4j_graphrag_pkg_schema,norm,1,,1,,,neo4j_graphrag_python_package_schema:additionalProperties,,neo4j_graphrag_python_package_schema,,,,neo4j_graphrag_python_package_schema,,,,,,True,True,True,True
+redis__mcp-redis,hset,raw,4,,2,value; expire_seconds,value; expire_seconds,expire_seconds:default,,,,,,name; key; value; expire_seconds,,,,,,True,False,True,True
+redis__mcp-redis,hset,norm,4,,1,value,value,expire_seconds:default,,,,,,name; key; value; expire_seconds,,,,,,True,False,True,True
+redis__mcp-redis,hget,raw,2,,0,,,,,,,,,name; key,,,,,,False,False,False,False
+redis__mcp-redis,hget,norm,2,,0,,,,,,,,,name; key,,,,,,False,False,False,False
+redis__mcp-redis,hdel,raw,2,,0,,,,,,,,,name; key,,,,,,False,False,False,False
+redis__mcp-redis,hdel,norm,2,,0,,,,,,,,,name; key,,,,,,False,False,False,False
+redis__mcp-redis,hgetall,raw,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,hgetall,norm,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,hexists,raw,2,,0,,,,,,,,,name; key,,,,,,False,False,False,False
+redis__mcp-redis,hexists,norm,2,,0,,,,,,,,,name; key,,,,,,False,False,False,False
+redis__mcp-redis,set_vector_in_hash,raw,3,,0,,,vector_field:default,,,,,,name; vector; vector_field,,,,,,False,False,False,True
+redis__mcp-redis,set_vector_in_hash,norm,3,,0,,,vector_field:default,,,,,,name; vector; vector_field,,,,,,False,False,False,True
+redis__mcp-redis,get_vector_from_hash,raw,2,,0,,,vector_field:default,,,,,,name; vector_field,,,,,,False,False,False,True
+redis__mcp-redis,get_vector_from_hash,norm,2,,0,,,vector_field:default,,,,,,name; vector_field,,,,,,False,False,False,True
+redis__mcp-redis,json_set,raw,4,,1,expire_seconds,expire_seconds,expire_seconds:default,,,,,,name; path; value; expire_seconds,,,,,,True,False,True,True
+redis__mcp-redis,json_set,norm,4,,0,,,expire_seconds:default,,,,,,name; path; value; expire_seconds,,,,,,False,False,False,True
+redis__mcp-redis,json_get,raw,2,,0,,,path:default,,,,,,name; path,,,,,,False,False,False,True
+redis__mcp-redis,json_get,norm,2,,0,,,path:default,,,,,,name; path,,,,,,False,False,False,True
+redis__mcp-redis,json_del,raw,2,,0,,,path:default,,,,,,name; path,,,,,,False,False,False,True
+redis__mcp-redis,json_del,norm,2,,0,,,path:default,,,,,,name; path,,,,,,False,False,False,True
+redis__mcp-redis,lpush,raw,3,,2,value; expire,value; expire,expire:default,,,,,,name; value; expire,,,,,,True,False,True,True
+redis__mcp-redis,lpush,norm,3,,1,value,value,expire:default,,,,,,name; value; expire,,,,,,True,False,True,True
+redis__mcp-redis,rpush,raw,3,,2,value; expire,value; expire,expire:default,,,,,,name; value; expire,,,,,,True,False,True,True
+redis__mcp-redis,rpush,norm,3,,1,value,value,expire:default,,,,,,name; value; expire,,,,,,True,False,True,True
+redis__mcp-redis,lpop,raw,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,lpop,norm,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,rpop,raw,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,rpop,norm,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,lrange,raw,3,,0,,,,,,,,,name; start; stop,,,,,,False,False,False,False
+redis__mcp-redis,lrange,norm,3,,0,,,,,,,,,name; start; stop,,,,,,False,False,False,False
+redis__mcp-redis,llen,raw,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,llen,norm,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,lrem,raw,3,,1,element,element,,,,,,,name; count; element,,,,,,True,False,True,False
+redis__mcp-redis,lrem,norm,3,,1,element,element,,,,,,,name; count; element,,,,,,True,False,True,False
+redis__mcp-redis,delete,raw,1,,0,,,,,,,,,key,,,,,,False,False,False,False
+redis__mcp-redis,delete,norm,1,,0,,,,,,,,,key,,,,,,False,False,False,False
+redis__mcp-redis,type,raw,1,,0,,,,,,,,,key,,,,,,False,False,False,False
+redis__mcp-redis,type,norm,1,,0,,,,,,,,,key,,,,,,False,False,False,False
+redis__mcp-redis,expire,raw,2,,0,,,,,,,,,name; expire_seconds,,,,,,False,False,False,False
+redis__mcp-redis,expire,norm,2,,0,,,,,,,,,name; expire_seconds,,,,,,False,False,False,False
+redis__mcp-redis,rename,raw,2,,0,,,,,,,,,old_key; new_key,,,,,,False,False,False,False
+redis__mcp-redis,rename,norm,2,,0,,,,,,,,,old_key; new_key,,,,,,False,False,False,False
+redis__mcp-redis,scan_keys,raw,3,,0,,,pattern:default; count:default; cursor:default,,,,,,pattern; count; cursor,,,,,,False,False,False,True
+redis__mcp-redis,scan_keys,norm,3,,0,,,pattern:default; count:default; cursor:default,,,,,,pattern; count; cursor,,,,,,False,False,False,True
+redis__mcp-redis,scan_all_keys,raw,2,,0,,,pattern:default; batch_size:default,,,,,,pattern; batch_size,,,,,,False,False,False,True
+redis__mcp-redis,scan_all_keys,norm,2,,0,,,pattern:default; batch_size:default,,,,,,pattern; batch_size,,,,,,False,False,False,True
+redis__mcp-redis,search_redis_documents,raw,1,,0,,,,,,,,,question,,,,,,False,False,False,False
+redis__mcp-redis,search_redis_documents,norm,1,,0,,,,,,,,,question,,,,,,False,False,False,False
+redis__mcp-redis,publish,raw,2,,0,,,,,,,,,channel; message,,,,,,False,False,False,False
+redis__mcp-redis,publish,norm,2,,0,,,,,,,,,channel; message,,,,,,False,False,False,False
+redis__mcp-redis,subscribe,raw,1,,0,,,,,,,,,channel,,,,,,False,False,False,False
+redis__mcp-redis,subscribe,norm,1,,0,,,,,,,,,channel,,,,,,False,False,False,False
+redis__mcp-redis,psubscribe,raw,1,,0,,,,,,,,,pattern,,,,,,False,False,False,False
+redis__mcp-redis,psubscribe,norm,1,,0,,,,,,,,,pattern,,,,,,False,False,False,False
+redis__mcp-redis,read_messages,raw,3,,0,,,timeout_ms:default; max_messages:default,,,,,,subscription_id; timeout_ms; max_messages,,,,,,False,False,False,True
+redis__mcp-redis,read_messages,norm,3,,0,,,timeout_ms:default; max_messages:default,,,,,,subscription_id; timeout_ms; max_messages,,,,,,False,False,False,True
+redis__mcp-redis,unsubscribe,raw,1,,0,,,,,,,,,subscription_id,,,,,,False,False,False,False
+redis__mcp-redis,unsubscribe,norm,1,,0,,,,,,,,,subscription_id,,,,,,False,False,False,False
+redis__mcp-redis,get_indexes,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+redis__mcp-redis,get_indexes,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+redis__mcp-redis,get_index_info,raw,1,,0,,,,,,,,,index_name,,,,,,False,False,False,False
+redis__mcp-redis,get_index_info,norm,1,,0,,,,,,,,,index_name,,,,,,False,False,False,False
+redis__mcp-redis,get_indexed_keys_number,raw,1,,0,,,,,,,,,index_name,,,,,,False,False,False,False
+redis__mcp-redis,get_indexed_keys_number,norm,1,,0,,,,,,,,,index_name,,,,,,False,False,False,False
+redis__mcp-redis,create_vector_index_hash,raw,5,,0,,,index_name:default; prefix:default; vector_field:default; dim:default; distance_metric:default,,,,,,index_name; prefix; vector_field; dim; distance_metric,,,,,,False,False,False,True
+redis__mcp-redis,create_vector_index_hash,norm,5,,0,,,index_name:default; prefix:default; vector_field:default; dim:default; distance_metric:default,,,,,,index_name; prefix; vector_field; dim; distance_metric,,,,,,False,False,False,True
+redis__mcp-redis,vector_search_hash,raw,5,,1,return_fields,return_fields,index_name:default; vector_field:default; k:default; return_fields:default,,,,,,query_vector; index_name; vector_field; k; return_fields,,,,,,True,False,True,True
+redis__mcp-redis,vector_search_hash,norm,5,,0,,,index_name:default; vector_field:default; k:default; return_fields:default,,,,,,query_vector; index_name; vector_field; k; return_fields,,,,,,False,False,False,True
+redis__mcp-redis,hybrid_search,raw,6,,1,return_fields,return_fields,filter_expression:default; index_name:default; vector_field:default; k:default; return_fields:default,,,,,,query_vector; filter_expression; index_name; vector_field; k; return_fields,,,,,,True,False,True,True
+redis__mcp-redis,hybrid_search,norm,6,,0,,,filter_expression:default; index_name:default; vector_field:default; k:default; return_fields:default,,,,,,query_vector; filter_expression; index_name; vector_field; k; return_fields,,,,,,False,False,False,True
+redis__mcp-redis,dbsize,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+redis__mcp-redis,dbsize,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+redis__mcp-redis,info,raw,1,,0,,,section:default,,,,,,section,,,,,,False,False,False,True
+redis__mcp-redis,info,norm,1,,0,,,section:default,,,,,,section,,,,,,False,False,False,True
+redis__mcp-redis,client_list,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+redis__mcp-redis,client_list,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+redis__mcp-redis,sadd,raw,3,,1,expire_seconds,expire_seconds,expire_seconds:default,,,,,,name; value; expire_seconds,,,,,,True,False,True,True
+redis__mcp-redis,sadd,norm,3,,0,,,expire_seconds:default,,,,,,name; value; expire_seconds,,,,,,False,False,False,True
+redis__mcp-redis,srem,raw,2,,0,,,,,,,,,name; value,,,,,,False,False,False,False
+redis__mcp-redis,srem,norm,2,,0,,,,,,,,,name; value,,,,,,False,False,False,False
+redis__mcp-redis,smembers,raw,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,smembers,norm,1,,0,,,,,,,,,name,,,,,,False,False,False,False
+redis__mcp-redis,zadd,raw,4,,1,expiration,expiration,expiration:default,,,,,,key; score; member; expiration,,,,,,True,False,True,True
+redis__mcp-redis,zadd,norm,4,,0,,,expiration:default,,,,,,key; score; member; expiration,,,,,,False,False,False,True
+redis__mcp-redis,zrange,raw,4,,0,,,with_scores:default,,,,,,key; start; end; with_scores,,,,,,False,False,False,True
+redis__mcp-redis,zrange,norm,4,,0,,,with_scores:default,,,,,,key; start; end; with_scores,,,,,,False,False,False,True
+redis__mcp-redis,zrem,raw,2,,0,,,,,,,,,key; member,,,,,,False,False,False,False
+redis__mcp-redis,zrem,norm,2,,0,,,,,,,,,key; member,,,,,,False,False,False,False
+redis__mcp-redis,xadd,raw,3,,3,expiration,expiration,fields:additionalProperties; expiration:default,,fields,,,,key; fields; expiration,,,,,,True,True,True,True
+redis__mcp-redis,xadd,norm,3,,2,,,fields:additionalProperties; expiration:default,,fields,,,,key; fields; expiration,,,,,,True,True,True,True
+redis__mcp-redis,xrange,raw,2,,0,,,count:default,,,,,,key; count,,,,,,False,False,False,True
+redis__mcp-redis,xrange,norm,2,,0,,,count:default,,,,,,key; count,,,,,,False,False,False,True
+redis__mcp-redis,xdel,raw,2,,0,,,,,,,,,key; entry_id,,,,,,False,False,False,False
+redis__mcp-redis,xdel,norm,2,,0,,,,,,,,,key; entry_id,,,,,,False,False,False,False
+redis__mcp-redis,xgroup_create,raw,4,,0,,,start_id:default; mkstream:default,,,,,,key; group_name; start_id; mkstream,,,,,,False,False,False,True
+redis__mcp-redis,xgroup_create,norm,4,,0,,,start_id:default; mkstream:default,,,,,,key; group_name; start_id; mkstream,,,,,,False,False,False,True
+redis__mcp-redis,xgroup_destroy,raw,2,,0,,,,,,,,,key; group_name,,,,,,False,False,False,False
+redis__mcp-redis,xgroup_destroy,norm,2,,0,,,,,,,,,key; group_name,,,,,,False,False,False,False
+redis__mcp-redis,xreadgroup,raw,6,,1,block_ms,block_ms,count:default; block_ms:default; stream_id:default,,,,,,key; group_name; consumer_name; count; block_ms; stream_id,,,,,,True,False,True,True
+redis__mcp-redis,xreadgroup,norm,6,,0,,,count:default; block_ms:default; stream_id:default,,,,,,key; group_name; consumer_name; count; block_ms; stream_id,,,,,,False,False,False,True
+redis__mcp-redis,xack,raw,3,,0,,,,,,,,,key; group_name; entry_ids,,,,,,False,False,False,False
+redis__mcp-redis,xack,norm,3,,0,,,,,,,,,key; group_name; entry_ids,,,,,,False,False,False,False
+redis__mcp-redis,set,raw,3,,2,value; expiration,value; expiration,expiration:default,,,,,,key; value; expiration,,,,,,True,False,True,True
+redis__mcp-redis,set,norm,3,,1,value,value,expiration:default,,,,,,key; value; expiration,,,,,,True,False,True,True
+redis__mcp-redis,get,raw,1,,0,,,,,,,,,key,,,,,,False,False,False,False
+redis__mcp-redis,get,norm,1,,0,,,,,,,,,key,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,all_table_names,raw,0,,0,,,,,,,,,,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,all_table_names,norm,0,,0,,,,,,,,,,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,filter_table_names,raw,1,,0,,,,,,,,,q,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,filter_table_names,norm,1,,0,,,,,,,,,q,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,schema_definitions,raw,1,,0,,,,,,,,,table_names,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,schema_definitions,norm,1,,0,,,,,,,,,table_names,,,,,,False,False,False,False
+runekaagaard__mcp-alchemy,execute_query,raw,2,,3,,,"params:additionalProperties,default",,params,,,,query; params,,,,,,True,True,True,True
+runekaagaard__mcp-alchemy,execute_query,norm,2,,3,,,"params:additionalProperties,default",,params,,,,query; params,,,,,,True,True,True,True

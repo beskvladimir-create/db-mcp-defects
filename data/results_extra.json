@@ -1,0 +1,77 @@
+{
+ "agentic_all_excl_dbhub": [
+  84,
+  5527
+ ],
+ "agentic_frame_excl_dbhub": [
+  25,
+  746
+ ],
+ "agentic_nonframe_excl_dbhub": [
+  59,
+  4781
+ ],
+ "agentic_dbhub": [
+  125,
+  215
+ ],
+ "agentic_fisher_p_excl_dbhub": 7.545244869141254e-05,
+ "agent_fix_repos": {
+  "FreePeak/db-mcp-server": 6,
+  "Snowflake-Labs/mcp": 1,
+  "benborla/mcp-server-mysql": 1,
+  "bytebase/dbhub": 31,
+  "crystaldba/postgres-mcp": 2,
+  "neondatabase/mcp-server-neon": 1,
+  "supabase/mcp": 3
+ },
+ "agent_fix_element": {
+  "CONFIG": 11,
+  "GUARD": 10,
+  "SESSION": 9,
+  "EXEC": 5,
+  "OUTPUT": 2,
+  "PROTOCOL": 2,
+  "INTROSPECT": 3,
+  "INPUT": 1,
+  "TOOL_DEF": 2
+ },
+ "agent_fix_symptom": {
+  "OPERATOR": 6,
+  "MISLEAD": 4,
+  "UNSAFE": 7,
+  "SILENT": 7,
+  "REJECT": 7,
+  "UNAVAIL": 11,
+  "UNKNOWN": 1,
+  "TOOLS": 2
+ },
+ "agent_fix_guard_share": [
+  10,
+  45
+ ],
+ "nonagent_fix_guard_share": [
+  27,
+  211
+ ],
+ "client_specific_element": {
+  "PROTOCOL": 3,
+  "TOOL_DEF": 9,
+  "INPUT": 2,
+  "GUARD": 2,
+  "CONFIG": 1
+ },
+ "tooldef_schema_tools": 28,
+ "tooldef_client_specific": 9,
+ "gemini_mentions_in_included": [
+  "googleapis__mcp-toolbox#3788",
+  "redis__mcp-redis#59",
+  "redis__mcp-redis#66",
+  "redis__mcp-redis#81"
+ ],
+ "undetectable_share_excl_guard": [
+  34,
+  174
+ ],
+ "author_own_items_in_sample": []
+}

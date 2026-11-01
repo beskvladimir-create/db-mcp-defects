@@ -1,0 +1,10 @@
+{
+ "command": [
+  "npx",
+  "-y",
+  "@neondatabase/mcp-server-neon",
+  "start",
+  "napi_dummy"
+ ],
+ "error": "server exited: npm error code E403\nnpm error 403 403 Forbidden - GET https://codeload.github.com/getsentry/fastify-otel/tar.gz/ae3088d65e286bdc94ac5d722573537d6a6671bb\nnpm error 403 In most cases, you or one of your dependencies are requesting\nnpm error 403 a package version that is forbidden by your security policy, or\nnpm error 403 on a server you do not have access to.\nnpm error A complete log of this run can be found in: /home/claude/.npm/_logs/2026-11-01T04_40_41_126Z-debug-0.log\n"
+}

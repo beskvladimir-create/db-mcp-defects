@@ -1,0 +1,948 @@
+{
+ "command": [
+  "uvx",
+  "elasticsearch-mcp-server"
+ ],
+ "server_info": {
+  "name": "elasticsearch-mcp-server",
+  "version": "3.4.7"
+ },
+ "protocol_version": "2025-06-18",
+ "tools": [
+  {
+   "name": "list_indices",
+   "description": "List all indices.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "type": "object"
+   },
+   "outputSchema": {
+    "properties": {
+     "result": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "result"
+    ],
+    "type": "object",
+    "x-fastmcp-wrap-result": true
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "get_index",
+   "description": "Returns information (mappings, settings, aliases) about one or more indices.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "create_index",
+   "description": "Create a new index.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "body": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional index configuration including mappings and settings"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "delete_index",
+   "description": "Delete an index.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "search_documents",
+   "description": "Search for documents.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "body": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Search query"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "body"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "index_document",
+   "description": "Creates or updates a document in the index.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "document": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Document data"
+     },
+     "id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional document ID"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "document"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "get_document",
+   "description": "Get a document by ID.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "id": {
+      "type": "string",
+      "description": "Document ID"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "id"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "delete_document",
+   "description": "Delete a document by ID.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "id": {
+      "type": "string",
+      "description": "Document ID"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "id"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "delete_by_query",
+   "description": "Deletes documents matching the provided query.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "body": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Query to match documents for deletion"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "body"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "get_cluster_health",
+   "description": "Returns basic information about the health of the cluster.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "get_cluster_stats",
+   "description": "Returns high-level overview of cluster statistics.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "list_aliases",
+   "description": "List all aliases.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "type": "object"
+   },
+   "outputSchema": {
+    "properties": {
+     "result": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "result"
+    ],
+    "type": "object",
+    "x-fastmcp-wrap-result": true
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "get_alias",
+   "description": "Get alias information for a specific index.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "put_alias",
+   "description": "Create or update an alias for a specific index.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "name": {
+      "type": "string",
+      "description": "Name of the alias"
+     },
+     "body": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Alias configuration"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "name",
+     "body"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "delete_alias",
+   "description": "Delete an alias for a specific index.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "index": {
+      "type": "string",
+      "description": "Name of the index"
+     },
+     "name": {
+      "type": "string",
+      "description": "Name of the alias"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "index",
+     "name"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "create_data_stream",
+   "description": "Create a new data stream.\n\nThis creates a new data stream with the specified name.\nThe data stream must have a matching index template before creation.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Name of the data stream to create"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "name"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "get_data_stream",
+   "description": "Get information about one or more data streams.\n\nRetrieves configuration, mappings, settings, and other information\nabout the specified data streams.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Name of the data stream(s) to retrieve.\n  Can be a comma-separated list or wildcard pattern.\n  If not provided, retrieves all data streams."
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "delete_data_stream",
+   "description": "Delete one or more data streams.\n\nPermanently deletes the specified data streams and all their backing indices.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Name of the data stream(s) to delete.\n  Can be a comma-separated list or wildcard pattern."
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "name"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "general_api_request",
+   "description": "Perform a general HTTP API request.\n   Use this tool for any Elasticsearch/OpenSearch API that does not have a dedicated tool.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "method": {
+      "type": "string",
+      "description": "HTTP method (GET, POST, PUT, DELETE, etc.)"
+     },
+     "path": {
+      "type": "string",
+      "description": "API endpoint path"
+     },
+     "params": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Query parameters"
+     },
+     "body": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Request body"
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "method",
+     "path"
+    ],
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  },
+  {
+   "name": "analyze_text",
+   "description": "Analyze text to see how it would be tokenized.\n\nUse this tool to understand how Elasticsearch/OpenSearch tokenizes and\ntransforms text using analyzers. This is essential for debugging search\nqueries and understanding why certain documents match or don't match.",
+   "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+     "text": {
+      "type": "string",
+      "description": "The text to analyze"
+     },
+     "index": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Index name to use its configured analyzer. If not specified,\n   uses cluster-level analysis with built-in analyzers only."
+     },
+     "analyzer": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Name of the analyzer to use (e.g., 'standard', 'korean',\n     'korean_search'). If index is specified, you can use\n     custom analyzers defined in that index."
+     },
+     "tokenizer": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Tokenizer to use for custom analysis chain. Cannot be\n      used together with 'analyzer'."
+     },
+     "filter": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "List of token filters to apply (e.g., ['lowercase', 'stop']).\n   Used with 'tokenizer' for custom analysis chain."
+     },
+     "char_filter": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "List of character filters to apply before tokenization.\n        Used with 'tokenizer' for custom analysis chain."
+     },
+     "explain": {
+      "default": false,
+      "type": "boolean",
+      "description": "If True, returns detailed information about each token\n    including all token attributes and filter transformations.\n    Useful for debugging complex analyzer chains."
+     },
+     "attributes": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "List of token attributes to return when explain=True\n       (e.g., ['keyword', 'type']). If not specified, all\n       attributes are returned."
+     },
+     "cluster": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional cluster name. Uses the default cluster if omitted."
+     }
+    },
+    "required": [
+     "text"
+    ],
+    "type": "object"
+   },
+   "outputSchema": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "_meta": {
+    "fastmcp": {
+     "tags": []
+    }
+   }
+  }
+ ]
+}

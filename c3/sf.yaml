@@ -1,0 +1,6 @@
+other_services:
+  object_manager: True
+  query_manager: True
+  semantic_manager: True
+sql_statement_permissions:
+  - Select: True

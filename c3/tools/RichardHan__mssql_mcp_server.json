@@ -1,0 +1,33 @@
+{
+ "command": [
+  "uvx",
+  "--with",
+  "mcp<2",
+  "--from",
+  "microsoft_sql_server_mcp",
+  "mssql_mcp_server"
+ ],
+ "server_info": {
+  "name": "mssql_mcp_server",
+  "version": "1.30.0"
+ },
+ "protocol_version": "2025-06-18",
+ "tools": [
+  {
+   "name": "execute_sql",
+   "description": "Execute an SQL query on the SQL Server",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string",
+      "description": "The SQL query to execute"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  }
+ ]
+}

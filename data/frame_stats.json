@@ -1,0 +1,181 @@
+{
+ "Anarkh-Lee__universal-db-mcp": {
+  "merged_prs": 0,
+  "fixlike": 0,
+  "auto_excluded": 0,
+  "frame": 0
+ },
+ "ClickHouse__mcp-clickhouse": {
+  "merged_prs": 94,
+  "fixlike": 14,
+  "auto_excluded": 1,
+  "frame": 13,
+  "sampled": 13
+ },
+ "FreePeak__db-mcp-server": {
+  "merged_prs": 64,
+  "fixlike": 22,
+  "auto_excluded": 0,
+  "frame": 22,
+  "sampled": 22
+ },
+ "RichardHan__mssql_mcp_server": {
+  "merged_prs": 7,
+  "fixlike": 1,
+  "auto_excluded": 0,
+  "frame": 1,
+  "sampled": 1
+ },
+ "Snowflake-Labs__mcp": {
+  "merged_prs": 97,
+  "fixlike": 18,
+  "auto_excluded": 2,
+  "frame": 16,
+  "sampled": 16
+ },
+ "alexander-zuev__supabase-mcp-server": {
+  "merged_prs": 18,
+  "fixlike": 8,
+  "auto_excluded": 0,
+  "frame": 8,
+  "sampled": 8
+ },
+ "benborla__mcp-server-mysql": {
+  "merged_prs": 44,
+  "fixlike": 8,
+  "auto_excluded": 0,
+  "frame": 8,
+  "sampled": 8
+ },
+ "bytebase__dbhub": {
+  "merged_prs": 215,
+  "fixlike": 77,
+  "auto_excluded": 2,
+  "frame": 75,
+  "sampled": 40
+ },
+ "centralmind__gateway": {
+  "merged_prs": 37,
+  "fixlike": 4,
+  "auto_excluded": 0,
+  "frame": 4,
+  "sampled": 4
+ },
+ "chroma-core__chroma-mcp": {
+  "merged_prs": 23,
+  "fixlike": 3,
+  "auto_excluded": 0,
+  "frame": 3,
+  "sampled": 3
+ },
+ "cr7258__elasticsearch-mcp-server": {
+  "merged_prs": 46,
+  "fixlike": 14,
+  "auto_excluded": 1,
+  "frame": 13,
+  "sampled": 13
+ },
+ "crystaldba__postgres-mcp": {
+  "merged_prs": 73,
+  "fixlike": 12,
+  "auto_excluded": 0,
+  "frame": 12,
+  "sampled": 12
+ },
+ "designcomputer__mysql_mcp_server": {
+  "merged_prs": 12,
+  "fixlike": 4,
+  "auto_excluded": 0,
+  "frame": 4,
+  "sampled": 4
+ },
+ "elastic__mcp-server-elasticsearch": {
+  "merged_prs": 128,
+  "fixlike": 19,
+  "auto_excluded": 14,
+  "frame": 5,
+  "sampled": 5
+ },
+ "executeautomation__mcp-database-server": {
+  "merged_prs": 9,
+  "fixlike": 0,
+  "auto_excluded": 0,
+  "frame": 0
+ },
+ "googleapis__mcp-toolbox": {
+  "merged_prs": 2566,
+  "fixlike": 474,
+  "auto_excluded": 174,
+  "frame": 300,
+  "sampled": 40
+ },
+ "mongodb-js__mongodb-mcp-server": {
+  "merged_prs": 1145,
+  "fixlike": 192,
+  "auto_excluded": 25,
+  "frame": 167,
+  "sampled": 40
+ },
+ "motherduckdb__mcp-server-motherduck": {
+  "merged_prs": 41,
+  "fixlike": 8,
+  "auto_excluded": 0,
+  "frame": 8,
+  "sampled": 8
+ },
+ "neo4j-contrib__mcp-neo4j": {
+  "merged_prs": 175,
+  "fixlike": 19,
+  "auto_excluded": 0,
+  "frame": 19,
+  "sampled": 19
+ },
+ "neo4j__mcp": {
+  "merged_prs": 280,
+  "fixlike": 16,
+  "auto_excluded": 1,
+  "frame": 15,
+  "sampled": 15
+ },
+ "neondatabase__mcp-server-neon": {
+  "merged_prs": 244,
+  "fixlike": 62,
+  "auto_excluded": 3,
+  "frame": 59,
+  "sampled": 40
+ },
+ "qdrant__mcp-server-qdrant": {
+  "merged_prs": 49,
+  "fixlike": 6,
+  "auto_excluded": 1,
+  "frame": 5,
+  "sampled": 5
+ },
+ "redis__mcp-redis": {
+  "merged_prs": 132,
+  "fixlike": 21,
+  "auto_excluded": 3,
+  "frame": 18,
+  "sampled": 18
+ },
+ "runekaagaard__mcp-alchemy": {
+  "merged_prs": 11,
+  "fixlike": 0,
+  "auto_excluded": 0,
+  "frame": 0
+ },
+ "subnetmarco__pgmcp": {
+  "merged_prs": 6,
+  "fixlike": 3,
+  "auto_excluded": 1,
+  "frame": 2,
+  "sampled": 2
+ },
+ "supabase__mcp": {
+  "merged_prs": 226,
+  "fixlike": 46,
+  "auto_excluded": 2,
+  "frame": 44,
+  "sampled": 40
+ }
+}
