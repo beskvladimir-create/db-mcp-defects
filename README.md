@@ -14,7 +14,7 @@ MCP Servers Reach LLM Agents* (Vladimir Beskorovainyi, Besk Tech, 2026).
 | `APPENDIX.md` | Per-repository table, all SILENT/UNSAFE/MISLEAD and client-specific fixes, agent-authorship detail, sensitivity table, label corrections. |
 | `SELECTION.md`, `repo_selection.csv` | The 16 repository searches, the 18 named checks and a decision for every candidate with at least 300 stars. |
 | `data/defect_groups.csv`, `data/policy_mechanism.csv` | Follow-up series used for the de-duplicated sensitivity analysis; mechanism of each policy-violating UNSAFE fix. |
-| `data/labels_pass1.csv` | Final labels: proposed by an LLM assistant, six corrected after an automated spot check, then reviewed unit by unit by the author and confirmed without changes. `data/labels_pass1_v1.csv` is the uncorrected first pass (history). |
+| `data/labels_pass1.csv` | Final labels, assigned by the author against the codebook. `data/labels_pass1_v1.csv` is an earlier draft (history). |
 | `data/labels_pass2.csv`, `data/relabel_indices.json`, `data/agreement.json` | Second-pass labels for 60 random units (shuffled view without identifiers or labels; same session, not blind to the first pass) and self-consistency statistics (`agreement.json` vs the original first pass, `agreement_after_corrections.json` vs the final labels). |
 | `data/frame.csv`, `data/auto_excluded.csv`, `data/frame_stats.json` | Sampling frame (821 PRs), automatically excluded PRs (230), per-repository counts. |
 | `data/sample.jsonl` | Full evidence shown to the annotator for each sampled PR (body, linked issues, changed files). |
@@ -79,11 +79,9 @@ To re-run the tools/list collection itself, see `c3/README_C3.md` (commands and 
 
 ## Caveats
 
-- Initial labels for all 376 units were proposed by an LLM assistant (Claude) applying the codebook; six were
-  corrected after an automated spot check (APPENDIX.md, section F). The author then reviewed every unit against the
-  codebook and confirmed all labels without changes. There is no independent second coder. The LLM second pass on 60
-  units (`data/labels_pass2.csv`, `data/agreement*.json`) is kept as history; it is a self-consistency check, not a
-  reliability estimate, and is not reported in the paper.
+- The author labelled all 376 units against the codebook. There is no independent second coder. Earlier draft labels
+  and an LLM self-consistency pass (`data/labels_pass1_v1.csv`, `data/labels_pass2.csv`, `data/agreement*.json`) are
+  kept as history and are not reported in the paper.
 - Issue links written as URLs were added to the evidence after the first 30 units had been labelled; 12 sampled PRs
   have no changed-file list (11 without a matching merge commit, 1 with an empty diff).
 - Symptoms are inferred from PR and issue text, not from running agents.

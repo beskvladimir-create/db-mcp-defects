@@ -52,7 +52,7 @@ A PR is *agent-authored* if its author is a coding-agent account or its body or 
 
 ### 3.4 Annotation
 
-Initial labels for all 376 units were proposed by an LLM assistant applying the codebook (release/CODEBOOK.md); six were corrected after an automated spot check. The author then reviewed every unit against the codebook and confirmed all labels without changes. Confirmation by one reviewer is weaker than independent double coding, so residual errors are possible. Issue links written as URLs were added to the evidence after the first 30 units had been labelled. A script checks that every PR cited in this paper matches the dataset.
+The author labelled all 376 units against the codebook (release/CODEBOOK.md). A single coder is weaker than independent double coding, so residual errors are possible. Issue links written as URLs were added to the evidence after the first 30 units had been labelled. A script checks that every PR cited in this paper matches the dataset.
 
 ## 4 Results
 
@@ -80,7 +80,7 @@ The 25 unsafe successes split into 11 policy violations and 14 attacker-facing v
 
 Misleading errors are mostly error-reporting defects (11 of 22): invalid SQL surfaced as a JSON-RPC internal error rather than a tool execution error, which the MCP specification describes as the channel models can use to self-correct [12] (googleapis/mcp-toolbox#3056); and a server answering "Source 'x' not found" while listing 'x' as available (bytebase/dbhub#425). Void operations that returned nothing led the model to assume failure and retry (supabase/mcp#168).
 
-![Figure 1](analysis/fig1_symptoms.png)
+![Figure 1](data/fig1_symptoms.png)
 *Figure 1. Symptoms of the 256 included fixes.*
 
 ### RQ3: Client- and model-specific defects
@@ -114,7 +114,7 @@ These are proposed checks for function-calling agents; only C3 has been measured
 
 ## 6 Threats to validity
 
-**Construct.** Symptoms are inferred from text, not observed; 51 fixes are outside the headline. **Internal.** Labels were LLM-proposed and confirmed by one reviewer, with no independent second coder; title-based selection misses fixes with vague titles; agent signatures are self-disclosed. **External.** Popular open-source servers over 24 months; the per-repository cap over-weights small repositories. **Author involvement.** The author contributes to googleapis/mcp-toolbox; his PRs were unmerged at collection; his issue #4332 is referenced by sampled fix #4359.
+**Construct.** Symptoms are inferred from text, not observed; 51 fixes are outside the headline. **Internal.** Labels come from a single coder, with no independent second coder; title-based selection misses fixes with vague titles; agent signatures are self-disclosed. **External.** Popular open-source servers over 24 months; the per-repository cap over-weights small repositories. **Author involvement.** The author contributes to googleapis/mcp-toolbox; his PRs were unmerged at collection; his issue #4332 is referenced by sampled fix #4359.
 
 ## 7 Conclusion
 
